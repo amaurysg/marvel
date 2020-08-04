@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles/style.css" />
+    <link rel="stylesheet" href="/fonts/" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap"
+      rel="stylesheet"
+    />
+    <title>Clone Marvel.com |</title>
+    <style>
+      body {
+      }
+      @font-face {
+        font-family: "icomoon";
+        src: url("fonts/icomoon.eot?x61x8q");
+        src: url("fonts/icomoon.eot?x61x8q#iefix") format("embedded-opentype"),
+          url("fonts/icomoon.ttf?x61x8q") format("truetype"),
+          url("fonts/icomoon.woff?x61x8q") format("woff"),
+          url("fonts/icomoon.svg?x61x8q#icomoon") format("svg");
+        font-weight: normal;
+        font-style: normal;
+        font-display: block;
+      }
+
+      [class^="icon-"],
+      [class*=" icon-"] {
+        /* use !important to prevent issues with browser extensions that change fonts */
+        font-family: "icomoon" !important;
+        speak: never;
+        font-style: normal;
+        font-weight: normal;
+        font-variant: normal;
+        text-transform: none;
+        line-height: 1;
+
+        /* Better Font Rendering =========== */
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+
+      .icon-search:before {
+        content: "\e986";
+      }
+      .icon-menu:before {
+        content: "\e9bd";
+      }
+      header {
+        height: 52px;
+        background-color: #202020;
+      }
+      .header-container {
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        height: inherit;
+      }
+      .icon-menu {
+        color: #ffffff;
+        font-size: 1.5em;
+        margin: 15px;
+      }
+      .icon-search {
+        color: #ffffff;
+        font-size: 1.5em;
+        margin: 15px;
+      }
+      .streaming {
+        display: flex;
+        height: 40px;
+        background-color: #151515;
+        justify-content: center;
+      }
+      /*    .header-streaming-container {
+      } */
+
+      .streaming-text {
+        font-family: "Roboto Condensed", sans-serif;
+        font-size: 12px;
+        /*  letter-spacing: 0.5px; */
+        margin: 0;
+        /* text-align: center; */
+        margin-top: 12px;
+        color: white;
+      }
+      .streaming-img img {
+        margin-left: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-container">
+        <div class="icon-menu"></div>
+        <div>
+          <img
+            src="./images/marvel-logo.png"
+            width="130"
+            height="52"
+            alt=""
+            class="marvel-logo"
+          />
+        </div>
+        <div class="icon-search"></div>
+      </div>
+    </header>
+
+    <section class="streaming">
+      <div class="header-streaming-container">
+        <p class="streaming-text">START STREAMING NOW</p>
+      </div>
+      <div class="streaming-img">
+        <img src="./images/disneybtn_asset2x_3.png" alt="" />
+      </div>
+    </section>
+    <main></main>
+  </body>
+</html>
