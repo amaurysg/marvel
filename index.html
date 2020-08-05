@@ -101,6 +101,10 @@
         /*  border: 1px solid red; */
         background-color: #151515;
       }
+      .hero section {
+        position: absolute;
+      }
+
       /*      .hero-image-iroman {
         height: 200px;
         background: url("./images/mcocss_0727_com_mas_mob_01.jpg") center;
@@ -128,6 +132,15 @@
       }
       .shield-image-avengers {
         background: url("./images/marvelsavengers_lob_log_eye_01_1_0.png");
+        height: 100px;
+        background-repeat: no-repeat;
+        /* margin: 20px; */
+        margin-top: 30px;
+        background-size: contain;
+      }
+
+      .shield-image-antman {
+        background: url("./images/svod_logo_white-homepage.png");
         height: 100px;
         background-repeat: no-repeat;
         /* margin: 20px; */
@@ -179,6 +192,32 @@
         );
         padding: 15px 40px;
       }
+
+      .menu {
+        text-align: center;
+        margin: 20px;
+        position: absolute;
+        top: 220px;
+      }
+
+      .menu li {
+        display: inline-block;
+        text-align: center;
+      }
+
+      .menu li a {
+        display: inline-block;
+
+        text-decoration: none;
+
+        padding: 10px;
+
+        width: 18px;
+        border-bottom: 5px solid #e1e1e1;
+      }
+      .menu li a:hover {
+        border-bottom: 5px solid #e62429;
+      }
     </style>
   </head>
   <body>
@@ -206,46 +245,84 @@
         <img src="./images/disneybtn_asset2x_3.png" alt="" />
       </div>
     </section>
-
-    <section class="hero">
-      <div class="hero-image">
-        <img class="" src="./images/mcocss_0727_com_mas_mob_01.jpg" alt="" />
-      </div>
-      <div class="hero-post-container">
-        <div class="shield-image">
-          <img src="" alt="" />
+    <div class="slider">
+      <section class="hero" id="slider1">
+        <div class="hero-image">
+          <img class="" src="./images/mcocss_0727_com_mas_mob_01.jpg" alt="" />
         </div>
-        <div class="hero-post-title">
-          <h1>SUMMONER SHOWDOWN IS BACK!</h1>
+        <div class="hero-post-container">
+          <div class="shield-image">
+            <img src="" alt="" />
+          </div>
+          <div class="hero-post-title">
+            <h1>SUMMONER SHOWDOWN IS BACK!</h1>
+          </div>
+          <div class="hero-post-copy">
+            <p>
+              3 regions. 3 rounds. 9 contestants. Find out how you can compete
+              in the 2020 Marvel Contest of Champions Summoner Showdown!
+            </p>
+          </div>
+          <button class="hero-btn">LEARN MORE</button>
         </div>
-        <div class="hero-post-copy">
-          <p>
-            3 regions. 3 rounds. 9 contestants. Find out how you can compete in
-            the 2020 Marvel Contest of Champions Summoner Showdown!
-          </p>
+      </section>
+      <section class="hero" id="slider2">
+        <div class="hero-image">
+          <img src="./images/avengers_0729_com_mas_mob_01.jpg" alt="" />
         </div>
-        <button class="hero-btn">LEARN MORE</button>
-      </div>
-    </section>
-    <section class="hero">
-      <div class="hero-image">
-        <img src="./images/avengers_0729_com_mas_mob_01.jpg" alt="" />
-      </div>
-      <div class="hero-post-container">
-        <div class="shield-image-avengers">
-          <img src="" alt="" />
+        <div class="hero-post-container">
+          <div class="shield-image-avengers">
+            <img src="" alt="" />
+          </div>
+          <div class="hero-post-title">
+            <h1>HAWKEYE JOINS THE FIGHT</h1>
+          </div>
+          <div class="hero-post-copy">
+            <p>
+              The latest Marvel's Avengers War Table revealed the latest
+              playable character-the highly requested Hawkeye!
+            </p>
+          </div>
+          <button class="hero-btn">LEARN MORE</button>
         </div>
-        <div class="hero-post-title">
-          <h1>HAWKEYE JOINS THE FIGHT</h1>
+      </section>
+      <section class="hero" id="slider3">
+        <div class="hero-image">
+          <img src="./images/antmanandwasp_lob_mas_mob_02.jpg" alt="" />
         </div>
-        <div class="hero-post-copy">
-          <p>
-            The latest Marvel's Avengers War Table revealed the latest playable
-            character-the highly requested Hawkeye!
-          </p>
+        <div class="hero-post-container">
+          <div class="shield-image-antman">
+            <img src="" alt="" />
+          </div>
+          <div class="hero-post-title">
+            <h1>HAWKEYE JOINS THE FIGHT</h1>
+          </div>
+          <div class="hero-post-copy">
+            <p>
+              The latest Marvel's Avengers War Table revealed the latest
+              playable character-the highly requested Hawkeye!
+            </p>
+          </div>
+          <button class="hero-btn">LEARN MORE</button>
         </div>
-        <button class="hero-btn">LEARN MORE</button>
-      </div>
-    </section>
+      </section>
+    </div>
+    <ul class="menu">
+      <li>
+        <a href="#slider1"></a>
+      </li>
+      <li>
+        <a href="#slider2"></a>
+      </li>
+      <li>
+        <a href="#slider3"></a>
+      </li>
+      <li>
+        <a href="#slider3"></a>
+      </li>
+      <li>
+        <a href="#slider3"></a>
+      </li>
+    </ul>
   </body>
 </html>

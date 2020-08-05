@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>slider-test</title>
+  </head>
+  <style>
+    body {
+      background-color: lightgrey;
+      font-family: sans-serif;
+    }
+
+    .container {
+      margin: auto;
+      background-color: white;
+      width: 800px;
+      padding: 30px;
+    }
+
+    ul,
+    li {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+    }
+
+    ul.slider {
+      position: relative;
+      width: 800px;
+      height: 300px;
+    }
+
+    ul.slider li {
+      position: absolute;
+      left: 0px;
+      top: 0px;
+      opacity: 0;
+      width: inherit;
+      height: inherit;
+      transition: opacity 2s;
+      background: #fff;
+    }
+
+    ul.slider li img {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+    }
+
+    ul.slider li:first-child {
+      opacity: 1; /*Mostramos el primer <li>*/
+    }
+
+    ul.slider li:target {
+      opacity: 1; /*Mostramos el <li> del enlace que pulsemos*/
+    }
+
+    .menu {
+      text-align: center;
+      margin: 20px;
+    }
+
+    .menu li {
+      display: inline-block;
+      text-align: center;
+    }
+
+    .menu li a {
+      display: inline-block;
+
+      text-decoration: none;
+
+      padding: 10px;
+
+      width: 18px;
+      border-bottom: 5px solid black;
+    }
+    .menu li a:hover {
+      border-bottom: 5px solid #e62429;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <ul class="slider">
+        <li id="slider1">
+          <img src="./images/antmanandwasp_lob_mas_mob_02.jpg" alt="" />
+        </li>
+        <li id="slider2">
+          <img src="images/avengers_0729_com_mas_mob_01.jpg" alt="" />
+        </li>
+        <li id="slider3">
+          <section class="hero">
+            <div class="hero-image">
+              <img src="./images/antmanandwasp_lob_mas_mob_02.jpg" alt="" />
+            </div>
+            <div class="hero-post-container">
+              <div class="shield-image-antman">
+                <img src="" alt="" />
+              </div>
+              <div class="hero-post-title">
+                <h1>HAWKEYE JOINS THE FIGHT</h1>
+              </div>
+              <div class="hero-post-copy">
+                <p>
+                  The latest Marvel's Avengers War Table revealed the latest
+                  playable character-the highly requested Hawkeye!
+                </p>
+              </div>
+              <button class="hero-btn">LEARN MORE</button>
+            </div>
+          </section>
+        </li>
+      </ul>
+      <ul class="menu">
+        <li>
+          <a href="#slider1">1</a>
+        </li>
+        <li>
+          <a href="#slider2">2</a>
+        </li>
+        <li>
+          <a href="#slider3">3</a>
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>
