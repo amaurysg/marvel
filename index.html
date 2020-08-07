@@ -51,35 +51,42 @@
       .icon-search:before {
         content: "\e986";
       }
+
       .icon-menu:before {
         content: "\e9bd";
       }
+
       header {
         height: 52px;
         background-color: #202020;
       }
+
       .header-container {
         display: flex;
         justify-content: space-between;
         position: relative;
         height: inherit;
       }
+
       .icon-menu {
         color: #ffffff;
         font-size: 1.5em;
         margin: 15px;
       }
+
       .icon-search {
         color: #ffffff;
         font-size: 1.5em;
         margin: 15px;
       }
+
       .streaming {
         display: flex;
         height: 40px;
         background-color: #151515;
         justify-content: center;
       }
+
       /*    .header-streaming-container {
         } */
 
@@ -92,6 +99,7 @@
         margin-top: 12px;
         color: white;
       }
+
       .streaming-img img {
         margin-left: 5px;
       }
@@ -101,24 +109,11 @@
         /*  border: 1px solid red; */
         background-color: #151515;
       }
+
       .hero section {
         position: absolute;
       }
 
-      /*      .hero-image-iroman {
-        height: 200px;
-        background: url("./images/mcocss_0727_com_mas_mob_01.jpg") center;
-        background-size: cover;
-        background-repeat: no-repeat;
-        object-fit: cover;
-      } */
-      /*       .hero-image-avengers {
-        height: 200px;
-        background: url("./images/avengers_0729_com_mas_mob_01.jpg") center;
-        background-size: cover;
-        background-repeat: no-repeat;
-        object-fit: cover;
-      } */
       .hero-image img {
         width: 100%;
       }
@@ -130,6 +125,7 @@
         /* margin: 20px; */
         margin-top: 30px;
       }
+
       .shield-image-avengers {
         background: url("./images/marvelsavengers_lob_log_eye_01_1_0.png");
         height: 100px;
@@ -151,6 +147,7 @@
       .hero-post-container {
         padding: 0 30px 20px;
       }
+
       .hero-post-title {
         font-family: "Roboto Condensed", sans-serif;
         color: white;
@@ -160,9 +157,11 @@
         font-weight: 800;
         margin: 0;
       }
+
       .hero-post-title h1 {
         margin-bottom: 11px;
       }
+
       .hero-post-copy {
         font-family: "Roboto", sans-serif;
         font-size: 15px;
@@ -171,33 +170,63 @@
         margin: 0;
         padding: 0;
       }
+
       .hero-btn {
         background-color: #e62429;
         border: none;
-        font-weight: 700;
+        font-size: 14px;
+        font-weight: bold;
         padding: 15px 40px;
+        margin-bottom: 15px;
         color: white;
         font-family: "Roboto Condensed", sans-serif;
         padding: 10px 15px;
         cursor: pointer;
         outline: none;
         clip-path: polygon(
-          10% 0,
+          14% 0,
           100% 0,
           100% 0,
-          100% 71%,
-          89% 100%,
+          100% 65%,
+          87% 100%,
           0 100%,
-          0 27%
+          0 34%
         );
+        padding: 15px 40px;
+      }
+
+      .hero-btn-large {
+        background-color: #e62429;
+        border: none;
+        font-size: 14px;
+        font-weight: 900;
+        padding: 15px 40px;
+        margin-bottom: ;
+        color: white;
+        font-family: "Roboto Condensed", sans-serif;
+        padding: 10px 15px;
+        cursor: pointer;
+        outline: none;
+        clip-path: polygon(
+          8% 0,
+          100% 0,
+          100% 20%,
+          100% 61%,
+          92% 100%,
+          0 100%,
+          0% 80%,
+          0 36%
+        );
+
         padding: 15px 40px;
       }
 
       .menu {
         text-align: center;
-        margin: 20px;
+        margin: 10px 0;
         position: absolute;
-        top: 220px;
+        top: 250px;
+        width: 100vw;
       }
 
       .menu li {
@@ -207,19 +236,46 @@
 
       .menu li a {
         display: inline-block;
-
         text-decoration: none;
-
         padding: 10px;
-
-        width: 18px;
-        border-bottom: 5px solid #e1e1e1;
+        border-bottom: 4px solid #e1e1e1;
+        margin-left: 3px;
       }
+
       .menu li a:hover {
         border-bottom: 5px solid #e62429;
       }
+
+      ul.hero-slider {
+        position: relative;
+      }
+
+      ul.hero-slider li {
+        position: absolute;
+        /* Con absolute todos mis articles estarán en encima de otro, dentro del relative de hero-slider */
+        transition: opacity 0.5s;
+        opacity: 0;
+      }
+
+      ul.hero-slider li:first-child {
+        opacity: 1;
+        /*Mostramos el primer <li>*/
+      }
+
+      ul.hero-slider li:target {
+        opacity: 1;
+        /*Mostramos el <li> del enlace que pulsemos*/
+      }
+
+      ul,
+      li {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+      }
     </style>
   </head>
+
   <body>
     <header class="header">
       <div class="header-container">
@@ -236,7 +292,7 @@
         <div class="icon-search"></div>
       </div>
     </header>
-
+    <!-- Streaming -->
     <section class="streaming">
       <div class="header-streaming-container">
         <p class="streaming-text">START STREAMING NOW</p>
@@ -245,68 +301,129 @@
         <img src="./images/disneybtn_asset2x_3.png" alt="" />
       </div>
     </section>
-    <div class="slider">
-      <section class="hero" id="slider1">
-        <div class="hero-image">
-          <img class="" src="./images/mcocss_0727_com_mas_mob_01.jpg" alt="" />
-        </div>
-        <div class="hero-post-container">
-          <div class="shield-image">
-            <img src="" alt="" />
-          </div>
-          <div class="hero-post-title">
-            <h1>SUMMONER SHOWDOWN IS BACK!</h1>
-          </div>
-          <div class="hero-post-copy">
-            <p>
-              3 regions. 3 rounds. 9 contestants. Find out how you can compete
-              in the 2020 Marvel Contest of Champions Summoner Showdown!
-            </p>
-          </div>
-          <button class="hero-btn">LEARN MORE</button>
-        </div>
-      </section>
-      <section class="hero" id="slider2">
-        <div class="hero-image">
-          <img src="./images/avengers_0729_com_mas_mob_01.jpg" alt="" />
-        </div>
-        <div class="hero-post-container">
-          <div class="shield-image-avengers">
-            <img src="" alt="" />
-          </div>
-          <div class="hero-post-title">
-            <h1>HAWKEYE JOINS THE FIGHT</h1>
-          </div>
-          <div class="hero-post-copy">
-            <p>
-              The latest Marvel's Avengers War Table revealed the latest
-              playable character-the highly requested Hawkeye!
-            </p>
-          </div>
-          <button class="hero-btn">LEARN MORE</button>
-        </div>
-      </section>
-      <section class="hero" id="slider3">
-        <div class="hero-image">
-          <img src="./images/antmanandwasp_lob_mas_mob_02.jpg" alt="" />
-        </div>
-        <div class="hero-post-container">
-          <div class="shield-image-antman">
-            <img src="" alt="" />
-          </div>
-          <div class="hero-post-title">
-            <h1>HAWKEYE JOINS THE FIGHT</h1>
-          </div>
-          <div class="hero-post-copy">
-            <p>
-              The latest Marvel's Avengers War Table revealed the latest
-              playable character-the highly requested Hawkeye!
-            </p>
-          </div>
-          <button class="hero-btn">LEARN MORE</button>
-        </div>
-      </section>
+    <!-- Hero -Posts -->
+    <div class="hero-container">
+      <ul class="hero-slider">
+        <li id="slider1">
+          <article class="hero" id="slider1">
+            <div class="hero-image">
+              <img
+                class=""
+                src="./images/mcocss_0727_com_mas_mob_01.jpg"
+                alt=""
+              />
+            </div>
+            <div class="hero-post-container">
+              <div class="shield-image">
+                <img src="" alt="" />
+              </div>
+              <div class="hero-post-title">
+                <h1>SUMMONER SHOWDOWN IS BACK!</h1>
+              </div>
+              <div class="hero-post-copy">
+                <p>
+                  3 regions. 3 rounds. 9 contestants. Find out how you can
+                  compete in the 2020 Marvel Contest of Champions Summoner
+                  Showdown!
+                </p>
+              </div>
+              <button class="hero-btn">LEARN MORE</button>
+            </div>
+          </article>
+        </li>
+        <li id="slider2">
+          <article class="hero" id="slider2">
+            <div class="hero-image">
+              <img src="./images/avengers_0729_com_mas_mob_01.jpg" alt="" />
+            </div>
+            <div class="hero-post-container">
+              <div class="shield-image-avengers">
+                <img src="" alt="" />
+              </div>
+              <div class="hero-post-title">
+                <h1>HAWKEYE JOINS THE FIGHT</h1>
+              </div>
+              <div class="hero-post-copy">
+                <p>
+                  The latest Marvel's Avengers War Table revealed the latest
+                  playable character-the highly requested Hawkeye!
+                </p>
+              </div>
+              <button class="hero-btn">LEARN MORE</button>
+            </div>
+          </article>
+        </li>
+        <li id="slider3">
+          <article class="hero" id="slider3">
+            <div class="hero-image">
+              <img src="./images/antmanandwasp_lob_mas_mob_02.jpg" alt="" />
+            </div>
+            <div class="hero-post-container">
+              <div class="shield-image-antman">
+                <img src="" alt="" />
+              </div>
+              <div class="hero-post-title">
+                <h1>HAWKEYE JOINS THE FIGHT</h1>
+              </div>
+              <div class="hero-post-copy">
+                <p>
+                  The latest Marvel's Avengers War Table revealed the latest
+                  playable character-the highly requested Hawkeye!
+                </p>
+              </div>
+              <button class="hero-btn">LEARN MORE</button>
+            </div>
+          </article>
+        </li>
+        <li id="slider4">
+          <article class="hero" id="slider4">
+            <div class="hero-image">
+              <img src="./images/empyre_0805_com_mas_mob_01.jpg" alt="" />
+            </div>
+            <div class="hero-post-container">
+              <div class="shield-image-empyre">
+                <img src="" alt="" />
+              </div>
+              <div class="hero-post-title">
+                <h1>SURPRISE CONCLUSION!</h1>
+              </div>
+              <div class="hero-post-copy">
+                <p>
+                  Spoilers ahead for two beloved Super Heroes in Empyre #4!
+                </p>
+              </div>
+              <button class="hero-btn">READ MORE</button>
+              <button class="hero-btn-large">
+                BEST OF WICCAN AND HULKLING
+              </button>
+            </div>
+          </article>
+        </li>
+        <li id="slider5">
+          <article class="hero" id="slider5">
+            <div class="hero-image">
+              <img src="./images/storyboards_0730_com_mas_mob_01.jpg" alt="" />
+            </div>
+            <div class="hero-post-container">
+              <div class="shield-image-story">
+                <img src="" alt="" />
+              </div>
+              <div class="hero-post-title">
+                <h1>NATALIA CORDOVA-BUCKLEY ON STORYBOARDS</h1>
+              </div>
+              <div class="hero-post-copy">
+                <p>
+                  See how the Agents of S.H.I.E.L.D star go full S.H.I.E.L.D
+                  agent with host Joe Quesada on the latest episode!
+                </p>
+              </div>
+              <button class="hero-btn">WATCH NOW</button>
+            </div>
+          </article>
+        </li>
+      </ul>
     </div>
+    <!--  Menú del Slider -->
     <ul class="menu">
       <li>
         <a href="#slider1"></a>
@@ -318,10 +435,10 @@
         <a href="#slider3"></a>
       </li>
       <li>
-        <a href="#slider3"></a>
+        <a href="#slider4"></a>
       </li>
       <li>
-        <a href="#slider3"></a>
+        <a href="#slider5"></a>
       </li>
     </ul>
   </body>

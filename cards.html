@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cards</title>
+  </head>
+  <style>
+    .cards-list {
+      height: 520px;
+      background-color: #ffffff;
+      border: 1px solid red;
+    }
+    .cards-container {
+      border: 1px solid blue;
+      height: inherit;
+      padding: 10px 20px 0;
+      margin: 0 auto;
+      box-sizing: border-box; /* Lo use para mantener dentro, no se sale el padding */
+    }
+    .cards-grid {
+      border: 1px solid green;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      display: grid;
+      overflow: hidden;
+      height: 65vh;
+      grid-gap: 5px;
+    }
+    .cards-image-item {
+      background: url("images/graphic_2\ \(2\).jpg");
+      background-size: contain;
+    }
+  </style>
+  <body>
+    <section class="cards-list">
+      <div class="cards-container">
+        <div class="cards-title">
+          <h1>MARVEL AT HOME</h1>
+        </div>
+        <div class="cards-grid">
+          <div class="cards-grid-item">
+            <div class="cards-image-item"></div>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit
+              sapiente sint quidem ipsam repellendus nihil nobis, temporibus ab
+              quo doloremque, eveniet fugit facilis sequi suscipit quam sit
+              consequuntur possimus vel?
+            </p>
+          </div>
+          <div class="cards-grid-item"></div>
+          <div class="cards-grid-item"></div>
+          <div class="cards-grid-item"></div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
