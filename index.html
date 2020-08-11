@@ -452,7 +452,62 @@
         color: #e62429;
         border: 1px solid #e62429;
       }
-
+      /*  UNLIMITED SLIDERS */
+      .unlimited-section {
+        height: 454px;
+        /*  border: 1px solid red; */
+        max-width: 1024px;
+      }
+      .unlimited-container {
+        height: inherit;
+        padding: 10px;
+        box-sizing: border-box;
+      }
+      .unlimited-slider {
+        padding-bottom: 17px;
+        position: relative;
+        max-width: 1240px;
+        top: 17px;
+        margin: -17px 0 0;
+        padding: 10px 0 0;
+        display: block;
+        white-space: nowrap;
+        overflow-x: auto;
+        overflow-y: hidden;
+        -webkit-overflow-scrolling: touch;
+      }
+      .unlimited-slider-item {
+        display: inline-block;
+        height: 311px;
+        width: 207px;
+        border: 1px solid black;
+        list-style: none;
+        margin-right: 20px;
+      }
+      .unlimited-slider-item-img img {
+        width: 100%;
+        /*   height: 311px;
+      width: 207px; */
+        overflow: hidden;
+        box-shadow: 0 7px 17px -8px rgba(0, 0, 0, 0.8);
+      }
+      .unlimited-slider-item-title p {
+        font-family: "Roboto", sans-serif;
+        font-weight: bold;
+        font-size: 14px;
+        overflow: hidden;
+        white-space: normal;
+        margin: 5px 0 2px 0;
+        letter-spacing: 0.5px;
+      }
+      .unlimited-slider-item-year p {
+        font-family: "Roboto Condensed", sans-serif;
+        color: #999;
+        letter-spacing: 0.5px;
+        font-size: 14px;
+        letter-spacing: 0.5px;
+        margin: 0;
+      }
       @media screen and (min-width: 490px) {
         .cards-in {
           grid-template-columns: repeat(auto-fill, minmax(23.75%, 1fr));
@@ -775,6 +830,178 @@
             <button>GET MARVEL UNLIMITED</button>
           </div>
         </div>
+      </div>
+    </section>
+    <!-- UNLIMITED SLIDERS -->
+    <section class="unlimited-section">
+      <div class="unlimited-container">
+        <ul class="unlimited-slider">
+          <li class="unlimited-slider-item">
+            <div class="unlimited-slider-item-img">
+              <img src="./images/portrait_uncanny.jpg" alt="" />
+            </div>
+            <div class="unlimited-slider-item-title">
+              <p>X-Men/Fantastic Four (2020) #1</p>
+            </div>
+            <div class="unlimited-slider-item-year">
+              <p>
+                2020
+              </p>
+            </div>
+          </li>
+          <li class="unlimited-slider-item">
+            <div class="unlimited-slider-item-img">
+              <img src="./images/portrait_uncanny (2).jpg" alt="" />
+            </div>
+
+            <div class="unlimited-slider-item-title">
+              <p>Captain America: The End (2020) #1</p>
+            </div>
+            <div class="unlimited-slider-item-year">
+              <p>2020</p>
+            </div>
+          </li>
+          <li class="unlimited-slider-item">
+            <div class="unlimited-slider-item-img">
+              <img src="./images/portrait_uncanny (4).jpg" alt="" />
+            </div>
+
+            <div class="unlimited-slider-item-title">
+              <p>Marauders (2019) #7</p>
+              <div class="unlimited-slider-item-year">
+                <p>
+                  2020
+                </p>
+              </div>
+            </div>
+          </li>
+          <li class="unlimited-slider-item">
+            <div class="unlimited-slider-item-img">
+              <img src="./images/portrait_uncanny (5).jpg" alt="" />
+            </div>
+            <div class="unlimited-slider-item-title">
+              <p>Star Wars: Darth Vader (2020) #1</p>
+            </div>
+            <div class="unlimited-slider-item-year">2020</div>
+          </li>
+          <li class="unlimited-slider-item">
+            <div class="unlimited-slider-item-img">
+              <img src="./images/portrait_uncanny (6).jpg" alt="" />
+            </div>
+            <div class="unlimited-slider-item-title">
+              <p>Miles Morales: Spider-Man (2018) #15</p>
+            </div>
+            <div class="unlimited-slider-item-year">2020</div>
+          </li>
+          <li class="unlimited-slider-item">
+            <div class="unlimited-slider-item-img">
+              <img src="./images/portrait_uncanny (7).jpg" alt="" />
+            </div>
+            <div class="unlimited-slider-item-title">
+              <p>Ant-Man (2020) #1</p>
+            </div>
+            <div class="unlimited-slider-item-year">2020</div>
+          </li>
+          <li class="unlimited-slider-item">
+            <div class="unlimited-slider-item-img">
+              <img src="./images/portrait_uncanny (8).jpg" alt="" />
+            </div>
+            <div class="unlimited-slider-item-title">
+              <p>Black Cat (2019) #9</p>
+            </div>
+            <div class="unlimited-slider-item-year">2020</div>
+          </li>
+          <li class="unlimited-slider-item">
+            <div class="unlimited-slider-item-img">
+              <img src="./images/portrait_uncanny (9).jpg" alt="" />
+            </div>
+            <div class="unlimited-slider-item-title">
+              <p>Daredevil (2019) #17</p>
+            </div>
+            <div class="unlimited-slider-item-year">2020</div>
+          </li>
+          <li class="unlimited-slider-item">
+            <div class="unlimited-slider-item-img">
+              <img src="./images/portrait_uncanny (10).jpg" alt="" />
+            </div>
+            <div class="unlimited-slider-item-title">
+              <p>Doctor Doom (2019) #5</p>
+            </div>
+            <div class="unlimited-slider-item-year">2020</div>
+          </li>
+          <li class="unlimited-slider-item">
+            <div class="unlimited-slider-item-img">
+              <img src="./images/portrait_uncanny (11).jpg" alt="" />
+            </div>
+            <div class="unlimited-slider-item-title">
+              <p>Immortal Hulk: Great Power (2020) #1</p>
+            </div>
+            <div class="unlimited-slider-item-year">2020</div>
+          </li>
+          <li class="unlimited-slider-item">
+            <div class="unlimited-slider-item-img">
+              <img src="./images/portrait_uncanny (12).jpg" alt="" />
+            </div>
+            <div class="unlimited-slider-item-title">
+              <p>Magnificent Ms. Marvel (2019) #12</p>
+            </div>
+            <div class="unlimited-slider-item-year">2020</div>
+          </li>
+          <li class="unlimited-slider-item">
+            <div class="unlimited-slider-item-img">
+              <img src="./images/portrait_uncanny (13).jpg" alt="" />
+            </div>
+            <div class="unlimited-slider-item-title">
+              <p>Marvel's Avengers: Hulk (2020) #1</p>
+            </div>
+            <div class="unlimited-slider-item-year">2020</div>
+          </li>
+          <li class="unlimited-slider-item">
+            <div class="unlimited-slider-item-img">
+              <img src="./images/portrait_uncanny (14).jpg" alt="" />
+            </div>
+            <div class="unlimited-slider-item-title">
+              <p>Spider-Man & Venom: Double Trouble (2019) #4</p>
+            </div>
+            <div class="unlimited-slider-item-year">2020</div>
+          </li>
+          <li class="unlimited-slider-item">
+            <div class="unlimited-slider-item-img">
+              <img src="./images/portrait_uncanny (17).jpg" alt="" />
+            </div>
+            <div class="unlimited-slider-item-title">
+              <p>Spider-Verse (2019) #5</p>
+            </div>
+            <div class="unlimited-slider-item-year">2020</div>
+          </li>
+          <li class="unlimited-slider-item">
+            <div class="unlimited-slider-item-img">
+              <img src="./images/portrait_uncanny (18).jpg" alt="" />
+            </div>
+            <div class="unlimited-slider-item-title">
+              <p>Strikeforce (2019) #6</p>
+            </div>
+            <div class="unlimited-slider-item-year">2020</div>
+          </li>
+          <li class="unlimited-slider-item">
+            <div class="unlimited-slider-item-img">
+              <img src="./images/portrait_uncanny (15).jpg" alt="" />
+            </div>
+            <div class="unlimited-slider-item-title">
+              <p>Sword Master (2019) #8</p>
+            </div>
+            <div class="unlimited-slider-item-year">2020</div>
+          </li>
+          <li class="unlimited-slider-item">
+            <div class="unlimited-slider-item-img">
+              <img src="./images/portrait_uncanny (19).jpg" alt="" />
+            </div>
+            <div class="unlimited-slider-item-title">
+              <p>Yondu (2019) #5</p>
+            </div>
+            <div class="unlimited-slider-item-year">2020</div>
+          </li>
+        </ul>
       </div>
     </section>
   </body>
