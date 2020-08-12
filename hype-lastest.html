@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>hype-latest</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,700;1,700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <style>
+    .hype-latest {
+      max-width: 1024px;
+      height: 100vh;
+    }
+    .hype-latest-container {
+      height: 100%;
+      padding: 0 30px 0 30px;
+    }
+    .hype-title {
+      text-align: center;
+      font-family: "Roboto Condensed", sans-serif;
+      margin-top: 20px;
+      margin-bottom: 0;
+      letter-spacing: 0.5px;
+      font-size: 24px;
+      font-weight: bold;
+      color: #202020;
+      padding-bottom: 10px;
+      padding-top: 30px;
+    }
+    .hype-subtitle {
+      text-align: center;
+      font-family: "Roboto";
+      font-size: 14px;
+      letter-spacing: 0.5px;
+      margin: 0;
+      padding: 0 15px 20px;
+    }
+    .svg-up {
+      position: relative;
+    }
+    .svg-up svg {
+      height: 55px;
+      left: 0;
+      position: absolute;
+      top: 0;
+      width: auto;
+      fill: none;
+      stroke: #c6a972;
+      stroke-width: 3px;
+    }
+    .svg-down {
+      position: relative;
+    }
+    .svg-down svg {
+      height: 55px;
+      position: absolute;
+      right: 0;
+      -webkit-transform: rotate(180deg);
+      transform: rotate(180deg);
+      fill: none;
+      stroke: #c6a972;
+      stroke-width: 3px;
+      /* padding-left: 38px; */
+      padding-top: 25px;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: 1fr 66%;
+      border-top: 1px solid #f2f2f2;
+      padding-bottom: 24px;
+      margin: 0 10px;
+    }
+    .cards-img img {
+      width: 90%;
+      height: 50px;
+      padding-top: 24px;
+      object-fit: cover;
+    }
+    .cards-descriptions {
+      padding-top: 24px;
+      padding-left: 20px;
+    }
+    .cards-descriptions-title {
+      font-family: "Roboto Condensed", sans-serif;
+      color: #999;
+      font-weight: bold;
+      font-size: 14px;
+      letter-spacing: 0.5px;
+    }
+    .cards-descriptions-copy {
+      font-family: "Roboto", sans-serif;
+      color: #202020;
+      font-size: 14px;
+      font-weight: bold;
+      letter-spacing: 0.5px;
+      margin-top: 8px;
+    }
+    .cards-descriptions-copy:hover {
+      color: #e62429;
+    }
+  </style>
+  <body>
+    <section class="hype-latest">
+      <div class="hype-latest-container">
+        <div class="part-hype">
+          <div class="part-hype-head">
+            <div class="svg-up">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="186"
+                height="55"
+                viewBox="0 0 186 55"
+              >
+                <path
+                  d="M21.4 1L1 21.4V717h264.6l20.4-20.4V1H21.4z"
+                  mask="url(#mask-2)"
+                ></path>
+              </svg>
+            </div>
+            <p class="hype-title">
+              THE HYPE BOX
+            </p>
+            <p class="hype-subtitle">
+              Can’t-miss news and updates from across the Marvel Universe!
+            </p>
+          </div>
+          <div class="cards">
+            <div class="cards-img">
+              <img
+                src="./images/nobrnd0000007_farewell_group_keyframe.png"
+                alt=""
+              />
+            </div>
+            <div class="cards-descriptions">
+              <div class="cards-descriptions-title">TV SHOWS</div>
+              <div class="cards-descriptions-copy">
+                The Cast and Showrunners of 'Marvel's Agents of S.H.I.E.L.D.'
+                Say Farewell to The Series
+              </div>
+            </div>
+          </div>
+          <div class="cards">
+            <div class="cards-img">
+              <img src="./images/empyre-catch-up_card.jpg" alt="" />
+            </div>
+            <div class="cards-descriptions">
+              <div class="cards-descriptions-title">COMICS</div>
+              <div class="cards-descriptions-copy">
+                ‘Empyre’: Where Does It Stand Today?
+              </div>
+            </div>
+          </div>
+          <div class="cards">
+            <div class="cards-img">
+              <img src="./images/tony-team-player_card.jpg" alt="" />
+            </div>
+            <div class="cards-descriptions">
+              <div class="cards-descriptions-title">COMICS</div>
+              <div class="cards-descriptions-copy">
+                4 Times Tony Stark Proved He Was a Team Player
+              </div>
+            </div>
+          </div>
+          <div class="cards">
+            <div class="cards-img">
+              <img src="./images/hulkbuster_card.jpg" alt="" />
+            </div>
+            <div class="cards-descriptions">
+              <div class="cards-descriptions-title">CULTURE & LIFESTYLE</div>
+              <div class="cards-descriptions-copy">
+                Learn How to Draw Tony Stark's Hulkbuster Armor on Marvel LIVE
+              </div>
+            </div>
+          </div>
+          <div class="cards">
+            <div class="cards-img">
+              <img src="./images/hulk-ron-lim_0.jpg" alt="" />
+            </div>
+            <div class="cards-descriptions">
+              <div class="cards-descriptions-title">COMICS</div>
+              <div class="cards-descriptions-copy">
+                Share Your Passion for Your Local Comic Book Store with
+                #LoveComicShops
+              </div>
+            </div>
+          </div>
+          <div class="svg-down">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="186"
+              height="55"
+              viewBox="0 0 186 55"
+            >
+              <path
+                d="M21.4 1L1 21.4V717h264.6l20.4-20.4V1H21.4z"
+                mask="url(#mask-2)"
+              ></path>
+            </svg>
+          </div>
+        </div>
+        <div class="part-latest">
+          <div class="part-latest-wrapper"></div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
