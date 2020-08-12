@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>sliders2</title>
+  </head>
+  <style>
+    .sliders {
+      height: 454px;
+      max-width: 1024px;
+      border: 0.5px solid red;
+    }
+    .sliders-container {
+      padding: 10px;
+      height: 100%;
+      box-sizing: border-box;
+    }
+    .sliders-cards {
+      height: 100%;
+      box-sizing: content-box;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      display: block;
+      white-space: nowrap;
+      position: relative;
+      overflow-x: auto;
+      overflow-y: hidden;
+      box-sizing: border-box;
+    }
+    .sliders-cards-item {
+      height: 380px;
+      width: 207px;
+      border: 0.5px solid blue;
+      display: inline-block;
+      margin-right: 20px;
+    }
+    .img{
+      background: url("./images/portrait_uncanny.jpg");
+      background-size: contain;
+      height: 314px;
+      background-repeat: no-repeat;
+    }
+    }
+    /*     p {
+      margin: 0;
+      overflow: hidden;
+      line-height: normal;
+      white-space: normal;
+    } */
+    .film {
+      overflow: hidden;
+      position: relative;
+      line-height: 1;
+    }
+    p {
+      color: #151515;
+      margin: 0;
+      padding: 0 0 5px;
+      white-space: normal;
+    }
+    .card{
+      height: 66px;
+      background-color: khaki;
+    }
+  </style>
+
+  <body>
+    <section class="sliders">
+      <div class="sliders-container">
+        <ul class="sliders-cards">
+          <li class="sliders-cards-item">
+            <div class="img"></div>
+            <div class="card">
+              <p>HOLA HOLA HOLA HOLA HOLA HOLA</p>
+            </div>
+          </li>
+          <li class="sliders-cards-item">
+            <div class="img"></div>
+            <div class="card">
+              <p>HOLA HOLA</p>
+            </div>
+          </li>
+          <li class="sliders-cards-item"></li>
+          <li class="sliders-cards-item"></li>
+          <li class="sliders-cards-item"></li>
+          <li class="sliders-cards-item"></li>
+          <li class="sliders-cards-item"></li>
+          <li class="sliders-cards-item"></li>
+        </ul>
+      </div>
+    </section>
+  </body>
+</html>
