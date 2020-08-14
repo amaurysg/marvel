@@ -506,11 +506,15 @@
       /* HYPE - LATEST */
       .hype-latest {
         max-width: 1024px;
-        height: 100vh;
+        /* height: 100vh; */
       }
       .hype-latest-container {
         height: 100%;
         padding: 0 30px 0 30px;
+      }
+      .part-hype {
+        max-width: 1024px;
+        height: 100%;
       }
       .hype-title {
         text-align: center;
@@ -547,6 +551,9 @@
       }
       .svg-down {
         position: relative;
+
+        height: 55px;
+        width: 100%;
       }
       .svg-down svg {
         height: 55px;
@@ -596,6 +603,92 @@
       .cards-hype-descriptions-copy:hover {
         color: #e62429;
       }
+      .part-latest {
+        margin-top: 30px;
+      }
+      .part-latest-wrapper {
+        /* padding: 0 30px; */
+      }
+      .latest-title {
+        font-family: "Roboto Condensed", sans-serif;
+        font-size: 26px;
+      }
+      .cards-latest {
+        /*  border: 1px solid orange; */
+        padding: 0;
+      }
+      .cards-latest-item {
+      }
+      .cards-latest-item-grid {
+        /*     display: grid;
+      grid-template-rows: 53% 1fr; */
+        display: block;
+        height: auto;
+        /* border: 1px solid black; */
+        margin-bottom: 10px;
+        border-bottom: 1px solid #999;
+        padding-top: 15px;
+        padding-bottom: 10px;
+      }
+      .cards-latest-item-img img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      .cards-latest-item-img img:hover {
+        transform: translateY(-5px);
+      }
+      .cards-latest-item-title {
+        font-family: "Roboto Condensed", sans-serif;
+        font-size: 14px;
+        color: #999;
+        font-weight: bold;
+        margin-bottom: 0;
+      }
+      .cards-latest-item-copy {
+        font-family: "Roboto";
+        color: #151515;
+        font-weight: bold;
+        font-size: 18px;
+        margin-top: 5px;
+        margin-bottom: 0;
+      }
+      .cards-latest-item-copy:hover {
+        color: #e62429;
+      }
+      .cards-latest-item-year {
+        font-family: "Roboto Condensed", sans-serif;
+        font-size: 12px;
+        color: #999;
+        font-weight: bold;
+        margin-bottom: 0;
+        margin-top: 5px;
+      }
+      .cards-latest-item-footer {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 5px;
+      }
+      .cards-latest-item-footer img {
+        width: 30px;
+        height: 30px;
+        margin: 0 5px 0 0;
+      }
+      .cards-latest-item-footer span {
+        font-family: "Roboto Condensed", sans-serif;
+        font-size: 16px;
+        color: #999;
+        margin: auto;
+        /*  font-weight: bold; */
+      }
+      .cards-latest-item-footer a {
+        font-family: "Roboto", sans-serif;
+        color: #e62429;
+        font-size: 14px;
+        margin: auto;
+        /* font-weight: bold; */
+      }
+
       @media screen and (min-width: 490px) {
         .cards-in {
           grid-template-columns: repeat(auto-fill, minmax(23.75%, 1fr));
@@ -1214,7 +1307,126 @@
           </div>
         </div>
         <div class="part-latest">
-          <div class="part-latest-wrapper"></div>
+          <div class="part-latest-wrapper">
+            <div class="part-latest">
+              <div class="latest-title">
+                <p>THE LATEST</p>
+              </div>
+              <ul class="cards-latest">
+                <div class="cards-latest-item">
+                  <div class="cards-latest-item-grid">
+                    <div class="cards-latest-item-img">
+                      <img src="./images/_shield_card_13.jpg" alt="" />
+                    </div>
+                    <div class="cards-latest-item-description">
+                      <p class="cards-latest-item-title">TV SHOWS</p>
+                      <p class="cards-latest-item-copy">
+                        The Two Hour Series Finale of 'Marvel's Agents of
+                        S.H.I.E.L.D.' Airs Tonight
+                      </p>
+                      <p class="cards-latest-item-year">1 HOUR AGO</p>
+                    </div>
+                  </div>
+                  <div class="cards-latest-item-grid">
+                    <div class="cards-latest-item-img">
+                      <img src="./images/shop.jpg" alt="" />
+                    </div>
+                    <div class="cards-latest-item-description">
+                      <p class="cards-latest-item-title">GEAR</p>
+                      <p class="cards-latest-item-copy">
+                        Shop Marvel: The Latest From Hasbro, Mondo, and More
+                      </p>
+                      <p class="cards-latest-item-year">2 HOUR AGO</p>
+                    </div>
+                  </div>
+                  <div class="cards-latest-item-grid">
+                    <div class="cards-latest-item-img">
+                      <img
+                        src="./images/poster_6180798618001_be8f2d45d4b8229bf697c339b04b2ba4.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="cards-latest-item-description">
+                      <p class="cards-latest-item-title">COMICS</p>
+                      <p class="cards-latest-item-copy">
+                        Christopher Cantwell Shares His Blueprint for Iron Man's
+                        Heroic New Era
+                      </p>
+                      <p class="cards-latest-item-year">2 HOUR AGO</p>
+                      <div class="cards-latest-item-footer">
+                        <img src="./images/icon1.svg" alt="" />
+                        <span>Earn Points, Get Rewards</span
+                        ><a href="">Join NOW!</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="cards-latest-item-grid">
+                    <div class="cards-latest-item-img">
+                      <img src="./images/clean_173.jpg" alt="" />
+                    </div>
+                    <div class="cards-latest-item-description">
+                      <p class="cards-latest-item-title">COMICS</p>
+                      <p class="cards-latest-item-copy">
+                        Didja Know... The Boldest Battles of the Black Panther
+                      </p>
+                      <p class="cards-latest-item-year">2 HOUR AGO</p>
+                    </div>
+                  </div>
+                  <div class="cards-latest-item-grid">
+                    <div class="cards-latest-item-img">
+                      <img
+                        src="./images/339072bdd3e7b343988006005ce8fd01.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="cards-latest-item-description">
+                      <p class="cards-latest-item-title">GAMES</p>
+                      <p class="cards-latest-item-copy">
+                        Entering Marvel Contest of Champions: Air-Walker
+                      </p>
+                      <p class="cards-latest-item-year">5 HOUR AGO</p>
+                      <div class="cards-latest-item-footer">
+                        <img src="./images/icon1.svg" alt="" />
+                        <span>Earn Points, Get Rewards</span
+                        ><a href="">Join NOW!</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="cards-latest-item-grid">
+                    <div class="cards-latest-item-img">
+                      <img src="./images/mpq.png" alt="" />
+                    </div>
+                    <div class="cards-latest-item-description">
+                      <p class="cards-latest-item-title">GAMES</p>
+                      <p class="cards-latest-item-copy">
+                        Piecing Together Marvel Puzzle Quest: Wolverine (Samurai
+                        Daken)
+                      </p>
+                      <p class="cards-latest-item-year">5 HOUR AGO</p>
+                      <div class="cards-latest-item-footer">
+                        <img src="./images/icon1.svg" alt="" />
+                        <span>Earn Points, Get Rewards</span
+                        ><a href="">Join NOW!</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="cards-latest-item-grid">
+                    <div class="cards-latest-item-img">
+                      <img src="./images/insider_crd-1560x876_3.jpg" alt="" />
+                    </div>
+                    <div class="cards-latest-item-description">
+                      <p class="cards-latest-item-title">CULTURE & LIFESTYLE</p>
+                      <p class="cards-latest-item-copy">
+                        Redeem Your Marvel Insider Points for Marvel Made
+                        Exclusive Pins and Skottie Young Premier Bundle Giveaway
+                      </p>
+                      <p class="cards-latest-item-year">8 HOUR AGO</p>
+                    </div>
+                  </div>
+                </div>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
     </section>
