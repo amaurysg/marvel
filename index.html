@@ -460,14 +460,30 @@
         max-width: 1024px;
         padding-top: 20px;
       }
+    
       .comics-sliders-container {
-        height: inherit;
+        height: auto;
         padding: 10px;
         box-sizing: border-box;
         display: flex;
         overflow-x: auto;
         overflow-y: hidden;
         -webkit-overflow-scrolling: touch;
+      }
+        .comics-sliders-container::-webkit-scrollbar{
+        background-color: #f2f2f2;
+        height: 3px;  
+      }
+  /*     .comics-sliders-container::-webkit-scrollbar-track{
+        background: black;
+      
+        
+      } */
+      .comics-sliders-container::-webkit-scrollbar-thumb{
+       
+        background-color:#e62429;
+       
+    
       }
       .comics-item {
         width: 58%;
