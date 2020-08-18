@@ -13,6 +13,7 @@
       href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap"
       rel="stylesheet"
     />
+
     <title>Clone Marvel.com |</title>
     <style>
       body {
@@ -455,10 +456,11 @@
       }
       /*  COMICS SLIDERS */
       .comics-sliders {
-        height: 454px;
+        height: auto;
         /*  border: 1px solid red; */
         max-width: 1024px;
         padding-top: 20px;
+        margin-bottom: 10px;
       }
     
       .comics-sliders-container {
@@ -471,20 +473,22 @@
         -webkit-overflow-scrolling: touch;
       }
         .comics-sliders-container::-webkit-scrollbar{
-        background-color: #f2f2f2;
+        background-color:#f2f2f2;
         height: 3px;  
+      }
+      .comics-sliders-container::-webkit-scrollbar-thumb{       
+        background-color:#e62429;
       }
   /*     .comics-sliders-container::-webkit-scrollbar-track{
         background: black;
       
         
       } */
-      .comics-sliders-container::-webkit-scrollbar-thumb{
-       
-        background-color:#e62429;
-       
-    
-      }
+  /*     .comics-sliders-container::-webkit-scrollbar-track{
+        background-color: black;
+        height: 2px;
+        
+      } */
       .comics-item {
         width: 58%;
         height: auto;
@@ -522,6 +526,7 @@
       /* HYPE - LATEST */
       .hype-latest {
         max-width: 1024px;
+        padding-top: 20px;
         /* height: 100vh; */
       }
       .hype-latest-container {
@@ -878,7 +883,90 @@
       margin-top: 50px;
       padding-bottom: 40px;
     }
-    
+    .footer{
+      height: 912px;
+      background: #151515;
+    }
+    .footer-container{
+      height: inherit;   
+      padding: 50px 30px 38px 30px; 
+      box-sizing: border-box;
+    }
+    .footer-part1{
+      text-align: center;
+      border-bottom: 1px solid #393939;
+      margin-bottom: 40px;
+    }
+    .footer-part2{
+      padding-bottom: 26px;
+      border-bottom: 1px solid #393939;
+    }
+    .footer-part1-img img{
+      width: 35px;
+      height: 50.55px;
+      margin-bottom: 30px;
+    }
+    .footer-part1-titles{   
+    display: flex;
+    justify-content: space-around;
+
+    }
+    .footer-part1-titles1 {
+      font-family: "Roboto", sans-serif;
+      font-size: 13px;
+      color: #fff;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-align: left;
+      width: 50%;
+      margin:0 0 25px 0;
+    }
+    .footer-part1-titles1 p{
+      margin: 0 0 25px 0;
+    }
+     .footer-part1-titles2{
+      font-family: "Roboto", sans-serif;
+      font-size: 13px;
+      font-weight: lighter;
+      color: #fff;   
+      text-align: left;
+      width: 50%;     
+    }
+    .footer-part1-titles2 p{
+      margin: 0 0 25px 0;
+    }
+    .footer-part1-titles p:hover{
+      color: #999;
+    }
+    .footer-inside1{
+      display: flex;
+      padding-bottom: 40px;
+    }
+    .footer-inside2{
+      display: flex;
+      
+    }
+    .footer-inside-img img{
+      width: 80px;
+    }
+    .footer-inside-descriptions{
+      padding-left: 30px;
+    }
+    .footer-inside-description-title{
+      margin: 0;
+      color: #fff;
+      font-family: "Roboto Condensed", sans-serif;
+      font-size: 14px;
+      letter-spacing: 2px;
+    }
+    .footer-inside-description-copy{
+      margin: 0;
+      color: #999;
+      font-family: "Roboto", sans-serif;
+      font-size: 14px;
+      
+
+    }
       @media screen and (min-width: 490px) {
         .cards-in {
           grid-template-columns: repeat(auto-fill, minmax(23.75%, 1fr));
@@ -936,8 +1024,9 @@
               <div class="shield-image">
                 <img src="" alt="" />
               </div>
-              <div class="hero-post-title">
-                <h1>SUMMONER SHOWDOWN IS BACK!</h1>
+        <p class="streaming-text">START STREAMING NOW</p>
+              <div class="hero-post-title  ">
+                <h1 >SUMMONER SHOWDOWN IS BACK!</h1>
               </div>
               <div class="hero-post-copy">
                 <p>
@@ -1872,5 +1961,53 @@
           </div>
         </section>
           <!-- FOOTER -->
+    <section class="footer">
+      <div class="footer-container">
+        <div class="footer-part1">
+          <div class="footer-part1-img">
+            <img src="./images/marvel-logo-small.png" alt="">
+          </div>
+          <div class="footer-part1-titles">
+            <div class="footer-part1-titles1">
+              <p>ABOUT MARVEL</p>
+              <p>HELP/FAQS</p>
+              <p>CAREERS</p>
+              <p>INTERNSHIPS</p>
+            </div>
+            <div class="footer-part1-titles2">
+              <p>ADVERTISING</p>
+              <p>MARVELHQ.COM</p>
+              <p>REDEEM DIGITAL COMICS</p>
+           
+            </div>
+          </div>
+        </div>
+        <div class="footer-part2">
+          <div class="footer-part2-inside">
+            <div class="footer-inside1">
+              <div class="footer-inside-img">
+                <img src="./images/marvel_insider-topnav-logo-large2x (1).png" alt="">
+              </div>
+              <div class="footer-inside-descriptions">
+                <h4 class="footer-inside-description-title">MARVEL INSIDER</h4>
+                <p class="footer-inside-description-copy">Get Rewarded for Being a Marvel Fan</p>
+              </div>
+            </div>
+            <div class="footer-inside2">
+              <div class="footer-inside-img">
+                <img src="./images/mastercard-crop_0-footer-v3.png" alt="">
+              </div>
+              <div class="footer-inside-descriptions">
+                <h4 class="footer-inside-description-title">MARVEL MASTERCARD®</h4>
+                <p class="footer-inside-description-copy">6 Card Designs—Unlimited Cashback</p>
+              </div>
+            </div>
+                  
+
+            
+          </div>
+        </div>
+      </div>
+    </section>
   </body>
 </html>
