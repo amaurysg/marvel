@@ -814,11 +814,11 @@
      
      /*  opacity: .28; */
     }
-   
+/*    
     img:hover {
       transform: translateY(-5px);
       opacity: 1;
-    }
+    } */
     .video-sliders-title p {
       width: 80%;
       margin: 0;
@@ -949,6 +949,7 @@
     }
     .footer-inside-img img{
       width: 80px;
+      object-fit: contain;
     }
     .footer-inside-descriptions{
       padding-left: 30px;
@@ -990,25 +991,104 @@
     height: 18px;
     }
     .footer-list{
+      
       text-align: center;
-      display: flex;
-      flex-wrap: wrap;
+    display: flex;
+    flex-shrink: 0;
+    flex-wrap: wrap;
+    justify-content: center;
     }
     .footer-list-item{
-       font-family: "Roboto Condensed", sans-serif;
+       font-family: "Roboto", sans-serif;
       color: #999;
       font-size: 12px;
       letter-spacing: .5px;
-      margin: 0 0 12px 0;
-      width: 50%;
+      margin: 0 0 10px 0;
+      padding:0 10px;
+    /*   line-height: 1.2em; */
+    /*   width: 50%; */
       
     }
     .footer-list-item:hover{
       color: #fff;
     }
+
+    .footer-list-item span,a{
+      color: #e62429;
+      
+    }
+    @media screen and (min-width: 375px){
+      .comics-item{
+        width: 34%;
+      }
+    }
+    
       @media screen and (min-width: 490px) {
         .cards-in {
           grid-template-columns: repeat(auto-fill, minmax(23.75%, 1fr));
+        }
+      }
+      @media screen and (min-width: 601px){
+        .comics-item{
+          width: 25% ;
+        }
+        .mastercard-container{
+          display: flex;
+        }
+        .footer-part1{
+        display: flex;
+        justify-content: space-around;
+        }
+        .footer-part2{         
+          padding-bottom: 0;
+        }
+        .footer-part2-inside{
+          display: flex;
+          justify-content: space-around;
+          
+        }
+      }
+      @media screen and (min-width: 839px){
+         .comics-item{
+          width: 14.5% ;
+        }
+        .mastercard{
+          padding-bottom: none;
+        }
+        .mastercard-descriptions{
+          padding:50px;
+        }
+        .footer-responsive-part1-2-3{
+          display: flex;
+          justify-content: space-between;
+        
+
+        }
+        .footer-part1{
+          width: 400px;
+          border-bottom:none;
+        }
+        .footer-part2{
+          border-bottom:none;
+        }
+        .footer-part2-inside{
+          display: inline-block;
+          width: 80%;
+        }
+        .footer-part3{
+          border-bottom:none;
+        }
+        .footer-part3-title{
+          width: 50%;
+        }
+        .footer-icons {
+         justify-content: start;
+         display: flex;
+         flex-wrap: wrap;
+        }
+        
+        .footer-icons img{
+        margin: 5px 10px 0 0;
         }
       }
     </style>
@@ -2002,63 +2082,65 @@
           <!-- FOOTER -->
     <section class="footer">
       <div class="footer-container">
-        <div class="footer-part1">
-          <div class="footer-part1-img">
-            <img src="./images/marvel-logo-small.png" alt="">
-          </div>
-          <div class="footer-part1-titles">
-            <div class="footer-part1-titles1">
-              <p>ABOUT MARVEL</p>
-              <p>HELP/FAQS</p>
-              <p>CAREERS</p>
-              <p>INTERNSHIPS</p>
+        <div class="footer-responsive-part1-2-3">
+          <div class="footer-part1">
+            <div class="footer-part1-img">
+              <img src="./images/marvel-logo-small.png" alt="">
             </div>
-            <div class="footer-part1-titles2">
-              <p>ADVERTISING</p>
-              <p>MARVELHQ.COM</p>
-              <p>REDEEM DIGITAL COMICS</p>
-           
-            </div>
-          </div>
-        </div>
-        <div class="footer-part2">
-          <div class="footer-part2-inside">
-            <div class="footer-inside1">
-              <div class="footer-inside-img">
-                <img src="./images/marvel_insider-topnav-logo-large2x (1).png" alt="">
+            <div class="footer-part1-titles">
+              <div class="footer-part1-titles1">
+                <p>ABOUT MARVEL</p>
+                <p>HELP/FAQS</p>
+                <p>CAREERS</p>
+                <p>INTERNSHIPS</p>
               </div>
-              <div class="footer-inside-descriptions">
-                <h4 class="footer-inside-description-title">MARVEL INSIDER</h4>
-                <p class="footer-inside-description-copy">Get Rewarded for Being a Marvel Fan</p>
-              </div>
-            </div>
-            <div class="footer-inside2">
-              <div class="footer-inside-img">
-                <img src="./images/mastercard-crop_0-footer-v3.png" alt="">
-              </div>
-              <div class="footer-inside-descriptions">
-                <h4 class="footer-inside-description-title">MARVEL MASTERCARD®</h4>
-                <p class="footer-inside-description-copy">6 Card Designs—Unlimited Cashback</p>
-              </div>
-            </div>
-                  
-
-            
-          </div>
-        </div>
-        <div class="footer-part3">
-          <div class="footer-part3-icons">
-            <h3 class="footer-part3-title">FOLLOW MARVEL</h3>
-            <div class="footer-icons">
-              <img src="./images/icons/SVG/facebook2.svg" alt="">
-              <img src="./images/icons/SVG/twitter.svg" alt="">
-              <img src="./images/icons/SVG/instagram.svg" alt="">
-              <img src="./images/icons/SVG/tumblr.svg" alt="">
-              <img src="./images/icons/SVG/youtube.svg" alt="">
-              <img src="./images/icons/SVG/snapchat-ghost.svg" alt="">
-              <img src="./images/icons/SVG/pinterest.svg" alt="">
+              <div class="footer-part1-titles2">
+                <p>ADVERTISING</p>
+                <p>MARVELHQ.COM</p>
+                <p>REDEEM DIGITAL COMICS</p>
              
-
+              </div>
+            </div>
+          </div>
+          <div class="footer-part2">
+            <div class="footer-part2-inside">
+              <div class="footer-inside1">
+                <div class="footer-inside-img">
+                  <img src="./images/marvel_insider-topnav-logo-large2x (1).png" alt="">
+                </div>
+                <div class="footer-inside-descriptions">
+                  <h4 class="footer-inside-description-title">MARVEL INSIDER</h4>
+                  <p class="footer-inside-description-copy">Get Rewarded for Being a Marvel Fan</p>
+                </div>
+              </div>
+              <div class="footer-inside2">
+                <div class="footer-inside-img">
+                  <img src="./images/mastercard-crop_0-footer-v3.png" alt="">
+                </div>
+                <div class="footer-inside-descriptions">
+                  <h4 class="footer-inside-description-title">MARVEL MASTERCARD®</h4>
+                  <p class="footer-inside-description-copy">6 Card Designs—Unlimited Cashback</p>
+                </div>
+              </div>
+                    
+  
+              
+            </div>
+          </div>
+          <div class="footer-part3">
+            <div class="footer-part3-icons">
+              <h3 class="footer-part3-title">FOLLOW MARVEL</h3>
+              <div class="footer-icons">
+                <img src="./images/icons/SVG/facebook2.svg" alt="">
+                <img src="./images/icons/SVG/twitter.svg" alt="">
+                <img src="./images/icons/SVG/instagram.svg" alt="">
+                <img src="./images/icons/SVG/tumblr.svg" alt="">
+                <img src="./images/icons/SVG/youtube.svg" alt="">
+                <img src="./images/icons/SVG/snapchat-ghost.svg" alt="">
+                <img src="./images/icons/SVG/pinterest.svg" alt="">
+               
+  
+              </div>
             </div>
           </div>
         </div>
@@ -2073,7 +2155,8 @@
             <p class="footer-list-item">Interest-Based Ads</p>
             <p class="footer-list-item">Marvel Insider Terms</p>
             <p class="footer-list-item">©2020 MARVEL</p>
-
+            <p class="footer-list-item">This clone was made with <span>❤</span> by @amaurysoto</p>
+            
           </div>
         </div>
       </div>
