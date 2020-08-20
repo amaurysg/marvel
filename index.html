@@ -720,7 +720,7 @@
     }
     .trailers-in {
       height: inherit;
-      display: inline-block;
+      /* display: inline-block */;
     /*   display: grid;
       grid-template: 35% 35% 30% / 1fr; */
     }
@@ -755,7 +755,8 @@
       margin-top: 8px;
     }
     .cards-latest-item-footer {
-      display: flex;
+      display: block;
+      /* display: flex; */
       justify-content: space-between;
       margin-top: 5px;
     }
@@ -768,7 +769,7 @@
       font-family: "Roboto Condensed", sans-serif;
       font-size: 16px;
       color: #999;
-      margin: auto;
+      margin-right: 10px;
       /*  font-weight: bold; */
     }
     .cards-latest-item-footer a {
@@ -1089,31 +1090,41 @@
       }
       @media screen and (min-width:768px){
        .trailers-video-head iframe{
-        height: 398px;
+        height: 330px;
       }
       .trailers-in{
       display: grid;
       grid-template-columns: 75% 25%;
+     /*  grid-template-rows: 64.5% 1fr; */
+
+      }
+      .trailers-description{
+        grid-row: 2;
       }
       .trailers-video-sliders{
         margin-top: 0;
       }
       .video-sliders-container{
         display: inline-block;
-        margin-left: 20px;
+       
+        padding: 0 30px;
+        height: 330px;
+        overflow: auto;
       }
+       .video-sliders-container::-webkit-scrollbar{
+         width: 5px;
+       }
       .video-sliders-title{
         display:none;
       }
       .video-sliders-item{
-        width: 80%;
+        width: 100%;
         grid-template-rows: 80%;
+        
       }
       }
       @media screen and (min-width: 839px){
-      .trailers-video-head iframe{
-        height: 437px;
-      }
+    
         .comics-item{
           width: 14.5% ;
         }
@@ -1890,7 +1901,7 @@
     <section class="trailers">
       <div class="trailers-container">
         <div class="trailers-in">
-          <div class="video-description-container">
+         
             <div class="trailers-video-head">
               <iframe
                 src="https://www.youtube.com/embed/5evGlVgmmfM"
@@ -1911,7 +1922,7 @@
                 suit?
               </p>
             </div>
-          </div>
+        
               <div class="trailers-video-sliders">
                 <div class="video-sliders-container">
                   <div class="video-sliders-item">
@@ -1934,12 +1945,20 @@
                       <p> Celebrating Essential Workers: A Heroic Doctor!</p>
                     </div>
                   </div>
-                                    <div class="video-sliders-item">
+                  <div class="video-sliders-item">
                     <div class="video-sliders-video">
                       <iframe width="560" height="315" src="https://www.youtube.com/embed/jQx0VwYQDA0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
                     <div class="video-sliders-title">
                       <p> A Look Inside Marvel Studios With One Day at Disney!</p>
+                    </div>
+                  </div>
+                  <div class="video-sliders-item">
+                    <div class="video-sliders-video">
+                      <iframe width="560" height="315" src="https://www.youtube.com/embed/1MLpiS4BlPU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="video-sliders-title">
+                      <p> A message from Clark Gregg, Agent Phil Coulson</p>
                     </div>
                   </div>
                   <div class="video-sliders-item">
