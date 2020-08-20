@@ -720,8 +720,9 @@
     }
     .trailers-in {
       height: inherit;
-      display: grid;
-      grid-template: 35% 35% 30% / 1fr;
+      display: inline-block;
+    /*   display: grid;
+      grid-template: 35% 35% 30% / 1fr; */
     }
     .trailers-video-head {
     }
@@ -742,7 +743,8 @@
       color: #e62429;
       font-weight: bold;
     }
-    .trailers-description p {
+    .trailers-description  {
+      margin-top: 30px;
     }
     .description-title {
       font-family: "Roboto", sans-serif;
@@ -784,7 +786,9 @@
       height: auto;
       /*  border: 1px solid red; */
       max-width: 1024px;
+      margin-top: 40px;
     }
+
     .video-sliders-container {
       height: auto;
       /* padding: 10px; */
@@ -794,6 +798,14 @@
         overflow-x: auto;
         overflow-y: hidden;
         -webkit-overflow-scrolling: touch;
+    }
+      .video-sliders-container::-webkit-scrollbar{
+      background-color: #f2f2f2;
+      height: 3px;
+    }
+        .video-sliders-container::-webkit-scrollbar-thumb{
+      background-color:#e62429;
+      height: 3px;
     }
     .video-sliders-item {
       display: grid;
@@ -1018,17 +1030,44 @@
       
     }
     @media screen and (min-width: 375px){
+      .trailers-video-head iframe{
+        height: 177px;
+      }
       .comics-item{
         width: 34%;
+      }
+      .video-sliders-item{
+        width: 33%;
       }
     }
     
       @media screen and (min-width: 490px) {
+      .trailers-video-head iframe{
+        height: 200px;
+      }
         .cards-in {
           grid-template-columns: repeat(auto-fill, minmax(23.75%, 1fr));
         }
       }
       @media screen and (min-width: 601px){
+        .trailers-video-head iframe{
+        height: 303px;
+      }
+        .video-sliders-item{
+          width: 25%;
+        }
+        .cards-latest-item-grid{
+          display: grid;
+         grid-template-columns: 1fr 1fr;
+ 
+        }
+        .cards-latest-item-img{
+          width: 100%;
+          margin-right: 20px;
+        }
+        .cards-latest-item-description{
+          padding: 0 30px;
+        }
         .comics-item{
           width: 25% ;
         }
@@ -1048,8 +1087,34 @@
           
         }
       }
+      @media screen and (min-width:768px){
+       .trailers-video-head iframe{
+        height: 398px;
+      }
+      .trailers-in{
+      display: grid;
+      grid-template-columns: 75% 25%;
+      }
+      .trailers-video-sliders{
+        margin-top: 0;
+      }
+      .video-sliders-container{
+        display: inline-block;
+        margin-left: 20px;
+      }
+      .video-sliders-title{
+        display:none;
+      }
+      .video-sliders-item{
+        width: 80%;
+        grid-template-rows: 80%;
+      }
+      }
       @media screen and (min-width: 839px){
-         .comics-item{
+      .trailers-video-head iframe{
+        height: 437px;
+      }
+        .comics-item{
           width: 14.5% ;
         }
         .mastercard{
@@ -1119,14 +1184,6 @@
         <img src="./images/disneybtn_asset2x_3.png" alt="" />
       </div>
     </section>
-
-    <!--     <section>
-          
-            <div class="nuevo">
-              <h1>HOLA!</h1>
-           
-    </section> -->
-
     <!-- Hero -Posts -->
     <div class="hero-container">
       <ul class="hero-slider">
@@ -1833,25 +1890,27 @@
     <section class="trailers">
       <div class="trailers-container">
         <div class="trailers-in">
-          <div class="trailers-video-head">
-            <iframe
-              src="https://www.youtube.com/embed/5evGlVgmmfM"
-              frameborder="0"
-              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
-            ></iframe>
-          </div>
-          <div class="trailers-description">
-            <small class="description-small">TRAILERS & EXTRAS</small>
-            <p class="description-title">Top 10 Iron Man Costumes!</p>
-            <div class="cards-latest-item-footer">
-              <img src="./images/icon1.svg" alt="" />
-              <span>Earn Points, Get Rewards</span><a href="">Join NOW!</a>
+          <div class="video-description-container">
+            <div class="trailers-video-head">
+              <iframe
+                src="https://www.youtube.com/embed/5evGlVgmmfM"
+                frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
             </div>
-            <p class="description-copy">
-              Only the best for Tony Stark. Which is YOUR favorite Iron Man
-              suit?
-            </p>
+            <div class="trailers-description">
+              <small class="description-small">TRAILERS & EXTRAS</small>
+              <p class="description-title">Top 10 Iron Man Costumes!</p>
+              <div class="cards-latest-item-footer">
+                <img src="./images/icon1.svg" alt="" />
+                <span>Earn Points, Get Rewards</span><a href="">Join NOW!</a>
+              </div>
+              <p class="description-copy">
+                Only the best for Tony Stark. Which is YOUR favorite Iron Man
+                suit?
+              </p>
+            </div>
           </div>
               <div class="trailers-video-sliders">
                 <div class="video-sliders-container">
