@@ -289,7 +289,7 @@
       .cards {
         /* border: 1px solid red; */
         padding: 10px 10px;
-        height: 520px;
+        height: auto;
       }
       .cards-in {
         /* border: 1px solid blue; */
@@ -301,7 +301,7 @@
         grid-template-columns: repeat(auto-fill, minmax(47%, 1fr));
 
         grid-gap: 10px;
-        height: 428px;
+        height: auto;
         overflow: hidden;
         align-items: center;
       }
@@ -434,6 +434,7 @@
       }
       .unlimited-button button {
         padding: 15px 20px;
+        margin-bottom: 20px;
         background-color: transparent;
         border: 1px solid #fff;
         color: #fff;
@@ -597,8 +598,8 @@
         margin: 0 10px;
       }
       .cards-hype-img img {
-        width: 90%;
-        height: 50px;
+        width: 100%;
+        /* height: 50px; */
         padding-top: 24px;
         object-fit: cover;
       }
@@ -647,7 +648,7 @@
         height: auto;
         /* border: 1px solid black; */
         margin-bottom: 10px;
-        border-bottom: 1px solid #999;
+        border-bottom: 1px solid #bbb;
         padding-top: 15px;
         padding-bottom: 10px;
       }
@@ -1031,6 +1032,9 @@
       
     }
     @media screen and (min-width: 375px){
+      .menu{
+        top:260px
+      }
       .trailers-video-head iframe{
         height: 177px;
       }
@@ -1124,7 +1128,28 @@
       }
       }
       @media screen and (min-width: 839px){
-    
+        .unlimited{
+          display: flex;
+          flex-direction: row-reverse;
+          height: auto;
+        }
+      .unlimited-img img{
+        height: 100%;
+        width: 100%;
+        /* height: 280px; */
+        object-fit: cover;
+      }  
+
+        .hype-latest-container{
+          display: flex;
+          flex-direction: row-reverse;
+        }
+        .part-latest-wrapper{
+          padding: 0 30px 0 0;
+        }
+        .part-latest{
+          margin-top: 0;
+        }
         .comics-item{
           width: 14.5% ;
         }
