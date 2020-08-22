@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sliders</title>
+    <link rel="shortcut icon" href="./images/favicon.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <style>
+    body {
+      padding: 0;
+      margin: 0;
+      background: #202020;
+      font-family: "Roboto", sans-serif;
+    }
+    .main-container {
+      height: 410px;
+      border: 1px solid red;
+    }
+    .main-article {
+      height: inherit;
+      background: url("images/mcocss_0727_com_mas_mob_01.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+
+      /*  position: relative; */
+    }
+    .article-description {
+      width: 30%;
+      /* text-align: center; */
+      padding: 50px 10px 10px 30px;
+    }
+    .article-description-title {
+      font-family: "Roboto Condensed", sans-serif;
+      letter-spacing: 1px;
+      color: #fff;
+      font-size: 26px;
+      font-weight: bold;
+    }
+    .article-description-copy {
+      font-family: "Roboto", sans-serif;
+      font-size: 16px;
+      color: #fff;
+      margin-top: 20px;
+    }
+    .article-description-button {
+      background-color: #e62429;
+      border: none;
+      font-size: 14px;
+      font-weight: bold;
+      padding: 15px 40px;
+      margin-bottom: 15px;
+      color: white;
+      font-family: "Roboto Condensed", sans-serif;
+      padding: 10px 15px;
+      cursor: pointer;
+      outline: none;
+      clip-path: polygon(
+        14% 0,
+        100% 0,
+        100% 0,
+        100% 65%,
+        87% 100%,
+        0 100%,
+        0 34%
+      );
+      padding: 15px 40px;
+      margin-top: 20px;
+    }
+  </style>
+  <body>
+    <section class="main">
+      <div class="main-container">
+        <article class="main-article">
+          <div class="article-description">
+            <div class="article-description-img">
+              <img src="./images/mcocss2020_lob_log_eye_01.png" alt="" />
+            </div>
+            <div class="article-description-title">
+              SUMMONER SHOWDOWN IS BACK!
+            </div>
+            <div class="article-description-copy">
+              3 regions. 3 rounds. 9 contestants. Find out how you can compete
+              in the 2020 Marvel Contest of Champions Summoner Showdown!
+            </div>
+            <button class="article-description-button">LEARN MORE</button>
+          </div>
+        </article>
+      </div>
+    </section>
+  </body>
+</html>

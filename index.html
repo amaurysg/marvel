@@ -1,471 +1,491 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/styles/style.css" />
-    <link rel="stylesheet" href="/fonts/" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap"
-      rel="stylesheet"
-    />
 
-    <title>Clone Marvel.com |</title>
-    <style>
-      body {
-        margin: 0;
-        padding: 0;
-        display: block;
-        max-width: 1024px;
-      }
-
-@font-face {
-  font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?1kqvt1');
-  src:  url('fonts/icomoon.eot?1kqvt1#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?1kqvt1') format('truetype'),
-    url('fonts/icomoon.woff?1kqvt1') format('woff'),
-    url('fonts/icomoon.svg?1kqvt1#icomoon') format('svg');
-  font-weight: normal;
-  font-style: normal;
-  font-display: block;
-}
-
-[class^="icon-"], [class*=" icon-"] {
-  /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: 'icomoon' !important;
-  speak: never;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-
-  /* Better Font Rendering =========== */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-.icon-search1:before {
-  content: "\e902";
-}
-.icon-credit-card:before {
-  content: "\e900";
-}
-.icon-credit-card1:before {
-  content: "\e901";
-}
-.icon-search:before {
-  content: "\e986";
-}
-.icon-menu:before {
-  content: "\e9bd";
-}
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/styles/style.css" />
+  <link rel="stylesheet" href="/fonts/" />
+  <link rel="shortcut icon" href="./images/favicon.png" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet" />
 
 
-      .header-mobile {
-        height: 52px;
-        background-color: #202020;
-      }
+  <title>CLONE Marvel.com |</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      display: block;
+      max-width: 1024px;
+    }
 
-      .header-container {
-        display: flex;
-        justify-content: space-between;
-        position: relative;
-        height: inherit;
-      }
+    @font-face {
+      font-family: 'icomoon';
+      src: url('fonts/icomoon.eot?1kqvt1');
+      src: url('fonts/icomoon.eot?1kqvt1#iefix') format('embedded-opentype'),
+        url('fonts/icomoon.ttf?1kqvt1') format('truetype'),
+        url('fonts/icomoon.woff?1kqvt1') format('woff'),
+        url('fonts/icomoon.svg?1kqvt1#icomoon') format('svg');
+      font-weight: normal;
+      font-style: normal;
+      font-display: block;
+    }
 
-      .header-desktop{
-        height: 92px;
-        
-        background: #202020;
-        color: #fff;
-      }
-      .nav1{
-        display: flex;
-        justify-content: space-between; 
-        height: 52px;
-        padding: 0 20px;
-        border-bottom:  1px solid #393939;
-       
-      }
-        .nav1-sign{
-        display: flex;
-        padding: 0 25px;
-        border-right: 1px solid #393939;
-         border-left:  1px solid #393939;
-      }
+    [class^="icon-"],
+    [class*=" icon-"] {
+      /* use !important to prevent issues with browser extensions that change fonts */
+      font-family: 'icomoon' !important;
+      speak: never;
+      font-style: normal;
+      font-weight: normal;
+      font-variant: normal;
+      text-transform: none;
+      line-height: 1;
 
-      .nav1-icon1{
-        margin: auto 0;
-      }
-      .nav1-icon1 img{
-        height: 25px;
-        width: 25px;
-        margin-right: 8px;
-      }
-      .nav1-sign p{
-        font-family: "Roboto Condensed", sans-serif;
-         font-size: 12px;
-         font-weight: bold;
-         letter-spacing: 1px;
-         margin: auto 0;
-         color: #fff;
-         margin: auto 0; 
-         margin-right: ;
-      }
+      /* Better Font Rendering =========== */
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
 
-      .nav1-logo{
-        justify-content: center;
-        margin: auto;
-        position: absolute;
-        left: 0;
-        right: 0;
-        height: 52px;
-        width: 130px;
-       
-      }
-      .nav1-card-master-container{
-        display: flex;
-        border-right: 1px solid #393939;
-        padding: 0 30px;
-      }
+    .icon-search1:before {
+      content: "\e902";
+    }
 
-      .nav2{
-        background: #202020;
-        height: 40px;
-      }
-      .nav2-list{
-        display: flex;        
-        justify-content: center;
-      }
+    .icon-credit-card:before {
+      content: "\e900";
+    }
 
-      .nav2-list-item{
-        padding: 0 18px;
+    .icon-credit-card1:before {
+      content: "\e901";
+    }
+
+    .icon-search:before {
+      content: "\e986";
+    }
+
+    .icon-menu:before {
+      content: "\e9bd";
+    }
+
+
+    .header-mobile {
+      height: 52px;
+      background-color: #202020;
+    }
+
+    .header-container {
+      display: flex;
+      justify-content: space-between;
+      position: relative;
+      height: inherit;
+    }
+
+    .header-desktop {
+      height: 92px;
+
+      background: #202020;
+      color: #fff;
+    }
+
+    .nav1 {
+      display: flex;
+      justify-content: space-between;
+      height: 52px;
+      padding: 0 20px;
+      border-bottom: 1px solid #393939;
+      color: #fff;
+    }
+
+    .nav1-sign {
+      display: flex;
+      padding: 0 25px;
+      border-right: 1px solid #393939;
+      border-left: 1px solid #393939;
+    }
+
+    .nav1-icon1 {
+      margin: auto 0;
+    }
+
+    .nav1-icon1 img {
+      height: 25px;
+      width: 25px;
+      margin-right: 8px;
+    }
+
+    .nav1-sign p {
+      font-family: "Roboto Condensed", sans-serif;
+      font-size: 12px;
+      font-weight: bold;
+      letter-spacing: 1px;
+      margin: auto 0;
+      color: #fff;
+      margin: auto 0;
+      margin-right: ;
+    }
+
+    .nav1-logo {
+      justify-content: center;
+      margin: auto;
+      position: absolute;
+      left: 0;
+      right: 0;
+      height: 52px;
+      width: 130px;
+
+    }
+
+    .nav1-card-master-container {
+      display: flex;
+      border-right: 1px solid #393939;
+      padding: 0 30px;
+    }
+
+    .nav2 {
+      background: #202020;
+      height: 40px;
+    }
+
+    .nav2-list {
+      display: flex;
+      justify-content: center;
+    }
+
+    .nav2-list-item {
+      padding: 0 18px;
       /* margin: 0 auto; */
-       font-family: "Roboto Condensed", sans-serif;
-       letter-spacing: 1px;
-       font-size: 12px;
-       font-weight: bold;
-      }
-      .nav2-list-item:hover{
-        color: #e62429;
-      }
+      font-family: "Roboto Condensed", sans-serif;
+      letter-spacing: 1px;
+      font-size: 12px;
+      font-weight: bold;
+    }
+
+    .nav2-list-item:hover {
+      color: #e62429;
+    }
 
 
 
-      .nav1-mastercard{
-        display: flex;
-       /*  padding: 0 30px; */
-        border-left: 1px solid #404040;
-        border-right: 1px solid #404040;
+    .nav1-mastercard {
+      display: flex;
+      /*  padding: 0 30px; */
+      border-left: 1px solid #404040;
+      border-right: 1px solid #404040;
 
-      }
-      .nav1-search{
-        margin: auto;
-      }
+    }
 
-      .icon-menu {
-        color: #ffffff;
-        font-size: 1.5em;
-        margin: 15px;
-      }
-      .icon-credit-card1{
-        margin:auto 5px;
-        font-size: 22px;
-      }
-      .nav1-mastercard p{
-        font-family: "Roboto Condensed", sans-serif;
-        font-size: 12px;
-        font-weight: bold;
-        letter-spacing: 1px;
+    .nav1-search {
+      margin: auto;
+    }
+
+    .icon-menu {
+      color: #ffffff;
+      font-size: 1.5em;
+      margin: 15px;
+    }
+
+    .icon-credit-card1 {
+      margin: auto 5px;
+      font-size: 22px;
+    }
+
+    .nav1-mastercard p {
+      font-family: "Roboto Condensed", sans-serif;
+      font-size: 12px;
+      font-weight: bold;
+      letter-spacing: 1px;
       /*   width: 50%; */
-      }
-      .icon-search1{
-        margin: auto ;
-        font-size: 22px;
-        padding: 0 15px;
-      }
+    }
 
-      .icon-search {
-        color: #ffffff;
-        font-size: 1.5em;
-        margin: 15px;
-      }
+    .icon-search1 {
+      margin: auto;
+      font-size: 22px;
+      padding: 0 15px;
+    }
 
-      .streaming-mobile, .streaming-desktop {
-        display: flex;
-        height: 40px;
-        background-color: #151515;
-        justify-content: center;
-        letter-spacing: .5px;
-      }
-          /*    .header-streaming-container {
+    .icon-search {
+      color: #ffffff;
+      font-size: 1.5em;
+      margin: 15px;
+    }
+
+    .streaming-mobile,
+    .streaming-desktop {
+      display: flex;
+      height: 40px;
+      background-color: #151515;
+      justify-content: center;
+      letter-spacing: .5px;
+    }
+
+    /*    .header-streaming-container {
         } */
 
-      .streaming-text {
-        font-family: "Roboto Condensed", sans-serif;
-        font-size: 14px;
-        /*  letter-spacing: 0.5px; */
-        margin: 0;
-        /* text-align: center; */
-        margin-top: 12px;
-        color: white;
-      }
+    .streaming-text {
+      font-family: "Roboto Condensed", sans-serif;
+      font-size: 14px;
+      /*  letter-spacing: 0.5px; */
+      margin: 0;
+      /* text-align: center; */
+      margin-top: 12px;
+      color: white;
+    }
 
-      .streaming-img img {
-        margin-left: 5px;
-      }
+    .streaming-img img {
+      margin-left: 5px;
+    }
 
-      .hero {
-        height: 600px;
-        /*  border: 1px solid red; */
-        background-color: #151515;
-      }
-      .hero-container {
-        height: 600px;
-      }
+    .hero {
+      height: 600px;
+      /*  border: 1px solid red; */
+      background-color: #151515;
+    }
 
-      .hero section {
-        position: absolute;
-      }
+    .hero-container {
+      height: 600px;
+    }
 
-      .hero-image img {
-        width: 100%;
-      }
+    .hero section {
+      position: absolute;
+    }
 
-      .shield-image {
-        background: url("images/mcocss2020_lob_log_eye_01.png");
-        height: 100px;
-        background-repeat: no-repeat;
-        /* margin: 20px; */
-        margin-top: 30px;
-      }
+    .hero-image img {
+      width: 100%;
+    }
 
-      .shield-image-avengers {
-        background: url("./images/marvelsavengers_lob_log_eye_01_1_0.png");
-        height: 100px;
-        background-repeat: no-repeat;
-        /* margin: 20px; */
-        margin-top: 30px;
-        background-size: contain;
-      }
+    .shield-image {
+      background: url("images/mcocss2020_lob_log_eye_01.png");
+      height: 100px;
+      background-repeat: no-repeat;
+      /* margin: 20px; */
+      margin-top: 30px;
+    }
 
-      .shield-image-antman {
-        background: url("./images/svod_logo_white-homepage.png");
-        height: 100px;
-        background-repeat: no-repeat;
-        /* margin: 20px; */
-        margin-top: 30px;
-        background-size: contain;
-      }
+    .shield-image-avengers {
+      background: url("./images/marvelsavengers_lob_log_eye_01_1_0.png");
+      height: 100px;
+      background-repeat: no-repeat;
+      /* margin: 20px; */
+      margin-top: 30px;
+      background-size: contain;
+    }
 
-      .hero-post-container {
-        padding: 0 30px 20px;
-      }
+    .shield-image-antman {
+      background: url("./images/svod_logo_white-homepage.png");
+      height: 100px;
+      background-repeat: no-repeat;
+      /* margin: 20px; */
+      margin-top: 30px;
+      background-size: contain;
+    }
 
-      .hero-post-title {
-        font-family: "Roboto Condensed", sans-serif;
-        color: white;
+    .hero-post-container {
+      padding: 0 30px 20px;
+    }
 
-        font-size: 18px;
-        line-height: 1;
-        font-weight: 800;
-        margin: 0;
-      }
+    .hero-post-title {
+      font-family: "Roboto Condensed", sans-serif;
+      color: white;
 
-      .hero-post-title h1 {
-        margin-bottom: 11px;
-      }
+      font-size: 18px;
+      line-height: 1;
+      font-weight: 800;
+      margin: 0;
+    }
 
-      .hero-post-copy {
-        font-family: "Roboto", sans-serif;
-        font-size: 15px;
-        color: white;
-        padding: 0 0 20px;
-        margin: 0;
-        padding: 0;
-      }
+    .hero-post-title h1 {
+      margin-bottom: 11px;
+    }
 
-      .hero-btn {
-        background-color: #e62429;
-        border: none;
-        font-size: 14px;
-        font-weight: bold;
-        padding: 15px 40px;
-        margin-bottom: 15px;
-        color: white;
-        font-family: "Roboto Condensed", sans-serif;
-        padding: 10px 15px;
-        cursor: pointer;
-        outline: none;
-        clip-path: polygon(
-          14% 0,
+    .hero-post-copy {
+      font-family: "Roboto", sans-serif;
+      font-size: 15px;
+      color: white;
+      padding: 0 0 20px;
+      margin: 0;
+      padding: 0;
+    }
+
+    .hero-btn {
+      background-color: #e62429;
+      border: none;
+      font-size: 14px;
+      font-weight: bold;
+      padding: 15px 40px;
+      margin-bottom: 15px;
+      color: white;
+      font-family: "Roboto Condensed", sans-serif;
+      padding: 10px 15px;
+      cursor: pointer;
+      outline: none;
+      clip-path: polygon(14% 0,
           100% 0,
           100% 0,
           100% 65%,
           87% 100%,
           0 100%,
-          0 34%
-        );
-        padding: 15px 40px;
-      }
+          0 34%);
+      padding: 15px 40px;
+    }
 
-      .hero-btn-large {
-        background-color: #e62429;
-        border: none;
-        font-size: 14px;
-        font-weight: 900;
-        padding: 15px 40px;
-        margin-bottom: ;
-        color: white;
-        font-family: "Roboto Condensed", sans-serif;
-        padding: 10px 15px;
-        cursor: pointer;
-        outline: none;
-        clip-path: polygon(
-          8% 0,
+    .hero-btn-large {
+      background-color: #e62429;
+      border: none;
+      font-size: 14px;
+      font-weight: 900;
+      padding: 15px 40px;
+      margin-bottom: ;
+      color: white;
+      font-family: "Roboto Condensed", sans-serif;
+      padding: 10px 15px;
+      cursor: pointer;
+      outline: none;
+      clip-path: polygon(8% 0,
           100% 0,
           100% 20%,
           100% 61%,
           92% 100%,
           0 100%,
           0% 80%,
-          0 36%
-        );
+          0 36%);
 
-        padding: 15px 40px;
-      }
+      padding: 15px 40px;
+    }
 
-      .menu {
-        text-align: center;
-        margin: 10px 0;
-        position: absolute;
-        top: 250px;
-        width: 100vw;
-      }
+    .menu {
+      text-align: center;
+      margin: 10px 0;
+      position: absolute;
+      top: 250px;
+      width: 100vw;
+    }
 
-      .menu li {
-        display: inline-block;
-        text-align: center;
-      }
+    .menu li {
+      display: inline-block;
+      text-align: center;
+    }
 
-      .menu li a {
-        display: inline-block;
-        text-decoration: none;
-        padding: 10px;
-        border-bottom: 4px solid #e1e1e1;
-        margin-left: 3px;
-      }
+    .menu li a {
+      display: inline-block;
+      text-decoration: none;
+      padding: 10px;
+      border-bottom: 4px solid #e1e1e1;
+      margin-left: 3px;
+    }
 
-      .menu li a:hover {
-        border-bottom: 5px solid #e62429;
-      }
+    .menu li a:hover {
+      border-bottom: 5px solid #e62429;
+    }
 
-      ul.hero-slider {
-        position: relative;
-      }
+    ul.hero-slider {
+      position: relative;
+    }
 
-      ul.hero-slider li {
-        position: absolute;
-        /* Con absolute todos mis articles estarán en encima de otro, dentro del relative de hero-slider */
-        transition: opacity 0.5s;
-        opacity: 0;
-      }
+    ul.hero-slider li {
+      position: absolute;
+      /* Con absolute todos mis articles estarán en encima de otro, dentro del relative de hero-slider */
+      transition: opacity 0.5s;
+      opacity: 0;
+    }
 
-      ul.hero-slider li:first-child {
-        opacity: 1;
-        /*Mostramos el primer <li>*/
-      }
+    ul.hero-slider li:first-child {
+      opacity: 1;
+      /*Mostramos el primer <li>*/
+    }
 
-      ul.hero-slider li:target {
-        opacity: 1;
-        /*Mostramos el <li> del enlace que pulsemos*/
-      }
+    ul.hero-slider li:target {
+      opacity: 1;
+      /*Mostramos el <li> del enlace que pulsemos*/
+    }
 
-      ul,
-      li {
-        padding: 0;
-        margin: 0;
-        list-style: none;
-      }
+    ul,
+    li {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+    }
 
-      .nuevo h3 {
-        color: red;
-        font-weight: bold;
-      }
+    .nuevo h3 {
+      color: red;
+      font-weight: bold;
+    }
 
-      /* CARDS  */
-      .cards {
-        /* border: 1px solid red; */
-        padding: 10px 10px;
-        height: auto;
-      }
-      .cards-in {
-        /* border: 1px solid blue; */
+    /* CARDS  */
+    .cards {
+      /* border: 1px solid red; */
+      padding: 10px 10px;
+      height: auto;
+    }
 
-        padding: 5px;
-        box-sizing: border-box; /* para que quede contenido dentro de elemento  */
-        display: grid;
-        /* grid-template-columns: repeat(auto-fill, minmax(31.66%, 1fr)); */
-        grid-template-columns: repeat(auto-fill, minmax(47%, 1fr));
+    .cards-in {
+      /* border: 1px solid blue; */
 
-        grid-gap: 10px;
-        height: auto;
-        overflow: hidden;
-        align-items: center;
-      }
-      .cards-title h3 {
-        font-family: "Roboto Condensed", sans-serif;
-        color: #202020;
-        font-weight: 800;
-        font-size: 26px;
-        padding-left: 5px;
-      }
-      .cards-item {
-        height: 100%;
-        /* border: 1px solid black; */
-      }
-      .cards {
-        /*   border: 3px solid green; */
-      }
-      .cards-item-img img {
-        /*  border: 1px solid red; */
-        object-fit: cover;
-        width: 100%;
-      }
-      .item-image img {
-        width: 100%;
+      padding: 5px;
+      box-sizing: border-box;
+      /* para que quede contenido dentro de elemento  */
+      display: grid;
+      /* grid-template-columns: repeat(auto-fill, minmax(31.66%, 1fr)); */
+      grid-template-columns: repeat(auto-fill, minmax(47%, 1fr));
 
-        object-fit: contain;
-      }
-      .item-title p {
-        font-family: "Roboto Condensed", sans-serif;
-        font-size: 1em;
-        font-weight: bold;
-        color: #999;
-        margin: 0;
-        margin-top: 2px;
-      }
-      .item-copy p {
-        font-family: "Roboto", sans-serif;
-        margin: 0;
-        margin-top: 5px;
-        font-weight: 700;
-        font-size: 0.9em;
-      }
+      grid-gap: 10px;
+      height: auto;
+      overflow: hidden;
+      align-items: center;
+    }
 
-      /*  UNLIMITED */
-      .unlimited {
-        height: 800px;
-        background-color: #151515;
-        border: 1px solid;
-        clip-path: polygon(
-          50% 0%,
+    .cards-title h3 {
+      font-family: "Roboto Condensed", sans-serif;
+      color: #202020;
+      font-weight: 800;
+      font-size: 26px;
+      padding-left: 5px;
+    }
+
+    .cards-item {
+      height: 100%;
+      /* border: 1px solid black; */
+    }
+
+    .cards {
+      /*   border: 3px solid green; */
+    }
+
+    .cards-item-img img {
+      /*  border: 1px solid red; */
+      object-fit: cover;
+      width: 100%;
+    }
+
+    .item-image img {
+      width: 100%;
+
+      object-fit: contain;
+    }
+
+    .item-title p {
+      font-family: "Roboto Condensed", sans-serif;
+      font-size: 1em;
+      font-weight: bold;
+      color: #999;
+      margin: 0;
+      margin-top: 2px;
+    }
+
+    .item-copy p {
+      font-family: "Roboto", sans-serif;
+      margin: 0;
+      margin-top: 5px;
+      font-weight: 700;
+      font-size: 0.9em;
+    }
+
+    /*  UNLIMITED */
+    .unlimited {
+      height: 800px;
+      background-color: #151515;
+      border: 1px solid;
+      clip-path: polygon(50% 0%,
           100% 0,
           100% 35%,
           100% 92%,
@@ -473,374 +493,424 @@
           0 100%,
           0% 70%,
           0% 35%,
-          0 0
-        );
-      }
-      .unlimited-img {
-        /* height: 35%; */
-      }
-      .unlimited-img img {
-        width: 100%;
-        height: 280px;
-        object-fit: cover;
-      }
-      .unlimited-main-container {
-        padding: 60px 30px 80px;
-      }
-      .unlimited-title-small {
-        color: #fefefe;
-        line-height: 1;
-        letter-spacing: 4px;
-        text-transform: uppercase;
-        color: #fff;
-        margin: 36px 0;
-        position: relative;
-        font-family: "Roboto Condensed", sans-serif;
-        font-size: 14px;
-        font-weight: 700;
-      }
-      .unlimited-title-small::before {
-        left: 53px;
-        top: -8px;
-        -webkit-transform-origin: left bottom;
-        transform-origin: left bottom;
-        background-color: #c6a972;
-        content: "";
-        display: block;
-        height: 3px;
-        position: absolute;
-        -webkit-transform: rotate(-45deg) skewX(45deg);
-        transform: rotate(-45deg) skewX(45deg);
-        width: 30px;
-        -webkit-font-smoothing: antialiased;
-        -webkit-box-sizing: border-box;
-        box-sizing: border-box;
-      }
-      .unlimited-title-small::after {
-        left: -6px;
-        top: calc(100% + 3px);
-        -webkit-transform-origin: right top;
-        transform-origin: right top;
-        background-color: #c6a972;
-        content: "";
-        display: block;
-        height: 3px;
-        position: absolute;
-        -webkit-transform: rotate(-45deg) skewX(45deg);
-        transform: rotate(-45deg) skewX(45deg);
-        width: 30px;
-        -webkit-font-smoothing: antialiased;
-        -webkit-box-sizing: border-box;
-        box-sizing: border-box;
-      }
-      .unlimited-title-big {
-        color: #fff;
-        font-family: "Roboto Condensed", sans-serif;
-        font-size: 26px;
-        font-weight: bold;
-        margin-bottom: 10px;
-      }
-      .unlimited-copy {
-        color: #fff;
-        font-family: "Roboto", sans-serif;
-        font-size: 16px;
-        margin-bottom: 20px;
-      }
-      .unlimited-button button {
-        padding: 15px 20px;
-        margin-bottom: 20px;
-        background-color: transparent;
-        border: 1px solid #fff;
-        color: #fff;
-        font-family: "Roboto", sans-serif;
-        font-weight: bold;
-        clip-path: polygon(
-          14% 0,
+          0 0);
+    }
+
+    .unlimited-img {
+      /* height: 35%; */
+    }
+
+    .unlimited-img img {
+      width: 100%;
+      height: 280px;
+      object-fit: cover;
+    }
+
+    .unlimited-main-container {
+      padding: 60px 30px 80px;
+    }
+
+    .unlimited-title-small {
+      color: #fefefe;
+      line-height: 1;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      color: #fff;
+      margin: 36px 0;
+      position: relative;
+      font-family: "Roboto Condensed", sans-serif;
+      font-size: 14px;
+      font-weight: 700;
+    }
+
+    .unlimited-title-small::before {
+      left: 53px;
+      top: -8px;
+      -webkit-transform-origin: left bottom;
+      transform-origin: left bottom;
+      background-color: #c6a972;
+      content: "";
+      display: block;
+      height: 3px;
+      position: absolute;
+      -webkit-transform: rotate(-45deg) skewX(45deg);
+      transform: rotate(-45deg) skewX(45deg);
+      width: 30px;
+      -webkit-font-smoothing: antialiased;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+    }
+
+    .unlimited-title-small::after {
+      left: -6px;
+      top: calc(100% + 3px);
+      -webkit-transform-origin: right top;
+      transform-origin: right top;
+      background-color: #c6a972;
+      content: "";
+      display: block;
+      height: 3px;
+      position: absolute;
+      -webkit-transform: rotate(-45deg) skewX(45deg);
+      transform: rotate(-45deg) skewX(45deg);
+      width: 30px;
+      -webkit-font-smoothing: antialiased;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+    }
+
+    .unlimited-title-big {
+      color: #fff;
+      font-family: "Roboto Condensed", sans-serif;
+      font-size: 26px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .unlimited-copy {
+      color: #fff;
+      font-family: "Roboto", sans-serif;
+      font-size: 16px;
+      margin-bottom: 20px;
+    }
+
+    .unlimited-button button {
+      padding: 15px 20px;
+      margin-bottom: 20px;
+      background-color: transparent;
+      border: 1px solid #fff;
+      color: #fff;
+      font-family: "Roboto", sans-serif;
+      font-weight: bold;
+      clip-path: polygon(14% 0,
           100% 0,
           100% 0,
           100% 65%,
           87% 100%,
           0 100%,
-          0 34%
-        );
-        outline: none;
-      }
-      .unlimited-button button:hover {
-        color: #e62429;
-        border: 1px solid #e62429;
-      }
-      /*  COMICS SLIDERS */
-      .comics-sliders {
-        height: auto;
-        /*  border: 1px solid red; */
-        max-width: 1024px;
-        padding-top: 20px;
-        margin-bottom: 10px;
-      }
-    
-      .comics-sliders-container {
-        height: auto;
-        padding: 10px;
-        box-sizing: border-box;
-        display: flex;
-        overflow-x: auto;
-        overflow-y: hidden;
-        -webkit-overflow-scrolling: touch;
-      }
-        .comics-sliders-container::-webkit-scrollbar{
-        background-color:#f2f2f2;
-        height: 3px;  
-      }
-      .comics-sliders-container::-webkit-scrollbar-thumb{       
-        background-color:#e62429;
-      }
-  /*     .comics-sliders-container::-webkit-scrollbar-track{
+          0 34%);
+      outline: none;
+    }
+
+    .unlimited-button button:hover {
+      color: #e62429;
+      border: 1px solid #e62429;
+    }
+
+    /*  COMICS SLIDERS */
+    .comics-sliders {
+      height: auto;
+      /*  border: 1px solid red; */
+      max-width: 1024px;
+      padding-top: 20px;
+      margin-bottom: 10px;
+    }
+
+    .comics-sliders-container {
+      height: auto;
+      padding: 10px;
+      box-sizing: border-box;
+      display: flex;
+      overflow-x: auto;
+      overflow-y: hidden;
+      -webkit-overflow-scrolling: touch;
+    }
+
+    .comics-sliders-container::-webkit-scrollbar {
+      background-color: #f2f2f2;
+      height: 3px;
+    }
+
+    .comics-sliders-container::-webkit-scrollbar-thumb {
+      background-color: #e62429;
+    }
+
+    /*     .comics-sliders-container::-webkit-scrollbar-track{
         background: black;
       
         
       } */
-  /*     .comics-sliders-container::-webkit-scrollbar-track{
+    /*     .comics-sliders-container::-webkit-scrollbar-track{
         background-color: black;
         height: 2px;
         
       } */
-      .comics-item {
-        width: 58%;
-        height: auto;
-        /*    border: 1px solid blue; */
-        margin-left: 20px;
-        flex-shrink: 0;
-      }
-      .comics-img img {
-        width: 100%;
-        box-shadow: 0 7px 17px -8px rgba(0, 0, 0, 0.8);
-      }
-      .comics-img img:hover {
-        transform: translateY(-5px);
-      }
-      .comics-title p {
-        margin: 0;
-        font-family: "Roboto", sans-serif;
-        font-weight: bold;
-        font-size: 14px;
-        letter-spacing: 0.5px;
-        padding-top: 18px;
-        padding-bottom: 5px;
-      }
-      .comics-title p:hover {
-        color: #e62429;
-      }
-      .comics-year p {
-        margin: 0;
-        font-family: "Roboto Condensed", sans-serif;
-        color: #999;
-        font-size: 12px;
-        letter-spacing: 1px;
-        font-weight: bold;
-      }
-      /* HYPE - LATEST */
-      .hype-latest {
-        max-width: 1024px;
-        padding-top: 20px;
-        /* height: 100vh; */
-      }
-      .hype-latest-container {
-        height: 100%;
-        padding: 0 30px 0 30px;
-      }
-      .part-hype {
-        max-width: 1024px;
-        height: 100%;
-      }
-      .hype-title {
-        text-align: center;
-        font-family: "Roboto Condensed", sans-serif;
-        margin-top: 20px;
-        margin-bottom: 0;
-        letter-spacing: 0.5px;
-        font-size: 24px;
-        font-weight: bold;
-        color: #202020;
-        padding-bottom: 10px;
-        padding-top: 30px;
-      }
-      .hype-subtitle {
-        text-align: center;
-        font-family: "Roboto";
-        font-size: 14px;
-        letter-spacing: 0.5px;
-        margin: 0;
-        padding: 0 15px 20px;
-      }
-      .svg-up {
-        position: relative;
-      }
-      .svg-up svg {
-        height: 55px;
-        left: 0;
-        position: absolute;
-        top: 0;
-        width: auto;
-        fill: none;
-        stroke: #c6a972;
-        stroke-width: 3px;
-      }
-      .svg-down {
-        position: relative;
+    .comics-item {
+      width: 58%;
+      height: auto;
+      /*    border: 1px solid blue; */
+      margin-left: 20px;
+      flex-shrink: 0;
+    }
 
-        height: 55px;
-        width: 100%;
-      }
-      .svg-down svg {
-        height: 55px;
-        position: absolute;
-        right: 0;
-        -webkit-transform: rotate(180deg);
-        transform: rotate(180deg);
-        fill: none;
-        stroke: #c6a972;
-        stroke-width: 3px;
-        /* padding-left: 38px; */
-        padding-top: 25px;
-      }
+    .comics-img img {
+      width: 100%;
+      box-shadow: 0 7px 17px -8px rgba(0, 0, 0, 0.8);
+    }
 
-      .cards-hype {
-        display: grid;
-        grid-template-columns: 1fr 66%;
-        border-top: 1px solid #f2f2f2;
-        padding-bottom: 24px;
-        margin: 0 10px;
-      }
-      .cards-hype-img img {
-        width: 100%;
-        /* height: 50px; */
-        padding-top: 24px;
-        object-fit: cover;
-      }
-      .cards-hype-descriptions {
-        padding-top: 24px;
-        padding-left: 20px;
-      }
-      .cards-hype-descriptions-title {
-        font-family: "Roboto Condensed", sans-serif;
-        color: #999;
-        font-weight: bold;
-        font-size: 14px;
-        letter-spacing: 0.5px;
-      }
-      .cards-hype-descriptions-copy {
-        font-family: "Roboto", sans-serif;
-        color: #202020;
-        font-size: 14px;
-        font-weight: bold;
-        letter-spacing: 0.5px;
-        margin-top: 8px;
-      }
-      .cards-hype-descriptions-copy:hover {
-        color: #e62429;
-      }
-      .part-latest {
-        margin-top: 30px;
-      }
-      .part-latest-wrapper {
-        /* padding: 0 30px; */
-      }
-      .latest-title {
-        font-family: "Roboto Condensed", sans-serif;
-        font-size: 26px;
-      }
-      .cards-latest {
-        /*  border: 1px solid orange; */
-        padding: 0;
-      }
-      .cards-latest-item {
-      }
-      .cards-latest-item-grid {
-        /*     display: grid;
+    .comics-img img:hover {
+      transform: translateY(-5px);
+    }
+
+    .comics-title p {
+      margin: 0;
+      font-family: "Roboto", sans-serif;
+      font-weight: bold;
+      font-size: 14px;
+      letter-spacing: 0.5px;
+      padding-top: 18px;
+      padding-bottom: 5px;
+    }
+
+    .comics-title p:hover {
+      color: #e62429;
+    }
+
+    .comics-year p {
+      margin: 0;
+      font-family: "Roboto Condensed", sans-serif;
+      color: #999;
+      font-size: 12px;
+      letter-spacing: 1px;
+      font-weight: bold;
+    }
+
+    /* HYPE - LATEST */
+    .hype-latest {
+      max-width: 1024px;
+      padding-top: 20px;
+      /* height: 100vh; */
+    }
+
+    .hype-latest-container {
+      height: 100%;
+      padding: 0 30px 0 30px;
+    }
+
+    .part-hype {
+      max-width: 1024px;
+      height: 100%;
+    }
+
+    .hype-title {
+      text-align: center;
+      font-family: "Roboto Condensed", sans-serif;
+      margin-top: 20px;
+      margin-bottom: 0;
+      letter-spacing: 0.5px;
+      font-size: 24px;
+      font-weight: bold;
+      color: #202020;
+      padding-bottom: 10px;
+      padding-top: 30px;
+    }
+
+    .hype-subtitle {
+      text-align: center;
+      font-family: "Roboto";
+      font-size: 14px;
+      letter-spacing: 0.5px;
+      margin: 0;
+      padding: 0 15px 20px;
+    }
+
+    .svg-up {
+      position: relative;
+    }
+
+    .svg-up svg {
+      height: 55px;
+      left: 0;
+      position: absolute;
+      top: 0;
+      width: auto;
+      fill: none;
+      stroke: #c6a972;
+      stroke-width: 3px;
+    }
+
+    .svg-down {
+      position: relative;
+
+      height: 55px;
+      width: 100%;
+    }
+
+    .svg-down svg {
+      height: 55px;
+      position: absolute;
+      right: 0;
+      -webkit-transform: rotate(180deg);
+      transform: rotate(180deg);
+      fill: none;
+      stroke: #c6a972;
+      stroke-width: 3px;
+      /* padding-left: 38px; */
+      padding-top: 25px;
+    }
+
+    .cards-hype {
+      display: grid;
+      grid-template-columns: 1fr 66%;
+      border-top: 1px solid #f2f2f2;
+      padding-bottom: 24px;
+      margin: 0 10px;
+    }
+
+    .cards-hype-img img {
+      width: 100%;
+      /* height: 50px; */
+      padding-top: 24px;
+      object-fit: cover;
+    }
+
+    .cards-hype-descriptions {
+      padding-top: 24px;
+      padding-left: 20px;
+    }
+
+    .cards-hype-descriptions-title {
+      font-family: "Roboto Condensed", sans-serif;
+      color: #999;
+      font-weight: bold;
+      font-size: 14px;
+      letter-spacing: 0.5px;
+    }
+
+    .cards-hype-descriptions-copy {
+      font-family: "Roboto", sans-serif;
+      color: #202020;
+      font-size: 14px;
+      font-weight: bold;
+      letter-spacing: 0.5px;
+      margin-top: 8px;
+    }
+
+    .cards-hype-descriptions-copy:hover {
+      color: #e62429;
+    }
+
+    .part-latest {
+      margin-top: 30px;
+    }
+
+    .part-latest-wrapper {
+      /* padding: 0 30px; */
+    }
+
+    .latest-title {
+      font-family: "Roboto Condensed", sans-serif;
+      font-size: 26px;
+    }
+
+    .cards-latest {
+      /*  border: 1px solid orange; */
+      padding: 0;
+    }
+
+    .cards-latest-item {}
+
+    .cards-latest-item-grid {
+      /*     display: grid;
       grid-template-rows: 53% 1fr; */
-        display: block;
-        height: auto;
-        /* border: 1px solid black; */
-        margin-bottom: 10px;
-        border-bottom: 1px solid #bbb;
-        padding-top: 15px;
-        padding-bottom: 10px;
-      }
-      .cards-latest-item-img img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-      }
-      .cards-latest-item-img img:hover {
-        transform: translateY(-5px);
-      }
-      .cards-latest-item-title {
-        font-family: "Roboto Condensed", sans-serif;
-        font-size: 14px;
-        color: #999;
-        font-weight: bold;
-        margin-bottom: 0;
-      }
-      .cards-latest-item-copy {
-        font-family: "Roboto";
-        color: #151515;
-        font-weight: bold;
-        font-size: 18px;
-        margin-top: 5px;
-        margin-bottom: 0;
-      }
-      .cards-latest-item-copy:hover {
-        color: #e62429;
-      }
-      .cards-latest-item-year {
-        font-family: "Roboto Condensed", sans-serif;
-        font-size: 12px;
-        color: #999;
-        font-weight: bold;
-        margin-bottom: 0;
-        margin-top: 5px;
-      }
-      .cards-latest-item-footer {
-        display: flex;
-        justify-content: space-between;
-        margin-top: 5px;
-      }
-      .cards-latest-item-footer img {
-        width: 30px;
-        height: 30px;
-        margin: 0 5px 0 0;
-      }
-      .cards-latest-item-footer span {
-        font-family: "Roboto Condensed", sans-serif;
-        font-size: 16px;
-        color: #999;
-        margin: auto;
-        /*  font-weight: bold; */
-      }
-      .cards-latest-item-footer a {
-        font-family: "Roboto", sans-serif;
-        color: #e62429;
-        font-size: 14px;
-        margin: auto;
-        /* font-weight: bold; */
-      }
-      /* TRAILERS */
+      display: block;
+      height: auto;
+      /* border: 1px solid black; */
+      margin-bottom: 10px;
+      border-bottom: 1px solid #bbb;
+      padding-top: 15px;
+      padding-bottom: 10px;
+    }
+
+    .cards-latest-item-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .cards-latest-item-img img:hover {
+      transform: translateY(-5px);
+    }
+
+    .cards-latest-item-title {
+      font-family: "Roboto Condensed", sans-serif;
+      font-size: 14px;
+      color: #999;
+      font-weight: bold;
+      margin-bottom: 0;
+    }
+
+    .cards-latest-item-copy {
+      font-family: "Roboto";
+      color: #151515;
+      font-weight: bold;
+      font-size: 18px;
+      margin-top: 5px;
+      margin-bottom: 0;
+    }
+
+    .cards-latest-item-copy:hover {
+      color: #e62429;
+    }
+
+    .cards-latest-item-year {
+      font-family: "Roboto Condensed", sans-serif;
+      font-size: 12px;
+      color: #999;
+      font-weight: bold;
+      margin-bottom: 0;
+      margin-top: 5px;
+    }
+
+    .cards-latest-item-footer {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 5px;
+    }
+
+    .cards-latest-item-footer img {
+      width: 30px;
+      height: 30px;
+      margin: 0 5px 0 0;
+    }
+
+    .cards-latest-item-footer span {
+      font-family: "Roboto Condensed", sans-serif;
+      font-size: 16px;
+      color: #999;
+      margin: auto;
+      /*  font-weight: bold; */
+    }
+
+    .cards-latest-item-footer a {
+      font-family: "Roboto", sans-serif;
+      color: #e62429;
+      font-size: 14px;
+      margin: auto;
+      /* font-weight: bold; */
+    }
+
+    /* TRAILERS */
     .trailers {
       max-width: 1024px;
       height: auto;
     }
+
     .trailers-container {
       padding: 30px 30px;
       height: inherit;
     }
+
     .trailers-in {
       height: inherit;
-      /* display: inline-block */;
-    /*   display: grid;
+      /* display: inline-block */
+      ;
+      /*   display: grid;
       grid-template: 35% 35% 30% / 1fr; */
     }
-    .trailers-video-head {
-    }
+
+    .trailers-video-head {}
+
     .trailers-video-head iframe {
       width: 100%;
       height: auto;
@@ -852,15 +922,18 @@
 
       overflow: hidden;
     }
+
     .trailers-description small {
       font-family: "Roboto Condensed", sans-serif;
       font-size: 12px;
       color: #e62429;
       font-weight: bold;
     }
-    .trailers-description  {
+
+    .trailers-description {
       margin-top: 30px;
     }
+
     .description-title {
       font-family: "Roboto", sans-serif;
       color: #202020;
@@ -869,17 +942,20 @@
       margin: 0;
       margin-top: 8px;
     }
+
     .cards-latest-item-footer {
       display: block;
       /* display: flex; */
       justify-content: space-between;
       margin-top: 5px;
     }
+
     .cards-latest-item-footer img {
       width: 30px;
       height: 30px;
       margin: 0 5px 0 0;
     }
+
     .cards-latest-item-footer span {
       font-family: "Roboto Condensed", sans-serif;
       font-size: 16px;
@@ -887,6 +963,7 @@
       margin-right: 10px;
       /*  font-weight: bold; */
     }
+
     .cards-latest-item-footer a {
       font-family: "Roboto", sans-serif;
       color: #e62429;
@@ -894,11 +971,13 @@
       margin: auto;
       /* font-weight: bold; */
     }
+
     .description-copy {
       margin-bottom: 0;
       font-family: "Roboto", sans-serif;
     }
-      .trailers-video-sliders {
+
+    .trailers-video-sliders {
       height: auto;
       /*  border: 1px solid red; */
       max-width: 1024px;
@@ -911,38 +990,44 @@
       box-sizing: border-box;
       display: flex;
       overflow: hidden;
-        overflow-x: auto;
-        overflow-y: hidden;
-        -webkit-overflow-scrolling: touch;
+      overflow-x: auto;
+      overflow-y: hidden;
+      -webkit-overflow-scrolling: touch;
     }
-      .video-sliders-container::-webkit-scrollbar{
+
+    .video-sliders-container::-webkit-scrollbar {
       background-color: #f2f2f2;
       height: 3px;
     }
-        .video-sliders-container::-webkit-scrollbar-thumb{
-      background-color:#e62429;
+
+    .video-sliders-container::-webkit-scrollbar-thumb {
+      background-color: #e62429;
       height: 3px;
     }
+
     .video-sliders-item {
       display: grid;
-     grid-template-rows: 52.5% 1fr;
+      grid-template-rows: 52.5% 1fr;
       width: 58%;
       height: auto;
       /*    border: 1px solid blue; */
       margin-right: 20px;
       flex-shrink: 0;
     }
-    .video-sliders-video{
-   overflow: hidden;
+
+    .video-sliders-video {
+      overflow: hidden;
 
     }
+
     .video-sliders-video iframe {
       width: 100%;
       height: 88%;
-     
-     /*  opacity: .28; */
+
+      /*  opacity: .28; */
     }
-/*    
+
+    /*    
     img:hover {
       transform: translateY(-5px);
       opacity: 1;
@@ -957,9 +1042,11 @@
       padding-top: 5px;
       padding-bottom: 5px;
     }
+
     .video-sliders-title p:hover {
       color: #e62429;
     }
+
     .video-year p {
       margin: 0;
       font-family: "Roboto Condensed", sans-serif;
@@ -968,21 +1055,25 @@
       letter-spacing: 1px;
       font-weight: bold;
     }
-    .mastercard{
+
+    .mastercard {
       height: auto;
       background-color: #000;
       padding-bottom: 10px;
     }
-    .mastercard-container{
+
+    .mastercard-container {
       height: auto;
       display: inline-block;
       text-align: -webkit-center;
     }
-    .mastercard-img img{
+
+    .mastercard-img img {
       width: 100%;
       padding-top: 10px;
     }
-    .mastercard-descriptions-title{
+
+    .mastercard-descriptions-title {
       color: #e62429;
       margin: 20px 0;
       text-align: center;
@@ -991,7 +1082,8 @@
       font-weight: bold;
       letter-spacing: 3px;
     }
-    .mastercard-descriptions-copy{
+
+    .mastercard-descriptions-copy {
       color: #f2f2f2;
       text-align: center;
       font-family: "Roboto", sans-serif;
@@ -1004,42 +1096,50 @@
       margin-bottom: 10px;
 
     }
-    .mastercard-descriptions-legal{
+
+    .mastercard-descriptions-legal {
       color: #f2f2f2;
       font-family: "Roboto", sans-serif;
       font-size: 11px;
       margin-top: 50px;
       /* padding-bottom: 40px; */
     }
-    .footer{
+
+    .footer {
       height: auto;
       background: #151515;
     }
-    .footer-container{
-      height: inherit;   
-      padding: 50px 30px 38px 30px; 
+
+    .footer-container {
+      height: inherit;
+      padding: 50px 30px 38px 30px;
       box-sizing: border-box;
     }
-    .footer-part1{
+
+    .footer-part1 {
       text-align: center;
       border-bottom: 1px solid #393939;
       margin-bottom: 40px;
     }
-    .footer-part2{
+
+    .footer-part2 {
       padding-bottom: 26px;
-      border-bottom: 1px solid #393939; 
+      border-bottom: 1px solid #393939;
       margin-bottom: 40px;
     }
-    .footer-part1-img img{
+
+    .footer-part1-img img {
       width: 35px;
       height: 50.55px;
       margin-bottom: 30px;
     }
-    .footer-part1-titles{   
-    display: flex;
-    justify-content: space-around;
+
+    .footer-part1-titles {
+      display: flex;
+      justify-content: space-around;
 
     }
+
     .footer-part1-titles1 {
       font-family: "Roboto", sans-serif;
       font-size: 13px;
@@ -1048,1409 +1148,1467 @@
       letter-spacing: 1px;
       text-align: left;
       width: 50%;
-      margin:0 0 25px 0;
-    }
-    .footer-part1-titles1 p{
       margin: 0 0 25px 0;
     }
-     .footer-part1-titles2{
+
+    .footer-part1-titles1 p {
+      margin: 0 0 25px 0;
+    }
+
+    .footer-part1-titles2 {
       font-family: "Roboto", sans-serif;
       font-size: 13px;
       font-weight: lighter;
-      color: #fff;   
+      color: #fff;
       text-align: left;
-      width: 50%;     
+      width: 50%;
     }
-    .footer-part1-titles2 p{
+
+    .footer-part1-titles2 p {
       margin: 0 0 25px 0;
     }
-    .footer-part1-titles p:hover{
+
+    .footer-part1-titles p:hover {
       color: #999;
     }
-    .footer-inside1{
+
+    .footer-inside1 {
       display: flex;
       padding-bottom: 40px;
     }
-    .footer-inside2{
+
+    .footer-inside2 {
       display: flex;
-      
+
     }
-    .footer-inside-img img{
+
+    .footer-inside-img img {
       width: 80px;
       object-fit: contain;
     }
-    .footer-inside-descriptions{
+
+    .footer-inside-descriptions {
       padding-left: 30px;
     }
-    .footer-inside-description-title{
+
+    .footer-inside-description-title {
       margin: 0;
       color: #fff;
       font-family: "Roboto Condensed", sans-serif;
       font-size: 14px;
       letter-spacing: 2px;
     }
-    .footer-inside-description-copy{
+
+    .footer-inside-description-copy {
       margin: 0;
       color: #999;
       font-family: "Roboto", sans-serif;
       font-size: 14px;
     }
-    .footer-part3{
-      border-bottom: 1px solid #393939; 
+
+    .footer-part3 {
+      border-bottom: 1px solid #393939;
       padding-bottom: 40px;
-     margin-bottom: 40px;
+      margin-bottom: 40px;
     }
-    .footer-part3-title{
+
+    .footer-part3-title {
       font-family: "Roboto Condensed", sans-serif;
       color: #fff;
       font-size: 14px;
       letter-spacing: 2px;
-       margin: 0 0 10px 0;
+      margin: 0 0 10px 0;
     }
-    .footer-icons{
-    justify-content: space-between;
-    display: flex;
-    padding-top: 30px;
-    
-   
+
+    .footer-icons {
+      justify-content: space-between;
+      display: flex;
+      padding-top: 30px;
+
+
     }
-    .footer-icons img{
-    width: 18px;
-    height: 18px;
+
+    .footer-icons img {
+      width: 18px;
+      height: 18px;
     }
-    .footer-list{
-      
+
+    .footer-list {
+
       text-align: center;
-    display: flex;
-    flex-shrink: 0;
-    flex-wrap: wrap;
-    justify-content: center;
+      display: flex;
+      flex-shrink: 0;
+      flex-wrap: wrap;
+      justify-content: center;
     }
-    .footer-list-item{
-       font-family: "Roboto", sans-serif;
+
+    .footer-list-item {
+      font-family: "Roboto", sans-serif;
       color: #999;
       font-size: 12px;
       letter-spacing: .5px;
       margin: 0 0 10px 0;
-      padding:0 10px;
-    /*   line-height: 1.2em; */
-    /*   width: 50%; */
-      
+      padding: 0 10px;
+      /*   line-height: 1.2em; */
+      /*   width: 50%; */
+
     }
-    .footer-list-item:hover{
+
+    .footer-list-item:hover {
       color: #fff;
     }
 
-    .footer-list-item span,a{
+    .footer-list-item span,
+    a {
       color: #e62429;
-      
+
     }
-    @media screen and (min-width: 375px){
-      .menu{
-        top:260px
+
+    @media screen and (min-width: 375px) {
+      .menu {
+        top: 260px
       }
-      .trailers-video-head iframe{
+
+      .trailers-video-head iframe {
         height: 177px;
       }
-      .comics-item{
+
+      .comics-item {
         width: 34%;
       }
-      .video-sliders-item{
+
+      .video-sliders-item {
         width: 33%;
       }
     }
-    
-      @media screen and (min-width: 490px) {
-      .trailers-video-head iframe{
-        height: 200px;
-      }
-        .cards-in {
-          grid-template-columns: repeat(auto-fill, minmax(23.75%, 1fr));
-        }
-      }
-      @media screen and (min-width: 601px){
-        .trailers-video-head iframe{
-        height: 303px;
-      }
-        .video-sliders-item{
-          width: 25%;
-        }
-        .cards-latest-item-grid{
-          display: grid;
-         grid-template-columns: 1fr 1fr;
- 
-        }
-        .cards-latest-item-img{
-          width: 100%;
-          margin-right: 20px;
-        }
-        .cards-latest-item-description{
-          padding: 0 30px;
-        }
-        .comics-item{
-          width: 25% ;
-        }
-        .mastercard-container{
-          display: flex;
-        }
-        .footer-part1{
-        display: flex;
-        justify-content: space-around;
-        }
-        .footer-part2{         
-          padding-bottom: 0;
-        }
-        .footer-part2-inside{
-          display: flex;
-          justify-content: space-around;
-          
-        }
-      }
-      @media screen and (min-width:768px){
-       .trailers-video-head iframe{
-        height: 330px;
-      }
-      .trailers-in{
-      display: grid;
-      grid-template-columns: 75% 25%;
-     /*  grid-template-rows: 64.5% 1fr; */
+
+    @media screen and (min-width: 490px) {
+      .hero-container {
+        height: 675px;
 
       }
-      .trailers-description{
+
+      .hero {
+        height: 675px;
+        border: yellow;
+      }
+
+      /* .hero{
+          height: 675px;
+        } */
+      .menu {
+        top: 330px
+      }
+
+      .trailers-video-head iframe {
+        height: 200px;
+      }
+
+      .cards-in {
+        grid-template-columns: repeat(auto-fill, minmax(23.75%, 1fr));
+      }
+    }
+
+    @media screen and (min-width: 601px) {
+      .hero-container {
+        height: 757px;
+        background: #202020
+      }
+
+      .hero {
+        height: 757px;
+      }
+
+      .menu {
+        top: 400px
+      }
+
+      .trailers-video-head iframe {
+        height: 303px;
+      }
+
+      .video-sliders-item {
+        width: 25%;
+      }
+
+      .cards-latest-item-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+      }
+
+      .cards-latest-item-img {
+        width: 100%;
+        margin-right: 20px;
+      }
+
+      .cards-latest-item-description {
+        padding: 0 30px;
+      }
+
+      .comics-item {
+        width: 25%;
+      }
+
+      .mastercard-container {
+        display: flex;
+      }
+
+      .footer-part1 {
+        display: flex;
+        justify-content: space-around;
+      }
+
+      .footer-part2 {
+        padding-bottom: 0;
+      }
+
+      .footer-part2-inside {
+        display: flex;
+        justify-content: space-around;
+
+      }
+    }
+
+    @media screen and (min-width:768px) {
+      .menu {
+        top: 465px
+      }
+
+      .trailers-video-head iframe {
+        height: 330px;
+      }
+
+      .trailers-in {
+        display: grid;
+        grid-template-columns: 75% 25%;
+        /*  grid-template-rows: 64.5% 1fr; */
+
+      }
+
+      .trailers-description {
         grid-row: 2;
       }
-      .trailers-video-sliders{
+
+      .trailers-video-sliders {
         margin-top: 0;
       }
-      .video-sliders-container{
+
+      .video-sliders-container {
         display: inline-block;
-       
+
         padding: 0 30px;
         height: 330px;
         overflow: auto;
       }
-       .video-sliders-container::-webkit-scrollbar{
-         width: 5px;
-       }
-      .video-sliders-title{
-        display:none;
+
+      .video-sliders-container::-webkit-scrollbar {
+        width: 5px;
       }
-      .video-sliders-item{
+
+      .video-sliders-title {
+        display: none;
+      }
+
+      .video-sliders-item {
         width: 100%;
         grid-template-rows: 80%;
-        
+
       }
+    }
+    .
+    @media screen and (max-width: 839px) {
+
+      .header-desktop,
+      .streaming-desktop {
+        display: none;
       }
-      @media screen and (max-width: 839px){
-        .header-desktop, .streaming-desktop{
-          display: none;
-        }
-   
-        
+
+
+    }
+
+    @media screen and (min-width: 839px) {
+      .header-mobile {
+        display: none;
       }
-      @media screen and (min-width: 839px){
-        .header-mobile{
-          display: none;
-        }
-        .streaming-mobile{
-          display: none;
-        }
-      
-       
-        .unlimited{
-          display: flex;
-          flex-direction: row-reverse;
-          height: auto;
-        }
-      .unlimited-img img{
+
+      .streaming-mobile {
+        display: none;
+      }
+
+
+      .unlimited {
+        display: flex;
+        flex-direction: row-reverse;
+        height: auto;
+      }
+
+      .unlimited-img img {
         height: 100%;
         width: 100%;
         /* height: 280px; */
         object-fit: cover;
-      }  
-
-        .hype-latest-container{
-          display: flex;
-          flex-direction: row-reverse;
-        }
-        .part-latest-wrapper{
-          padding: 0 30px 0 0;
-        }
-        .part-latest{
-          margin-top: 0;
-        }
-        .comics-item{
-          width: 14.5% ;
-        }
-        .mastercard{
-          padding-bottom: none;
-        }
-        .mastercard-descriptions{
-          padding:50px;
-        }
-        .footer-responsive-part1-2-3{
-          display: flex;
-          justify-content: space-between;
-        
-
-        }
-        .footer-part1{
-          width: 400px;
-          border-bottom:none;
-        }
-        .footer-part2{
-          border-bottom:none;
-        }
-        .footer-part2-inside{
-          display: inline-block;
-          width: 80%;
-        }
-        .footer-part3{
-          border-bottom:none;
-        }
-        .footer-part3-title{
-          width: 50%;
-        }
-        .footer-icons {
-         justify-content: start;
-         display: flex;
-         flex-wrap: wrap;
-        }
-        
-        .footer-icons img{
-        margin: 5px 10px 0 0;
-        }
       }
-    </style>
-  </head>
 
-  <body>
-    <header>
-      <div class="header-mobile">
-        <div class="header-container">
-          <div class="icon-menu"></div>
-          <div>
-            <img
-              src="./images/marvel-logo.png"
-              width="130"
-              height="52"
-              alt=""
-              class="marvel-logo"
-            />
-          </div>
-          <div class="icon-search"></div>
+      .hype-latest-container {
+        display: flex;
+        flex-direction: row-reverse;
+      }
+
+      .part-latest-wrapper {
+        padding: 0 30px 0 0;
+      }
+
+      .part-latest {
+        margin-top: 0;
+      }
+
+      .comics-item {
+        width: 14.5%;
+      }
+
+      .mastercard {
+        padding-bottom: none;
+      }
+
+      .mastercard-descriptions {
+        padding: 50px;
+      }
+
+      .footer-responsive-part1-2-3 {
+        display: flex;
+        justify-content: space-between;
+
+
+      }
+
+      .footer-part1 {
+        width: 400px;
+        border-bottom: none;
+      }
+
+      .footer-part2 {
+        border-bottom: none;
+      }
+
+      .footer-part2-inside {
+        display: inline-block;
+        width: 80%;
+      }
+
+      .footer-part3 {
+        border-bottom: none;
+      }
+
+      .footer-part3-title {
+        width: 50%;
+      }
+
+      .footer-icons {
+        justify-content: start;
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      .footer-icons img {
+        margin: 5px 10px 0 0;
+      }
+      .nav4{
+        color: blue;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="header-mobile">
+      <div class="header-container">
+        <div class="icon-menu"></div>
+        <div>
+          <img src="./images/MarvelLogo.svg" width="130" height="52" alt="" class="marvel-logo" />
         </div>
+        <div class="icon-search"></div>
       </div>
-      <div class="header-desktop">
-        <div class="header-desktop-container">
-          <div class="nav1">
-            <div class="nav1-sign">
-               <div class="nav1-icon1">
-                <img src="./images/logo-in.png" alt="">
-                </div> 
-              <p class="nav1-sign-in">SIGN IN </p>
-              <p class="nav1-sign-in">|</p>
-              <p class="nav1-sign-in">JOIN</p>
-
-
-             
+    </div>
+    <div class="header-desktop">
+      <div class="header-desktop-container">
+        <div class="nav1">
+          <div class="nav1-sign">
+            <div class="nav1-icon1">
+              <img src="./images/logo-in.png" alt="">
             </div>
+            <p class="nav1-sign-in">SIGN IN </p>
+            <p class="nav1-sign-in">|</p>
+            <p class="nav1-sign-in">JOIN</p>
+          </div>
+          <div class="nav1-logo">
             <div class="nav1-logo">
-              <div class="nav1-logo">
-                <img src="./images/marvel-logo.png" width="130" height="52" alt="">
-              </div>
+              <img src="./images/MarvelLogo.svg" width="130" height="52" alt="">
             </div>
-            <div class="nav1-mastercard">
-              <div class="nav1-card-master-container">
-                <div class="icon-credit-card1"></div>
-                <p class="nav1-master">MARVEL <br> MASTERCARD®</p>
+          </div>
+          <div class="nav1-mastercard">
+            <div class="nav1-card-master-container">
+              <div class="icon-credit-card1"></div>
+              <p class="nav1-master">MARVEL <br> MASTERCARD ®</p>
 
-              </div>
-     <div class="nav1-search">
-                <div class="icon-search1"></div>
-              </div> 
-             </div>
-          </div>
-          <div class="nav2">
-            <div class="nav2-container"> 
-              <ul class="nav2-list">
-                <p class="nav2-list-item">VIDEOS</p>
-                <p class="nav2-list-item">CHARACTERS</p>
-                <p class="nav2-list-item">COMICS</p>
-                <p class="nav2-list-item">MOVIES</p>
-                <p class="nav2-list-item">TV SHOWS</p>
-                <p class="nav2-list-item">GAMES</p>
-                <p class="nav2-list-item">NEWS</p>
-                <p class="nav2-list-item">MORE</p>
-              </ul>
+            </div>
+            <div class="nav1-search">
+              <div class="icon-search1"></div>
             </div>
           </div>
+        </div>
+        <div class="nav2">
+          <div class="nav2-container">
+            <ul class="nav2-list">
+              <p class="nav2-list-item">VIDEOS</p>
+              <p class="nav2-list-item">CHARACTERS</p>
+              <p class="nav2-list-item">COMICS</p>
+              <p class="nav2-list-item">MOVIES</p>
+              <p class="nav2-list-item">TV SHOWS</p>
+              <p class="nav2-list-item">GAMES</p>
+              <p class="nav2-list-item">NEWS</p>
+              <p class="nav2-list-item">MORE</p>
+            </ul>
+          </div>
+        </div>    
+        <div class="nav4">SOY NAB4</div>
 
-        </div>
-      </div>
-
-      
-    </header>
-    <!-- Streaming -->
-    <section class="streaming-mobile">
-      <div class="header-streaming-container">
-        <p class="streaming-text">START STREAMING NOW</p>
-      </div>
-      <div class="streaming-img">
-        <img src="./images/disneybtn_asset2x_3.png" alt="" />
-      </div>
-    </section>
-        <section class="streaming-desktop">
-      <div class="header-streaming-container">
-        <p class="streaming-text">MARVEL MOVIES & SERIES STREAMING ANYTIME ON</p>
-      </div>
-      <div class="streaming-img">
-        <img src="./images/disneybtn_asset2x_3.png" alt="" />
-      </div>
-    </section>
-    <!-- Hero -Posts -->
-    <div class="hero-container">
-      <ul class="hero-slider">
-        <li id="slider1">
-          <article class="hero" id="slider1">
-            <div class="hero-image">
-              <img
-                class=""
-                src="./images/mcocss_0727_com_mas_mob_01.jpg"
-                alt=""
-              />
-            </div>
-            <div class="hero-post-container">
-              <div class="shield-image">
-                <img src="" alt="" />
-              </div>
-        <p class="streaming-text">START STREAMING NOW</p>
-              <div class="hero-post-title  ">
-                <h1 >SUMMONER SHOWDOWN IS BACK!</h1>
-              </div>
-              <div class="hero-post-copy">
-                <p>
-                  3 regions. 3 rounds. 9 contestants. Find out how you can
-                  compete in the 2020 Marvel Contest of Champions Summoner
-                  Showdown!
-                </p>
-              </div>
-              <button class="hero-btn">LEARN MORE</button>
-            </div>
-          </article>
-        </li>
-        <li id="slider2">
-          <article class="hero" id="slider2">
-            <div class="hero-image">
-              <img src="./images/avengers_0729_com_mas_mob_01.jpg" alt="" />
-            </div>
-            <div class="hero-post-container">
-              <div class="shield-image-avengers">
-                <img src="" alt="" />
-              </div>
-              <div class="hero-post-title">
-                <h1>HAWKEYE JOINS THE FIGHT</h1>
-              </div>
-              <div class="hero-post-copy">
-                <p>
-                  The latest Marvel's Avengers War Table revealed the latest
-                  playable character-the highly requested Hawkeye!
-                </p>
-              </div>
-              <button class="hero-btn">LEARN MORE</button>
-            </div>
-          </article>
-        </li>
-        <li id="slider3">
-          <article class="hero" id="slider3">
-            <div class="hero-image">
-              <img src="./images/antmanandwasp_lob_mas_mob_02.jpg" alt="" />
-            </div>
-            <div class="hero-post-container">
-              <div class="shield-image-antman">
-                <img src="" alt="" />
-              </div>
-              <div class="hero-post-title">
-                <h1>HAWKEYE JOINS THE FIGHT</h1>
-              </div>
-              <div class="hero-post-copy">
-                <p>
-                  The latest Marvel's Avengers War Table revealed the latest
-                  playable character-the highly requested Hawkeye!
-                </p>
-              </div>
-              <button class="hero-btn">LEARN MORE</button>
-            </div>
-          </article>
-        </li>
-        <li id="slider4">
-          <article class="hero" id="slider4">
-            <div class="hero-image">
-              <img src="./images/empyre_0805_com_mas_mob_01.jpg" alt="" />
-            </div>
-            <div class="hero-post-container">
-              <div class="shield-image-empyre">
-                <img src="" alt="" />
-              </div>
-              <div class="hero-post-title">
-                <h1>SURPRISE CONCLUSION!</h1>
-              </div>
-              <div class="hero-post-copy">
-                <p>
-                  Spoilers ahead for two beloved Super Heroes in Empyre #4!
-                </p>
-              </div>
-              <button class="hero-btn">READ MORE</button>
-              <button class="hero-btn-large">
-                BEST OF WICCAN AND HULKLING
-              </button>
-            </div>
-          </article>
-        </li>
-        <li id="slider5">
-          <article class="hero" id="slider5">
-            <div class="hero-image">
-              <img src="./images/storyboards_0730_com_mas_mob_01.jpg" alt="" />
-            </div>
-            <div class="hero-post-container">
-              <div class="shield-image-story">
-                <img src="" alt="" />
-              </div>
-              <div class="hero-post-title">
-                <h1>NATALIA CORDOVA-BUCKLEY ON STORYBOARDS</h1>
-              </div>
-              <div class="hero-post-copy">
-                <p>
-                  See how the Agents of S.H.I.E.L.D star go full S.H.I.E.L.D
-                  agent with host Joe Quesada on the latest episode!
-                </p>
-              </div>
-              <button class="hero-btn">WATCH NOW</button>
-            </div>
-          </article>
-        </li>
-      </ul>
-    </div>
-    <!--  Menú del Slider -->
-    <ul class="menu">
-      <li>
-        <a href="#slider1"></a>
-      </li>
-      <li>
-        <a href="#slider2"></a>
-      </li>
-      <li>
-        <a href="#slider3"></a>
-      </li>
-      <li>
-        <a href="#slider4"></a>
-      </li>
-      <li>
-        <a href="#slider5"></a>
-      </li>
-    </ul>
-
-    <!-- CARDS -->
-    <!-- MARVEL AT HOME-->
-    <div class="cards">
-      <div class="cards-title">
-        <h3>MARVEL AT HOME</h3>
-      </div>
-      <div class="cards-in">
-        <div class="cards-item">
-          <div class="cards-item-img">
-            <img src="./images/graphic_2 (2).jpg" alt="cards-img" />
-          </div>
-          <div class="item-title">
-            <p>CULTURE & LIFESTYLES</p>
-          </div>
-          <div class="item-copy">
-            <p>
-              Marvel At Home: Here’s How to Stay Connected With Your Favorite
-              Super Heroes
-            </p>
-          </div>
-        </div>
-        <div class="cards-item">
-          <div class="cards-item-img">
-            <img src="./images/cube_0.jpg" alt="cards-img" />
-          </div>
-          <div class="item-title">
-            <p>CULTURE & LIFESTYLES</p>
-          </div>
-          <div class="item-copy">
-            <p>Marvel Mission Recap: Cosmic Cube</p>
-          </div>
-        </div>
-        <div class="cards-item">
-          <div class="cards-item-img">
-            <img src="./images/333.jpg" alt="cards-img" height="90" />
-          </div>
-          <div class="item-title">
-            <p>CULTURE & LIFESTYLES</p>
-          </div>
-          <div class="item-copy">
-            <p>Make Your Video Calls Worthy With These Backgrounds</p>
-          </div>
-        </div>
-        <div class="cards-item">
-          <div class="cards-item-img">
-            <img src="./images/wom-7-23-20.jpg" alt="cards-img" />
-          </div>
-          <div class="item-title">
-            <p>GAMES</p>
-          </div>
-          <div class="item-copy">
-            <p>
-              Everything We Saw During the July 'Marvel’s Avengers' WAR TABLE
-              Livestream
-            </p>
-          </div>
-        </div>
       </div>
     </div>
-    <!-- MARVEL PODCASTS-->
-    <div class="cards">
-      <div class="cards-title">
-        <h3>MARVEL PODCASTS</h3>
-      </div>
-      <div class="cards-in">
-        <div class="cards-item">
-          <div class="cards-item-img">
-            <img src="./images/wom-7-23-20.jpg" alt="cards-img" />
-          </div>
-          <div class="item-title">
-            <p>PODCASTS</p>
-          </div>
-          <div class="item-copy">
-            <p>
-              'Marvel's Agents of S.H.I.E.L.D.' Star Elizabeth Henstridge Talks
-              to Women of Marvel About Her Directorial Debut
-            </p>
-          </div>
-        </div>
-        <div class="cards-item">
-          <div class="cards-item-img">
-            <img src="./images/twim-7-24-20.jpg" alt="cards-img" />
-          </div>
-          <div class="item-title">
-            <p>PODCASTS</p>
-          </div>
-          <div class="item-copy">
-            <p>This Week in Marvel Heralds the Reign of Emperor Hulkling</p>
-          </div>
-        </div>
-        <div class="cards-item">
-          <div class="cards-item-img">
-            <img src="./images/clean_copy_8.jpg" alt="cards-img" height="90" />
-          </div>
-          <div class="item-title">
-            <p>COMICS</p>
-          </div>
-          <div class="item-copy">
-            <p>
-              Peter David Tells the Story Behind Spider-Man and "The Death of
-              Jean DeWolff"
-            </p>
-          </div>
-        </div>
-        <div class="cards-item">
-          <div class="cards-item-img">
-            <img src="./images/clean_1_39.jpg" alt="cards-img" />
-          </div>
-          <div class="item-title">
-            <p>COMICS</p>
-          </div>
-          <div class="item-copy">
-            <p>
-              All-Star Artist Javier Garrón on the Influence of Alan Davis and
-              'ClanDestine'
-            </p>
-          </div>
-        </div>
-      </div>
+  </header>
+  <!-- Streaming -->
+  <section class="streaming-mobile">
+    <div class="header-streaming-container">
+      <p class="streaming-text">START STREAMING NOW</p>
     </div>
-
-    <!-- NEW ON MARVEL UNLIMITED-->
-    <section class="unlimited">
-      <div class="unlimited-img">
-        <img src="./images/0420_mu_base_set_dsk.jpg" alt="" />
-      </div>
-      <div class="unlimited-main">
-        <div class="unlimited-main-container">
-          <div class="unlimited-main-img">
-            <img src="./images/marvelunlimited_lob_log_eye_01 (1).png" alt="" />
+    <div class="streaming-img">
+      <img src="./images/disneybtn_asset2x_3.png" alt="" />
+    </div>
+  </section>
+  <section class="streaming-desktop">
+    <div class="header-streaming-container">
+      <p class="streaming-text">MARVEL MOVIES & SERIES STREAMING ANYTIME ON</p>
+    </div>
+    <div class="streaming-img">
+      <img src="./images/disneybtn_asset2x_3.png" alt="" />
+    </div>
+  </section>
+  <!-- Hero -Posts -->
+  <div class="hero-container">
+    <ul class="hero-slider">
+      <li id="slider1">
+        <article class="hero" id="slider1">
+          <div class="hero-image">
+            <img class="" src="./images/mcocss_0727_com_mas_mob_01.jpg" alt="" />
           </div>
-          <div class="unlimited-title-small">AVAILABLE NOW</div>
-          <div class="unlimited-title-big">NEW ON MARVEL UNLIMITED</div>
-          <div class="unlimited-copy">
-            Read these plus 27,000+ digital comics for $9.99 a month!
-          </div>
-          <div class="unlimited-button">
-            <button>GET MARVEL UNLIMITED</button>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- UNLIMITED SLIDERS -->
-             <section class="comics-sliders">
-      <div class="comics-sliders-container">
-        <div class="comics-item">
-          <div class="comics-img">
-            <img src="./images/portrait_uncanny.jpg" alt="" />
-          </div>
-          <div class="comics-title">
-            <p>X-Men/Fantastic Four (2020) #1</p>
-          </div>
-          <div class="comics-year">
-            <p>2020</p>
-          </div>
-        </div>
-        <div class="comics-item">
-          <div class="comics-img">
-            <img src="./images/portrait_uncanny (2).jpg" alt="" />
-          </div>
-          <div class="comics-title">
-            <p>Captain America: The End (2020) #1</p>
-          </div>
-          <div class="comics-year">
-            <p>2020</p>
-          </div>
-        </div>
-        <div class="comics-item">
-          <div class="comics-img">
-            <img src="./images/portrait_uncanny (4).jpg" alt="" />
-          </div>
-          <div class="comics-title">
-            <p>Marauders (2019) #7</p>
-          </div>
-          <div class="comics-year">
-            <p>2020</p>
-          </div>
-        </div>
-        <div class="comics-item">
-          <div class="comics-img">
-            <img src="./images/portrait_uncanny (5).jpg" alt="" />
-          </div>
-          <div class="comics-title">
-            <p>Star Wars: Darth Vader (2020) #1</p>
-          </div>
-          <div class="comics-year">
-            <p>2020</p>
-          </div>
-        </div>
-        <div class="comics-item">
-          <div class="comics-img">
-            <img src="./images/portrait_uncanny (6).jpg" alt="" />
-          </div>
-          <div class="comics-title">
-            <p>Miles Morales: Spider-Man (2018) #15</p>
-          </div>
-          <div class="comics-year">
-            <p>2020</p>
-          </div>
-        </div>
-        <div class="comics-item">
-          <div class="comics-img">
-            <img src="./images/portrait_uncanny (7).jpg" alt="" />
-          </div>
-          <div class="comics-title">
-            <p>Ant-Man (2020) #1</p>
-          </div>
-          <div class="comics-year">
-            <p>2020</p>
-          </div>
-        </div>
-        <div class="comics-item">
-          <div class="comics-img">
-            <img src="./images/portrait_uncanny (8).jpg" alt="" />
-          </div>
-          <div class="comics-title">
-            <p>Black Cat (2019) #9</p>
-          </div>
-          <div class="comics-year">
-            <p>2020</p>
-          </div>
-        </div>
-        <div class="comics-item">
-          <div class="comics-img">
-            <img src="./images/portrait_uncanny (9).jpg" alt="" />
-          </div>
-          <div class="comics-title">
-            <p>Daredevil (2019) #17</p>
-          </div>
-          <div class="comics-year">
-            <p>2020</p>
-          </div>
-        </div>
-        <div class="comics-item">
-          <div class="comics-img">
-            <img src="./images/portrait_uncanny (10).jpg" alt="" />
-          </div>
-          <div class="comics-title">
-            <p>Doctor Doom (2019) #5</p>
-          </div>
-          <div class="comics-year">
-            <p>2020</p>
-          </div>
-        </div>
-        <div class="comics-item">
-          <div class="comics-img">
-            <img src="./images/portrait_uncanny (11).jpg" alt="" />
-          </div>
-          <div class="comics-title">
-            <p>Immortal Hulk: Great Power (2020) #1</p>
-          </div>
-          <div class="comics-year">
-            <p>2020</p>
-          </div>
-        </div>
-        <div class="comics-item">
-          <div class="comics-img">
-            <img src="./images/portrait_uncanny (12).jpg" alt="" />
-          </div>
-          <div class="comics-title">
-            <p>Magnificent Ms. Marvel (2019) #12</p>
-          </div>
-          <div class="comics-year">
-            <p>2020</p>
-          </div>
-        </div>
-        <div class="comics-item">
-          <div class="comics-img">
-            <img src="./images/portrait_uncanny (13).jpg" alt="" />
-          </div>
-          <div class="comics-title">
-            <p>Marvel's Avengers: Hulk (2020) #1</p>
-          </div>
-          <div class="comics-year">
-            <p>2020</p>
-          </div>
-        </div>
-        <div class="comics-item">
-          <div class="comics-img">
-            <img src="./images/portrait_uncanny (14).jpg" alt="" />
-          </div>
-          <div class="comics-title">
-            <p>Spider-Man & Venom: Double Trouble (2019) #4</p>
-          </div>
-          <div class="comics-year">
-            <p>2020</p>
-          </div>
-        </div>
-        <div class="comics-item">
-          <div class="comics-img">
-            <img src="./images/portrait_uncanny (17).jpg" alt="" />
-          </div>
-          <div class="comics-title">
-            <p>Spider-Verse (2019) #5</p>
-          </div>
-          <div class="comics-year">
-            <p>2020</p>
-          </div>
-        </div>
-        <div class="comics-item">
-          <div class="comics-img">
-            <img src="./images/portrait_uncanny (18).jpg" alt="" />
-          </div>
-          <div class="comics-title">
-            <p>Strikeforce (2019) #6</p>
-          </div>
-          <div class="comics-year">
-            <p>2020</p>
-          </div>
-        </div>
-        <div class="comics-item">
-          <div class="comics-img">
-            <img src="./images/portrait_uncanny (15).jpg" alt="" />
-          </div>
-          <div class="comics-title">
-            <p>Sword Master (2019) #8</p>
-          </div>
-          <div class="comics-year">
-            <p>2020</p>
-          </div>
-        </div>
-        <div class="comics-item">
-          <div class="comics-img">
-            <img src="./images/portrait_uncanny (19).jpg" alt="" />
-          </div>
-          <div class="comics-title">
-            <p>Yondu (2019) #5</p>
-          </div>
-          <div class="comics-year">
-            <p>2020</p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- HYPE-LATEST -->
-    <section class="hype-latest">
-      <div class="hype-latest-container">
-        <div class="part-hype">
-          <div class="part-hype-head">
-            <div class="svg-up">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="186"
-                height="55"
-                viewBox="0 0 186 55"
-              >
-                <path
-                  d="M21.4 1L1 21.4V717h264.6l20.4-20.4V1H21.4z"
-                  mask="url(#mask-2)"
-                ></path>
-              </svg>
+          <div class="hero-post-container">
+            <div class="shield-image">
+              <img src="" alt="" />
             </div>
-            <p class="hype-title">
-              THE HYPE BOX
-            </p>
-            <p class="hype-subtitle">
-              Can’t-miss news and updates from across the Marvel Universe!
-            </p>
-          </div>
-          <div class="cards-hype">
-            <div class="cards-hype-img">
-              <img
-                src="./images/nobrnd0000007_farewell_group_keyframe.png"
-                alt=""
-              />
+            <p class="streaming-text">START STREAMING NOW</p>
+            <div class="hero-post-title  ">
+              <h1>SUMMONER SHOWDOWN IS BACK!</h1>
             </div>
-            <div class="cards-hype-descriptions">
-              <div class="cards-hype-descriptions-title">TV SHOWS</div>
-              <div class="cards-hype-descriptions-copy">
-                The Cast and Showrunners of 'Marvel's Agents of S.H.I.E.L.D.'
-                Say Farewell to The Series
-              </div>
-            </div>
-          </div>
-          <div class="cards-hype">
-            <div class="cards-hype-img">
-              <img src="./images/empyre-catch-up_card.jpg" alt="" />
-            </div>
-            <div class="cards-hype-descriptions">
-              <div class="cards-hype-descriptions-title">COMICS</div>
-              <div class="cards-hype-descriptions-copy">
-                ‘Empyre’: Where Does It Stand Today?
-              </div>
-            </div>
-          </div>
-          <div class="cards-hype">
-            <div class="cards-hype-img">
-              <img src="./images/tony-team-player_card.jpg" alt="" />
-            </div>
-            <div class="cards-hype-descriptions">
-              <div class="cards-hype-descriptions-title">COMICS</div>
-              <div class="cards-hype-descriptions-copy">
-                4 Times Tony Stark Proved He Was a Team Player
-              </div>
-            </div>
-          </div>
-          <div class="cards-hype">
-            <div class="cards-hype-img">
-              <img src="./images/hulkbuster_card.jpg" alt="" />
-            </div>
-            <div class="cards-hype-descriptions">
-              <div class="cards-hype-descriptions-title">
-                CULTURE & LIFESTYLE
-              </div>
-              <div class="cards-hype-descriptions-copy">
-                Learn How to Draw Tony Stark's Hulkbuster Armor on Marvel LIVE
-              </div>
-            </div>
-          </div>
-          <div class="cards-hype">
-            <div class="cards-hype-img">
-              <img src="./images/hulk-ron-lim_0.jpg" alt="" />
-            </div>
-            <div class="cards-hype-descriptions">
-              <div class="cards-hype-descriptions-title">COMICS</div>
-              <div class="cards-hype-descriptions-copy">
-                Share Your Passion for Your Local Comic Book Store with
-                #LoveComicShops
-              </div>
-            </div>
-          </div>
-          <div class="svg-down">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="186"
-              height="55"
-              viewBox="0 0 186 55"
-            >
-              <path
-                d="M21.4 1L1 21.4V717h264.6l20.4-20.4V1H21.4z"
-                mask="url(#mask-2)"
-              ></path>
-            </svg>
-          </div>
-        </div>
-        <div class="part-latest">
-          <div class="part-latest-wrapper">
-            <div class="part-latest">
-              <div class="latest-title">
-                <p>THE LATEST</p>
-              </div>
-              <ul class="cards-latest">
-                <div class="cards-latest-item">
-                  <div class="cards-latest-item-grid">
-                    <div class="cards-latest-item-img">
-                      <img src="./images/16x9_8.png" alt="" />
-                    </div>
-                    <div class="cards-latest-item-description">
-                      <p class="cards-latest-item-title">TV SHOWS</p>
-                      <p class="cards-latest-item-copy">
-                        The Two Hour Series Finale of 'Marvel's Agents of
-                        S.H.I.E.L.D.' Airs Tonight
-                      </p>
-                      <p class="cards-latest-item-year">1 HOUR AGO</p>
-                    </div>
-                  </div>
-                  <div class="cards-latest-item-grid">
-                    <div class="cards-latest-item-img">
-                      <img src="./images/shop.jpg" alt="" />
-                    </div>
-                    <div class="cards-latest-item-description">
-                      <p class="cards-latest-item-title">GEAR</p>
-                      <p class="cards-latest-item-copy">
-                        Shop Marvel: The Latest From Hasbro, Mondo, and More
-                      </p>
-                      <p class="cards-latest-item-year">2 HOUR AGO</p>
-                    </div>
-                  </div>
-                  <div class="cards-latest-item-grid">
-                    <div class="cards-latest-item-img">
-                      <img
-                        src="./images/poster_6180798618001_be8f2d45d4b8229bf697c339b04b2ba4.jpg"
-                        alt=""
-                      />
-                    </div>
-                    <div class="cards-latest-item-description">
-                      <p class="cards-latest-item-title">COMICS</p>
-                      <p class="cards-latest-item-copy">
-                        Christopher Cantwell Shares His Blueprint for Iron Man's
-                        Heroic New Era
-                      </p>
-                      <p class="cards-latest-item-year">2 HOUR AGO</p>
-                      <div class="cards-latest-item-footer">
-                        <img src="./images/icon1.svg" alt="" />
-                        <span>Earn Points, Get Rewards</span
-                        ><a href="">Join NOW!</a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="cards-latest-item-grid">
-                    <div class="cards-latest-item-img">
-                      <img src="./images/clean_173.jpg" alt="" />
-                    </div>
-                    <div class="cards-latest-item-description">
-                      <p class="cards-latest-item-title">COMICS</p>
-                      <p class="cards-latest-item-copy">
-                        Didja Know... The Boldest Battles of the Black Panther
-                      </p>
-                      <p class="cards-latest-item-year">2 HOUR AGO</p>
-                    </div>
-                  </div>
-                  <div class="cards-latest-item-grid">
-                    <div class="cards-latest-item-img">
-                      <img
-                        src="./images/339072bdd3e7b343988006005ce8fd01.jpg"
-                        alt=""
-                      />
-                    </div>
-                    <div class="cards-latest-item-description">
-                      <p class="cards-latest-item-title">GAMES</p>
-                      <p class="cards-latest-item-copy">
-                        Entering Marvel Contest of Champions: Air-Walker
-                      </p>
-                      <p class="cards-latest-item-year">5 HOUR AGO</p>
-                      <div class="cards-latest-item-footer">
-                        <img src="./images/icon1.svg" alt="" />
-                        <span>Earn Points, Get Rewards</span
-                        ><a href="">Join NOW!</a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="cards-latest-item-grid">
-                    <div class="cards-latest-item-img">
-                      <img src="./images/mpq.png" alt="" />
-                    </div>
-                    <div class="cards-latest-item-description">
-                      <p class="cards-latest-item-title">GAMES</p>
-                      <p class="cards-latest-item-copy">
-                        Piecing Together Marvel Puzzle Quest: Wolverine (Samurai
-                        Daken)
-                      </p>
-                      <p class="cards-latest-item-year">5 HOUR AGO</p>
-                      <div class="cards-latest-item-footer">
-                        <img src="./images/icon1.svg" alt="" />
-                        <span>Earn Points, Get Rewards</span
-                        ><a href="">Join NOW!</a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="cards-latest-item-grid">
-                    <div class="cards-latest-item-img">
-                      <img src="./images/insider_crd-1560x876_3.jpg" alt="" />
-                    </div>
-                    <div class="cards-latest-item-description">
-                      <p class="cards-latest-item-title">CULTURE & LIFESTYLE</p>
-                      <p class="cards-latest-item-copy">
-                        Redeem Your Marvel Insider Points for Marvel Made
-                        Exclusive Pins and Skottie Young Premier Bundle Giveaway
-                      </p>
-                      <p class="cards-latest-item-year">8 HOUR AGO</p>
-                    </div>
-                  </div>
-                </div>
-              </ul>
-             <!--  <button class="button-latest">READ MORE</button> -->
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- TRAILERS -->
-    <section class="trailers">
-      <div class="trailers-container">
-        <div class="trailers-in">
-         
-            <div class="trailers-video-head">
-              <iframe
-                src="https://www.youtube.com/embed/5evGlVgmmfM"
-                frameborder="0"
-                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen
-              ></iframe>
-            </div>
-            <div class="trailers-description">
-              <small class="description-small">TRAILERS & EXTRAS</small>
-              <p class="description-title">Top 10 Iron Man Costumes!</p>
-              <div class="cards-latest-item-footer">
-                <img src="./images/icon1.svg" alt="" />
-                <span>Earn Points, Get Rewards</span><a href="">Join NOW!</a>
-              </div>
-              <p class="description-copy">
-                Only the best for Tony Stark. Which is YOUR favorite Iron Man
-                suit?
+            <div class="hero-post-copy">
+              <p>
+                3 regions. 3 rounds. 9 contestants. Find out how you can
+                compete in the 2020 Marvel Contest of Champions Summoner
+                Showdown!
               </p>
             </div>
-        
-              <div class="trailers-video-sliders">
-                <div class="video-sliders-container">
-                  <div class="video-sliders-item">
-                    <div class="video-sliders-video">
-                    <iframe src="https://www.youtube.com/embed/5evGlVgmmfM" frameborder="0"
-                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-                   </iframe>
-                    </div>
-                    <div class="video-sliders-title">
-                      <p> Top 10 Iron Man Costumes!</p>
-                    </div>
-                  </div>
+            <button class="hero-btn">LEARN MORE</button>
+          </div>
+        </article>
+      </li>
+      <li id="slider2">
+        <article class="hero" id="slider2">
+          <div class="hero-image">
+            <img src="./images/avengers_0729_com_mas_mob_01.jpg" alt="" />
+          </div>
+          <div class="hero-post-container">
+            <div class="shield-image-avengers">
+              <img src="" alt="" />
+            </div>
+            <div class="hero-post-title">
+              <h1>HAWKEYE JOINS THE FIGHT</h1>
+            </div>
+            <div class="hero-post-copy">
+              <p>
+                The latest Marvel's Avengers War Table revealed the latest
+                playable character-the highly requested Hawkeye!
+              </p>
+            </div>
+            <button class="hero-btn">LEARN MORE</button>
+          </div>
+        </article>
+      </li>
+      <li id="slider3">
+        <article class="hero" id="slider3">
+          <div class="hero-image">
+            <img src="./images/antmanandwasp_lob_mas_mob_02.jpg" alt="" />
+          </div>
+          <div class="hero-post-container">
+            <div class="shield-image-antman">
+              <img src="" alt="" />
+            </div>
+            <div class="hero-post-title">
+              <h1>HAWKEYE JOINS THE FIGHT</h1>
+            </div>
+            <div class="hero-post-copy">
+              <p>
+                The latest Marvel's Avengers War Table revealed the latest
+                playable character-the highly requested Hawkeye!
+              </p>
+            </div>
+            <button class="hero-btn">LEARN MORE</button>
+          </div>
+        </article>
+      </li>
+      <li id="slider4">
+        <article class="hero" id="slider4">
+          <div class="hero-image">
+            <img src="./images/empyre_0805_com_mas_mob_01.jpg" alt="" />
+          </div>
+          <div class="hero-post-container">
+            <div class="shield-image-empyre">
+              <img src="" alt="" />
+            </div>
+            <div class="hero-post-title">
+              <h1>SURPRISE CONCLUSION!</h1>
+            </div>
+            <div class="hero-post-copy">
+              <p>
+                Spoilers ahead for two beloved Super Heroes in Empyre #4!
+              </p>
+            </div>
+            <button class="hero-btn">READ MORE</button>
+            <button class="hero-btn-large">
+              BEST OF WICCAN AND HULKLING
+            </button>
+          </div>
+        </article>
+      </li>
+      <li id="slider5">
+        <article class="hero" id="slider5">
+          <div class="hero-image">
+            <img src="./images/storyboards_0730_com_mas_mob_01.jpg" alt="" />
+          </div>
+          <div class="hero-post-container">
+            <div class="shield-image-story">
+              <img src="" alt="" />
+            </div>
+            <div class="hero-post-title">
+              <h1>NATALIA CORDOVA-BUCKLEY ON STORYBOARDS</h1>
+            </div>
+            <div class="hero-post-copy">
+              <p>
+                See how the Agents of S.H.I.E.L.D star go full S.H.I.E.L.D
+                agent with host Joe Quesada on the latest episode!
+              </p>
+            </div>
+            <button class="hero-btn">WATCH NOW</button>
+          </div>
+        </article>
+      </li>
+    </ul>
+  </div>
+  <!--  Menú del Slider -->
+  <ul class="menu">
+    <li>
+      <a href="#slider1"></a>
+    </li>
+    <li>
+      <a href="#slider2"></a>
+    </li>
+    <li>
+      <a href="#slider3"></a>
+    </li>
+    <li>
+      <a href="#slider4"></a>
+    </li>
+    <li>
+      <a href="#slider5"></a>
+    </li>
+  </ul>
 
-                   <div class="video-sliders-item">
-                    <div class="video-sliders-video">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/q0xtjV820o8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-                    </iframe>
-                    </div>
-                    <div class="video-sliders-title">
-                      <p> Celebrating Essential Workers: A Heroic Doctor!</p>
+  <!-- CARDS -->
+  <!-- MARVEL AT HOME-->
+  <div class="cards">
+    <div class="cards-title">
+      <h3>MARVEL AT HOME</h3>
+    </div>
+    <div class="cards-in">
+      <div class="cards-item">
+        <div class="cards-item-img">
+          <img src="./images/graphic_2 (2).jpg" alt="cards-img" />
+        </div>
+        <div class="item-title">
+          <p>CULTURE & LIFESTYLES</p>
+        </div>
+        <div class="item-copy">
+          <p>
+            Marvel At Home: Here’s How to Stay Connected With Your Favorite
+            Super Heroes
+          </p>
+        </div>
+      </div>
+      <div class="cards-item">
+        <div class="cards-item-img">
+          <img src="./images/cube_0.jpg" alt="cards-img" />
+        </div>
+        <div class="item-title">
+          <p>CULTURE & LIFESTYLES</p>
+        </div>
+        <div class="item-copy">
+          <p>Marvel Mission Recap: Cosmic Cube</p>
+        </div>
+      </div>
+      <div class="cards-item">
+        <div class="cards-item-img">
+          <img src="./images/333.jpg" alt="cards-img" height="90" />
+        </div>
+        <div class="item-title">
+          <p>CULTURE & LIFESTYLES</p>
+        </div>
+        <div class="item-copy">
+          <p>Make Your Video Calls Worthy With These Backgrounds</p>
+        </div>
+      </div>
+      <div class="cards-item">
+        <div class="cards-item-img">
+          <img src="./images/wom-7-23-20.jpg" alt="cards-img" />
+        </div>
+        <div class="item-title">
+          <p>GAMES</p>
+        </div>
+        <div class="item-copy">
+          <p>
+            Everything We Saw During the July 'Marvel’s Avengers' WAR TABLE
+            Livestream
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- MARVEL PODCASTS-->
+  <div class="cards">
+    <div class="cards-title">
+      <h3>MARVEL PODCASTS</h3>
+    </div>
+    <div class="cards-in">
+      <div class="cards-item">
+        <div class="cards-item-img">
+          <img src="./images/wom-7-23-20.jpg" alt="cards-img" />
+        </div>
+        <div class="item-title">
+          <p>PODCASTS</p>
+        </div>
+        <div class="item-copy">
+          <p>
+            'Marvel's Agents of S.H.I.E.L.D.' Star Elizabeth Henstridge Talks
+            to Women of Marvel About Her Directorial Debut
+          </p>
+        </div>
+      </div>
+      <div class="cards-item">
+        <div class="cards-item-img">
+          <img src="./images/twim-7-24-20.jpg" alt="cards-img" />
+        </div>
+        <div class="item-title">
+          <p>PODCASTS</p>
+        </div>
+        <div class="item-copy">
+          <p>This Week in Marvel Heralds the Reign of Emperor Hulkling</p>
+        </div>
+      </div>
+      <div class="cards-item">
+        <div class="cards-item-img">
+          <img src="./images/clean_copy_8.jpg" alt="cards-img" height="90" />
+        </div>
+        <div class="item-title">
+          <p>COMICS</p>
+        </div>
+        <div class="item-copy">
+          <p>
+            Peter David Tells the Story Behind Spider-Man and "The Death of
+            Jean DeWolff"
+          </p>
+        </div>
+      </div>
+      <div class="cards-item">
+        <div class="cards-item-img">
+          <img src="./images/clean_1_39.jpg" alt="cards-img" />
+        </div>
+        <div class="item-title">
+          <p>COMICS</p>
+        </div>
+        <div class="item-copy">
+          <p>
+            All-Star Artist Javier Garrón on the Influence of Alan Davis and
+            'ClanDestine'
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- NEW ON MARVEL UNLIMITED-->
+  <section class="unlimited">
+    <div class="unlimited-img">
+      <img src="./images/0420_mu_base_set_dsk.jpg" alt="" />
+    </div>
+    <div class="unlimited-main">
+      <div class="unlimited-main-container">
+        <div class="unlimited-main-img">
+          <img src="./images/marvelunlimited_lob_log_eye_01 (1).png" alt="" />
+        </div>
+        <div class="unlimited-title-small">AVAILABLE NOW</div>
+        <div class="unlimited-title-big">NEW ON MARVEL UNLIMITED</div>
+        <div class="unlimited-copy">
+          Read these plus 27,000+ digital comics for $9.99 a month!
+        </div>
+        <div class="unlimited-button">
+          <button>GET MARVEL UNLIMITED</button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- UNLIMITED SLIDERS -->
+  <section class="comics-sliders">
+    <div class="comics-sliders-container">
+      <div class="comics-item">
+        <div class="comics-img">
+          <img src="./images/portrait_uncanny.jpg" alt="" />
+        </div>
+        <div class="comics-title">
+          <p>X-Men/Fantastic Four (2020) #1</p>
+        </div>
+        <div class="comics-year">
+          <p>2020</p>
+        </div>
+      </div>
+      <div class="comics-item">
+        <div class="comics-img">
+          <img src="./images/portrait_uncanny (2).jpg" alt="" />
+        </div>
+        <div class="comics-title">
+          <p>Captain America: The End (2020) #1</p>
+        </div>
+        <div class="comics-year">
+          <p>2020</p>
+        </div>
+      </div>
+      <div class="comics-item">
+        <div class="comics-img">
+          <img src="./images/portrait_uncanny (4).jpg" alt="" />
+        </div>
+        <div class="comics-title">
+          <p>Marauders (2019) #7</p>
+        </div>
+        <div class="comics-year">
+          <p>2020</p>
+        </div>
+      </div>
+      <div class="comics-item">
+        <div class="comics-img">
+          <img src="./images/portrait_uncanny (5).jpg" alt="" />
+        </div>
+        <div class="comics-title">
+          <p>Star Wars: Darth Vader (2020) #1</p>
+        </div>
+        <div class="comics-year">
+          <p>2020</p>
+        </div>
+      </div>
+      <div class="comics-item">
+        <div class="comics-img">
+          <img src="./images/portrait_uncanny (6).jpg" alt="" />
+        </div>
+        <div class="comics-title">
+          <p>Miles Morales: Spider-Man (2018) #15</p>
+        </div>
+        <div class="comics-year">
+          <p>2020</p>
+        </div>
+      </div>
+      <div class="comics-item">
+        <div class="comics-img">
+          <img src="./images/portrait_uncanny (7).jpg" alt="" />
+        </div>
+        <div class="comics-title">
+          <p>Ant-Man (2020) #1</p>
+        </div>
+        <div class="comics-year">
+          <p>2020</p>
+        </div>
+      </div>
+      <div class="comics-item">
+        <div class="comics-img">
+          <img src="./images/portrait_uncanny (8).jpg" alt="" />
+        </div>
+        <div class="comics-title">
+          <p>Black Cat (2019) #9</p>
+        </div>
+        <div class="comics-year">
+          <p>2020</p>
+        </div>
+      </div>
+      <div class="comics-item">
+        <div class="comics-img">
+          <img src="./images/portrait_uncanny (9).jpg" alt="" />
+        </div>
+        <div class="comics-title">
+          <p>Daredevil (2019) #17</p>
+        </div>
+        <div class="comics-year">
+          <p>2020</p>
+        </div>
+      </div>
+      <div class="comics-item">
+        <div class="comics-img">
+          <img src="./images/portrait_uncanny (10).jpg" alt="" />
+        </div>
+        <div class="comics-title">
+          <p>Doctor Doom (2019) #5</p>
+        </div>
+        <div class="comics-year">
+          <p>2020</p>
+        </div>
+      </div>
+      <div class="comics-item">
+        <div class="comics-img">
+          <img src="./images/portrait_uncanny (11).jpg" alt="" />
+        </div>
+        <div class="comics-title">
+          <p>Immortal Hulk: Great Power (2020) #1</p>
+        </div>
+        <div class="comics-year">
+          <p>2020</p>
+        </div>
+      </div>
+      <div class="comics-item">
+        <div class="comics-img">
+          <img src="./images/portrait_uncanny (12).jpg" alt="" />
+        </div>
+        <div class="comics-title">
+          <p>Magnificent Ms. Marvel (2019) #12</p>
+        </div>
+        <div class="comics-year">
+          <p>2020</p>
+        </div>
+      </div>
+      <div class="comics-item">
+        <div class="comics-img">
+          <img src="./images/portrait_uncanny (13).jpg" alt="" />
+        </div>
+        <div class="comics-title">
+          <p>Marvel's Avengers: Hulk (2020) #1</p>
+        </div>
+        <div class="comics-year">
+          <p>2020</p>
+        </div>
+      </div>
+      <div class="comics-item">
+        <div class="comics-img">
+          <img src="./images/portrait_uncanny (14).jpg" alt="" />
+        </div>
+        <div class="comics-title">
+          <p>Spider-Man & Venom: Double Trouble (2019) #4</p>
+        </div>
+        <div class="comics-year">
+          <p>2020</p>
+        </div>
+      </div>
+      <div class="comics-item">
+        <div class="comics-img">
+          <img src="./images/portrait_uncanny (17).jpg" alt="" />
+        </div>
+        <div class="comics-title">
+          <p>Spider-Verse (2019) #5</p>
+        </div>
+        <div class="comics-year">
+          <p>2020</p>
+        </div>
+      </div>
+      <div class="comics-item">
+        <div class="comics-img">
+          <img src="./images/portrait_uncanny (18).jpg" alt="" />
+        </div>
+        <div class="comics-title">
+          <p>Strikeforce (2019) #6</p>
+        </div>
+        <div class="comics-year">
+          <p>2020</p>
+        </div>
+      </div>
+      <div class="comics-item">
+        <div class="comics-img">
+          <img src="./images/portrait_uncanny (15).jpg" alt="" />
+        </div>
+        <div class="comics-title">
+          <p>Sword Master (2019) #8</p>
+        </div>
+        <div class="comics-year">
+          <p>2020</p>
+        </div>
+      </div>
+      <div class="comics-item">
+        <div class="comics-img">
+          <img src="./images/portrait_uncanny (19).jpg" alt="" />
+        </div>
+        <div class="comics-title">
+          <p>Yondu (2019) #5</p>
+        </div>
+        <div class="comics-year">
+          <p>2020</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- HYPE-LATEST -->
+  <section class="hype-latest">
+    <div class="hype-latest-container">
+      <div class="part-hype">
+        <div class="part-hype-head">
+          <div class="svg-up">
+            <svg xmlns="http://www.w3.org/2000/svg" width="186" height="55" viewBox="0 0 186 55">
+              <path d="M21.4 1L1 21.4V717h264.6l20.4-20.4V1H21.4z" mask="url(#mask-2)"></path>
+            </svg>
+          </div>
+          <p class="hype-title">
+            THE HYPE BOX
+          </p>
+          <p class="hype-subtitle">
+            Can’t-miss news and updates from across the Marvel Universe!
+          </p>
+        </div>
+        <div class="cards-hype">
+          <div class="cards-hype-img">
+            <img src="./images/nobrnd0000007_farewell_group_keyframe.png" alt="" />
+          </div>
+          <div class="cards-hype-descriptions">
+            <div class="cards-hype-descriptions-title">TV SHOWS</div>
+            <div class="cards-hype-descriptions-copy">
+              The Cast and Showrunners of 'Marvel's Agents of S.H.I.E.L.D.'
+              Say Farewell to The Series
+            </div>
+          </div>
+        </div>
+        <div class="cards-hype">
+          <div class="cards-hype-img">
+            <img src="./images/empyre-catch-up_card.jpg" alt="" />
+          </div>
+          <div class="cards-hype-descriptions">
+            <div class="cards-hype-descriptions-title">COMICS</div>
+            <div class="cards-hype-descriptions-copy">
+              ‘Empyre’: Where Does It Stand Today?
+            </div>
+          </div>
+        </div>
+        <div class="cards-hype">
+          <div class="cards-hype-img">
+            <img src="./images/tony-team-player_card.jpg" alt="" />
+          </div>
+          <div class="cards-hype-descriptions">
+            <div class="cards-hype-descriptions-title">COMICS</div>
+            <div class="cards-hype-descriptions-copy">
+              4 Times Tony Stark Proved He Was a Team Player
+            </div>
+          </div>
+        </div>
+        <div class="cards-hype">
+          <div class="cards-hype-img">
+            <img src="./images/hulkbuster_card.jpg" alt="" />
+          </div>
+          <div class="cards-hype-descriptions">
+            <div class="cards-hype-descriptions-title">
+              CULTURE & LIFESTYLE
+            </div>
+            <div class="cards-hype-descriptions-copy">
+              Learn How to Draw Tony Stark's Hulkbuster Armor on Marvel LIVE
+            </div>
+          </div>
+        </div>
+        <div class="cards-hype">
+          <div class="cards-hype-img">
+            <img src="./images/hulk-ron-lim_0.jpg" alt="" />
+          </div>
+          <div class="cards-hype-descriptions">
+            <div class="cards-hype-descriptions-title">COMICS</div>
+            <div class="cards-hype-descriptions-copy">
+              Share Your Passion for Your Local Comic Book Store with
+              #LoveComicShops
+            </div>
+          </div>
+        </div>
+        <div class="svg-down">
+          <svg xmlns="http://www.w3.org/2000/svg" width="186" height="55" viewBox="0 0 186 55">
+            <path d="M21.4 1L1 21.4V717h264.6l20.4-20.4V1H21.4z" mask="url(#mask-2)"></path>
+          </svg>
+        </div>
+      </div>
+      <div class="part-latest">
+        <div class="part-latest-wrapper">
+          <div class="part-latest">
+            <div class="latest-title">
+              <p>THE LATEST</p>
+            </div>
+            <ul class="cards-latest">
+              <div class="cards-latest-item">
+                <div class="cards-latest-item-grid">
+                  <div class="cards-latest-item-img">
+                    <img src="./images/16x9_8.png" alt="" />
+                  </div>
+                  <div class="cards-latest-item-description">
+                    <p class="cards-latest-item-title">TV SHOWS</p>
+                    <p class="cards-latest-item-copy">
+                      The Two Hour Series Finale of 'Marvel's Agents of
+                      S.H.I.E.L.D.' Airs Tonight
+                    </p>
+                    <p class="cards-latest-item-year">1 HOUR AGO</p>
+                  </div>
+                </div>
+                <div class="cards-latest-item-grid">
+                  <div class="cards-latest-item-img">
+                    <img src="./images/shop.jpg" alt="" />
+                  </div>
+                  <div class="cards-latest-item-description">
+                    <p class="cards-latest-item-title">GEAR</p>
+                    <p class="cards-latest-item-copy">
+                      Shop Marvel: The Latest From Hasbro, Mondo, and More
+                    </p>
+                    <p class="cards-latest-item-year">2 HOUR AGO</p>
+                  </div>
+                </div>
+                <div class="cards-latest-item-grid">
+                  <div class="cards-latest-item-img">
+                    <img src="./images/poster_6180798618001_be8f2d45d4b8229bf697c339b04b2ba4.jpg" alt="" />
+                  </div>
+                  <div class="cards-latest-item-description">
+                    <p class="cards-latest-item-title">COMICS</p>
+                    <p class="cards-latest-item-copy">
+                      Christopher Cantwell Shares His Blueprint for Iron Man's
+                      Heroic New Era
+                    </p>
+                    <p class="cards-latest-item-year">2 HOUR AGO</p>
+                    <div class="cards-latest-item-footer">
+                      <img src="./images/icon1.svg" alt="" />
+                      <span>Earn Points, Get Rewards</span><a href="">Join NOW!</a>
                     </div>
                   </div>
-                  <div class="video-sliders-item">
-                    <div class="video-sliders-video">
-                      <iframe width="560" height="315" src="https://www.youtube.com/embed/jQx0VwYQDA0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    </div>
-                    <div class="video-sliders-title">
-                      <p> A Look Inside Marvel Studios With One Day at Disney!</p>
+                </div>
+                <div class="cards-latest-item-grid">
+                  <div class="cards-latest-item-img">
+                    <img src="./images/clean_173.jpg" alt="" />
+                  </div>
+                  <div class="cards-latest-item-description">
+                    <p class="cards-latest-item-title">COMICS</p>
+                    <p class="cards-latest-item-copy">
+                      Didja Know... The Boldest Battles of the Black Panther
+                    </p>
+                    <p class="cards-latest-item-year">2 HOUR AGO</p>
+                  </div>
+                </div>
+                <div class="cards-latest-item-grid">
+                  <div class="cards-latest-item-img">
+                    <img src="./images/339072bdd3e7b343988006005ce8fd01.jpg" alt="" />
+                  </div>
+                  <div class="cards-latest-item-description">
+                    <p class="cards-latest-item-title">GAMES</p>
+                    <p class="cards-latest-item-copy">
+                      Entering Marvel Contest of Champions: Air-Walker
+                    </p>
+                    <p class="cards-latest-item-year">5 HOUR AGO</p>
+                    <div class="cards-latest-item-footer">
+                      <img src="./images/icon1.svg" alt="" />
+                      <span>Earn Points, Get Rewards</span><a href="">Join NOW!</a>
                     </div>
                   </div>
-                  <div class="video-sliders-item">
-                    <div class="video-sliders-video">
-                      <iframe width="560" height="315" src="https://www.youtube.com/embed/1MLpiS4BlPU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    </div>
-                    <div class="video-sliders-title">
-                      <p> A message from Clark Gregg, Agent Phil Coulson</p>
+                </div>
+                <div class="cards-latest-item-grid">
+                  <div class="cards-latest-item-img">
+                    <img src="./images/mpq.png" alt="" />
+                  </div>
+                  <div class="cards-latest-item-description">
+                    <p class="cards-latest-item-title">GAMES</p>
+                    <p class="cards-latest-item-copy">
+                      Piecing Together Marvel Puzzle Quest: Wolverine (Samurai
+                      Daken)
+                    </p>
+                    <p class="cards-latest-item-year">5 HOUR AGO</p>
+                    <div class="cards-latest-item-footer">
+                      <img src="./images/icon1.svg" alt="" />
+                      <span>Earn Points, Get Rewards</span><a href="">Join NOW!</a>
                     </div>
                   </div>
-                  <div class="video-sliders-item">
-                    <div class="video-sliders-video">
-                      <iframe width="560" height="315" src="https://www.youtube.com/embed/1MLpiS4BlPU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    </div>
-                    <div class="video-sliders-title">
-                      <p> A message from Clark Gregg, Agent Phil Coulson</p>
-                    </div>
+                </div>
+                <div class="cards-latest-item-grid">
+                  <div class="cards-latest-item-img">
+                    <img src="./images/insider_crd-1560x876_3.jpg" alt="" />
                   </div>
-             
+                  <div class="cards-latest-item-description">
+                    <p class="cards-latest-item-title">CULTURE & LIFESTYLE</p>
+                    <p class="cards-latest-item-copy">
+                      Redeem Your Marvel Insider Points for Marvel Made
+                      Exclusive Pins and Skottie Young Premier Bundle Giveaway
+                    </p>
+                    <p class="cards-latest-item-year">8 HOUR AGO</p>
+                  </div>
                 </div>
               </div>
+            </ul>
+            <!--  <button class="button-latest">READ MORE</button> -->
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
+  <!-- TRAILERS -->
+  <section class="trailers">
+    <div class="trailers-container">
+      <div class="trailers-in">
 
-        <!-- NEW ON MARVEL UNLIMITED-->
-    <section class="unlimited">
-      <div class="unlimited-img">
-        <img src="./images/new_com_20200810_set_01.jpg" alt="" />
+        <div class="trailers-video-head">
+          <iframe src="https://www.youtube.com/embed/5evGlVgmmfM" frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="trailers-description">
+          <small class="description-small">TRAILERS & EXTRAS</small>
+          <p class="description-title">Top 10 Iron Man Costumes!</p>
+          <div class="cards-latest-item-footer">
+            <img src="./images/icon1.svg" alt="" />
+            <span>Earn Points, Get Rewards</span><a href="">Join NOW!</a>
+          </div>
+          <p class="description-copy">
+            Only the best for Tony Stark. Which is YOUR favorite Iron Man
+            suit?
+          </p>
+        </div>
+
+        <div class="trailers-video-sliders">
+          <div class="video-sliders-container">
+            <div class="video-sliders-item">
+              <div class="video-sliders-video">
+                <iframe src="https://www.youtube.com/embed/5evGlVgmmfM" frameborder="0"
+                  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                </iframe>
+              </div>
+              <div class="video-sliders-title">
+                <p> Top 10 Iron Man Costumes!</p>
+              </div>
+            </div>
+
+            <div class="video-sliders-item">
+              <div class="video-sliders-video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/q0xtjV820o8" frameborder="0"
+                  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                </iframe>
+              </div>
+              <div class="video-sliders-title">
+                <p> Celebrating Essential Workers: A Heroic Doctor!</p>
+              </div>
+            </div>
+            <div class="video-sliders-item">
+              <div class="video-sliders-video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/jQx0VwYQDA0" frameborder="0"
+                  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen></iframe>
+              </div>
+              <div class="video-sliders-title">
+                <p> A Look Inside Marvel Studios With One Day at Disney!</p>
+              </div>
+            </div>
+            <div class="video-sliders-item">
+              <div class="video-sliders-video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/1MLpiS4BlPU" frameborder="0"
+                  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen></iframe>
+              </div>
+              <div class="video-sliders-title">
+                <p> A message from Clark Gregg, Agent Phil Coulson</p>
+              </div>
+            </div>
+            <div class="video-sliders-item">
+              <div class="video-sliders-video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/1MLpiS4BlPU" frameborder="0"
+                  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen></iframe>
+              </div>
+              <div class="video-sliders-title">
+                <p> A message from Clark Gregg, Agent Phil Coulson</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
       </div>
-      <div class="unlimited-main">
-        <div class="unlimited-main-container">
-         <!--  <div class="unlimited-main-img">
+    </div>
+    </div>
+  </section>
+
+  <!-- NEW ON MARVEL UNLIMITED-->
+  <section class="unlimited">
+    <div class="unlimited-img">
+      <img src="./images/new_com_20200810_set_01.jpg" alt="" />
+    </div>
+    <div class="unlimited-main">
+      <div class="unlimited-main-container">
+        <!--  <div class="unlimited-main-img">
             <img src="./images/marvelunlimited_lob_log_eye_01 (1).png" alt="" />
           </div> -->
-          <div class="unlimited-title-small">ON SALE 8/12</div>
-          <div class="unlimited-title-big">NEW COMICS THIS WEEK</div>
-          <div class="unlimited-copy">
-            Check out the newest Marvel comics coming out this week!
+        <div class="unlimited-title-small">ON SALE 8/12</div>
+        <div class="unlimited-title-big">NEW COMICS THIS WEEK</div>
+        <div class="unlimited-copy">
+          Check out the newest Marvel comics coming out this week!
+        </div>
+        <div class="unlimited-button">
+          <button>SHOP DIGITAL COMICS</button>
+        </div>
+        <div class="unlimited-button">
+          <button>PRINT SUBSCRIPTIONS</button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- UNLIMITED SLIDERS -->
+  <section class="comics-sliders">
+    <div class="comics-sliders-container">
+      <div class="comics-item">
+        <div class="comics-img">
+          <img src="./images/portrait_uncanny (22).jpg" alt="" />
+        </div>
+        <div class="comics-title">
+          <p>Empyre (2020) #5</p>
+        </div>
+        <div class="comics-year">
+          <p>2020</p>
+        </div>
+      </div>
+      <div class="comics-item">
+        <div class="comics-img">
+          <img src="./images/portrait_uncanny (23).jpg" alt="" />
+        </div>
+        <div class="comics-title">
+          <p>Empyre: X-Men (2020) #3</p>
+        </div>
+        <div class="comics-year">
+          <p>2020</p>
+        </div>
+      </div>
+      <div class="comics-item">
+        <div class="comics-img">
+          <img src="./images/portrait_uncanny (24).jpg" alt="" />
+        </div>
+        <div class="comics-title">
+          <p>Star Wars: Darth Vader (2020) #4</p>
+        </div>
+        <div class="comics-year">
+          <p>2020</p>
+        </div>
+      </div>
+      <div class="comics-item">
+        <div class="comics-img">
+          <img src="./images/portrait_uncanny (25).jpg" alt="" />
+        </div>
+        <div class="comics-title">
+          <p>The Amazing Spider-Man (2018) #46</p>
+        </div>
+        <div class="comics-year">
+          <p>2020</p>
+        </div>
+      </div>
+      <div class="comics-item">
+        <div class="comics-img">
+          <img src="./images/portrait_uncanny (26).jpg" alt="" />
+        </div>
+        <div class="comics-title">
+          <p>Immortal Hulk (2018) #36</p>
+        </div>
+        <div class="comics-year">
+          <p>2020</p>
+        </div>
+      </div>
+      <div class="comics-item">
+        <div class="comics-img">
+          <img src="./images/portrait_uncanny (27).jpg" alt="" />
+        </div>
+        <div class="comics-title">
+          <p>Marauders (2019) #11</p>
+        </div>
+        <div class="comics-year">
+          <p>2020</p>
+        </div>
+      </div>
+      <div class="comics-item">
+        <div class="comics-img">
+          <img src="./images/portrait_uncanny (29).jpg" alt="" />
+        </div>
+        <div class="comics-title">
+          <p>Captain Marvel (2019) #19</p>
+        </div>
+        <div class="comics-year">
+          <p>2020</p>
+        </div>
+      </div>
+      <div class="comics-item">
+        <div class="comics-img">
+          <img src="./images/portrait_uncanny (28).jpg" alt="" />
+        </div>
+        <div class="comics-title">
+          <p>Empyre: Avengers (2020) #2</p>
+        </div>
+        <div class="comics-year">
+          <p>2020</p>
+        </div>
+      </div>
+      <div class="comics-item">
+        <div class="comics-img">
+          <img src="./images/portrait_uncanny (30).jpg" alt="" />
+        </div>
+        <div class="comics-title">
+          <p>Empyre: Captain America (2020) #2</p>
+        </div>
+        <div class="comics-year">
+          <p>2020</p>
+        </div>
+      </div>
+      <div class="comics-item">
+        <div class="comics-img">
+          <img src="./images/portrait_uncanny (31).jpg" alt="" />
+        </div>
+        <div class="comics-title">
+          <p>Star Wars: The Action Figure Variant Covers (2020) #1</p>
+        </div>
+        <div class="comics-year">
+          <p>2020</p>
+        </div>
+      </div>
+      <div class="comics-item">
+        <div class="comics-img">
+          <img src="./images/portrait_uncanny (32).jpg" alt="" />
+        </div>
+        <div class="comics-title">
+          <p>Venom (2018) #27</p>
+        </div>
+        <div class="comics-year">
+          <p>2020</p>
+        </div>
+      </div>
+      <div class="comics-item">
+        <div class="comics-img">
+          <img src="./images/portrait_uncanny (33).jpg" alt="" />
+        </div>
+        <div class="comics-title">
+          <p>X-Force (2019) #12</p>
+        </div>
+        <div class="comics-year">
+          <p>2020</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <!-- MASTERCARD -->
+  <section class="mastercard">
+    <div class="mastercard-container">
+      <div class="mastercard-img">
+        <img src="./images/02mm_promo_dsk-1140x680.jpg" alt="">
+      </div>
+      <div class="mastercard-descriptions">
+        <div class="mastercard-descriptions-title">
+          MARVEL MASTERCARD®
+        </div>
+        <div class="mastercard-descriptions-copy">
+          Earn a $25 Statement Credit
+        </div>
+        <button class="hero-btn">LEARN MORE</button>
+        <div class="mastercard-descriptions-legal">Terms and Conditions Apply. Ⓒ 2020 MARVEL</div>
+      </div>
+    </div>
+  </section>
+  <!-- FOOTER -->
+  <section class="footer">
+    <div class="footer-container">
+      <div class="footer-responsive-part1-2-3">
+        <div class="footer-part1">
+          <div class="footer-part1-img">
+            <img src="./images/marvel-logo-small.png" alt="">
           </div>
-          <div class="unlimited-button">
-            <button>SHOP DIGITAL COMICS</button>
+          <div class="footer-part1-titles">
+            <div class="footer-part1-titles1">
+              <p>ABOUT MARVEL</p>
+              <p>HELP/FAQS</p>
+              <p>CAREERS</p>
+              <p>INTERNSHIPS</p>
+            </div>
+            <div class="footer-part1-titles2">
+              <p>ADVERTISING</p>
+              <p>MARVELHQ.COM</p>
+              <p>REDEEM DIGITAL COMICS</p>
+
+            </div>
           </div>
-                    <div class="unlimited-button">
-            <button>PRINT SUBSCRIPTIONS</button>
+        </div>
+        <div class="footer-part2">
+          <div class="footer-part2-inside">
+            <div class="footer-inside1">
+              <div class="footer-inside-img">
+                <img src="./images/marvel_insider-topnav-logo-large2x (1).png" alt="">
+              </div>
+              <div class="footer-inside-descriptions">
+                <h4 class="footer-inside-description-title">MARVEL INSIDER</h4>
+                <p class="footer-inside-description-copy">Get Rewarded for Being a Marvel Fan</p>
+              </div>
+            </div>
+            <div class="footer-inside2">
+              <div class="footer-inside-img">
+                <img src="./images/mastercard-crop_0-footer-v3.png" alt="">
+              </div>
+              <div class="footer-inside-descriptions">
+                <h4 class="footer-inside-description-title">MARVEL MASTERCARD®</h4>
+                <p class="footer-inside-description-copy">6 Card Designs—Unlimited Cashback</p>
+              </div>
+            </div>
+
+
+
+          </div>
+        </div>
+        <div class="footer-part3">
+          <div class="footer-part3-icons">
+            <h3 class="footer-part3-title">FOLLOW MARVEL</h3>
+            <div class="footer-icons">
+              <img src="./images/icons/SVG/facebook2.svg" alt="">
+              <img src="./images/icons/SVG/twitter.svg" alt="">
+              <img src="./images/icons/SVG/instagram.svg" alt="">
+              <img src="./images/icons/SVG/tumblr.svg" alt="">
+              <img src="./images/icons/SVG/youtube.svg" alt="">
+              <img src="./images/icons/SVG/snapchat-ghost.svg" alt="">
+              <img src="./images/icons/SVG/pinterest.svg" alt="">
+
+
+            </div>
           </div>
         </div>
       </div>
-    </section>
-    <!-- UNLIMITED SLIDERS -->
-             <section class="comics-sliders">
-      <div class="comics-sliders-container">
-        <div class="comics-item">
-          <div class="comics-img">
-            <img src="./images/portrait_uncanny (22).jpg" alt="" />
-          </div>
-          <div class="comics-title">
-            <p>Empyre (2020) #5</p>
-          </div>
-          <div class="comics-year">
-            <p>2020</p>
-          </div>
-        </div>
-        <div class="comics-item">
-          <div class="comics-img">
-            <img src="./images/portrait_uncanny (23).jpg" alt="" />
-          </div>
-          <div class="comics-title">
-            <p>Empyre: X-Men (2020) #3</p>
-          </div>
-          <div class="comics-year">
-            <p>2020</p>
-          </div>
-        </div>
-        <div class="comics-item">
-          <div class="comics-img">
-            <img src="./images/portrait_uncanny (24).jpg" alt="" />
-          </div>
-          <div class="comics-title">
-            <p>Star Wars: Darth Vader (2020) #4</p>
-          </div>
-          <div class="comics-year">
-            <p>2020</p>
-          </div>
-        </div>
-        <div class="comics-item">
-          <div class="comics-img">
-            <img src="./images/portrait_uncanny (25).jpg" alt="" />
-          </div>
-          <div class="comics-title">
-            <p>The Amazing Spider-Man (2018) #46</p>
-          </div>
-          <div class="comics-year">
-            <p>2020</p>
-          </div>
-        </div>
-        <div class="comics-item">
-          <div class="comics-img">
-            <img src="./images/portrait_uncanny (26).jpg" alt="" />
-          </div>
-          <div class="comics-title">
-            <p>Immortal Hulk (2018) #36</p>
-          </div>
-          <div class="comics-year">
-            <p>2020</p>
-          </div>
-        </div>
-        <div class="comics-item">
-          <div class="comics-img">
-            <img src="./images/portrait_uncanny (27).jpg" alt="" />
-          </div>
-          <div class="comics-title">
-            <p>Marauders (2019) #11</p>
-          </div>
-          <div class="comics-year">
-            <p>2020</p>
-          </div>
-        </div>
-        <div class="comics-item">
-          <div class="comics-img">
-            <img src="./images/portrait_uncanny (29).jpg" alt="" />
-          </div>
-          <div class="comics-title">
-            <p>Captain Marvel (2019) #19</p>
-          </div>
-          <div class="comics-year">
-            <p>2020</p>
-          </div>
-        </div>
-        <div class="comics-item">
-          <div class="comics-img">
-            <img src="./images/portrait_uncanny (28).jpg" alt="" />
-          </div>
-          <div class="comics-title">
-            <p>Empyre: Avengers (2020) #2</p>
-          </div>
-          <div class="comics-year">
-            <p>2020</p>
-          </div>
-        </div>
-        <div class="comics-item">
-          <div class="comics-img">
-            <img src="./images/portrait_uncanny (30).jpg" alt="" />
-          </div>
-          <div class="comics-title">
-            <p>Empyre: Captain America (2020) #2</p>
-          </div>
-          <div class="comics-year">
-            <p>2020</p>
-          </div>
-        </div>
-        <div class="comics-item">
-          <div class="comics-img">
-            <img src="./images/portrait_uncanny (31).jpg" alt="" />
-          </div>
-          <div class="comics-title">
-            <p>Star Wars: The Action Figure Variant Covers (2020) #1</p>
-          </div>
-          <div class="comics-year">
-            <p>2020</p>
-          </div>
-        </div>
-        <div class="comics-item">
-          <div class="comics-img">
-            <img src="./images/portrait_uncanny (32).jpg" alt="" />
-          </div>
-          <div class="comics-title">
-            <p>Venom (2018) #27</p>
-          </div>
-          <div class="comics-year">
-            <p>2020</p>
-          </div>
-        </div>
-        <div class="comics-item">
-          <div class="comics-img">
-            <img src="./images/portrait_uncanny (33).jpg" alt="" />
-          </div>
-          <div class="comics-title">
-            <p>X-Force (2019) #12</p>
-          </div>
-          <div class="comics-year">
-            <p>2020</p>
-          </div>
-        </div>
-    
-      </div>
-    </section>
-          <!-- MASTERCARD -->      
-        <section class="mastercard">
-          <div class="mastercard-container">
-            <div class="mastercard-img">
-              <img src="./images/02mm_promo_dsk-1140x680.jpg" alt="">
-            </div>
-            <div class="mastercard-descriptions">
-              <div class="mastercard-descriptions-title">
-                MARVEL MASTERCARD®
-              </div>
-              <div class="mastercard-descriptions-copy">
-                Earn a $25 Statement Credit
-              </div>
-              <button class="hero-btn">LEARN MORE</button>
-              <div class="mastercard-descriptions-legal">Terms and Conditions Apply.  Ⓒ 2020 MARVEL</div>
-            </div>
-          </div>
-        </section>
-          <!-- FOOTER -->
-    <section class="footer">
-      <div class="footer-container">
-        <div class="footer-responsive-part1-2-3">
-          <div class="footer-part1">
-            <div class="footer-part1-img">
-              <img src="./images/marvel-logo-small.png" alt="">
-            </div>
-            <div class="footer-part1-titles">
-              <div class="footer-part1-titles1">
-                <p>ABOUT MARVEL</p>
-                <p>HELP/FAQS</p>
-                <p>CAREERS</p>
-                <p>INTERNSHIPS</p>
-              </div>
-              <div class="footer-part1-titles2">
-                <p>ADVERTISING</p>
-                <p>MARVELHQ.COM</p>
-                <p>REDEEM DIGITAL COMICS</p>
-             
-              </div>
-            </div>
-          </div>
-          <div class="footer-part2">
-            <div class="footer-part2-inside">
-              <div class="footer-inside1">
-                <div class="footer-inside-img">
-                  <img src="./images/marvel_insider-topnav-logo-large2x (1).png" alt="">
-                </div>
-                <div class="footer-inside-descriptions">
-                  <h4 class="footer-inside-description-title">MARVEL INSIDER</h4>
-                  <p class="footer-inside-description-copy">Get Rewarded for Being a Marvel Fan</p>
-                </div>
-              </div>
-              <div class="footer-inside2">
-                <div class="footer-inside-img">
-                  <img src="./images/mastercard-crop_0-footer-v3.png" alt="">
-                </div>
-                <div class="footer-inside-descriptions">
-                  <h4 class="footer-inside-description-title">MARVEL MASTERCARD®</h4>
-                  <p class="footer-inside-description-copy">6 Card Designs—Unlimited Cashback</p>
-                </div>
-              </div>
-                    
-  
-              
-            </div>
-          </div>
-          <div class="footer-part3">
-            <div class="footer-part3-icons">
-              <h3 class="footer-part3-title">FOLLOW MARVEL</h3>
-              <div class="footer-icons">
-                <img src="./images/icons/SVG/facebook2.svg" alt="">
-                <img src="./images/icons/SVG/twitter.svg" alt="">
-                <img src="./images/icons/SVG/instagram.svg" alt="">
-                <img src="./images/icons/SVG/tumblr.svg" alt="">
-                <img src="./images/icons/SVG/youtube.svg" alt="">
-                <img src="./images/icons/SVG/snapchat-ghost.svg" alt="">
-                <img src="./images/icons/SVG/pinterest.svg" alt="">
-               
-  
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="footer-part4">
-          <div class="footer-list">
-            <p class="footer-list-item">Terms of Use</p>
-            <p class="footer-list-item">Privacy Policy</p>
-            <p class="footer-list-item">Your California Privacy Rights</p>
-            <p class="footer-list-item">Do Not Sell My Info</p>
-            <p class="footer-list-item">Children's Online Privacy Policy</p>
-            <p class="footer-list-item">License Agreement</p>
-            <p class="footer-list-item">Interest-Based Ads</p>
-            <p class="footer-list-item">Marvel Insider Terms</p>
-            <p class="footer-list-item">©2020 MARVEL</p>
-            <p class="footer-list-item">This clone was made with <span>❤</span> by @amaurysoto</p>
-            
-          </div>
+      <div class="footer-part4">
+        <div class="footer-list">
+          <p class="footer-list-item">Terms of Use</p>
+          <p class="footer-list-item">Privacy Policy</p>
+          <p class="footer-list-item">Your California Privacy Rights</p>
+          <p class="footer-list-item">Do Not Sell My Info</p>
+          <p class="footer-list-item">Children's Online Privacy Policy</p>
+          <p class="footer-list-item">License Agreement</p>
+          <p class="footer-list-item">Interest-Based Ads</p>
+          <p class="footer-list-item">Marvel Insider Terms</p>
+          <p class="footer-list-item">©2020 MARVEL</p>
+          <p class="footer-list-item">This clone was made with <span>❤</span> by @amaurysoto</p>
+
         </div>
       </div>
-    </section>
-  </body>
+    </div>
+  </section>
+</body>
+
 </html>
