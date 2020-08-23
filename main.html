@@ -18,11 +18,11 @@
     body {
       padding: 0;
       margin: 0;
-      background: #202020;
+      /* background: #202020; */
       font-family: "Roboto", sans-serif;
     }
     .main-container {
-      height: 410px;
+      height: 420px;
       border: 1px solid red;
     }
     .main-article {
@@ -75,6 +75,41 @@
       padding: 15px 40px;
       margin-top: 20px;
     }
+    .main-menu {
+      height: 73px;
+      max-width: 80%;
+      border: 1px solid green;
+      background-color: #fff;
+      position: relative;
+      top: 10px;
+      /* left: 20px; */
+    }
+    .main-menu-container {
+      text-align: initial;
+      height: inherit;
+
+      margin: 0;
+    }
+    .main-container-list {
+      height: 73px;
+      display: flex;
+      color: #151515;
+      font-weight: bold;
+      list-style: none;
+      margin: 0;
+      box-sizing: border-box;
+      padding-bottom: 10px;
+    }
+    .main-menu-container-button {
+      height: 45px;
+      width: 135px;
+      /* border-top: 5px solid; */
+      padding: 10px 30px 10px 0;
+    }
+    .main-menu-container-button:hover {
+      color: #e62429;
+      border-top: 5px solid #e62429;
+    }
   </style>
   <body>
     <section class="main">
@@ -96,5 +131,20 @@
         </article>
       </div>
     </section>
+    <div class="main-menu">
+      <div class="main-menu-container">
+        <ul class="main-container-list">
+          <li class="main-menu-container-button">
+            Margaret Stohl on Captain Marvel
+          </li>
+          <li class="main-menu-container-button">Eternals #1</li>
+          <li class="main-menu-container-button">Indigenous Voices #1</li>
+          <li class="main-menu-container-button">Black, White & Blood</li>
+          <li class="main-menu-container-button">
+            The Rise of Ultraman Trailer
+          </li>
+        </ul>
+      </div>
+    </div>
   </body>
 </html>
