@@ -21,45 +21,79 @@
       /* background: #202020; */
       font-family: "Roboto", sans-serif;
     }
+
     /* MAIN DESKTOP */
     /*   .main-container {
     height: 415px;
    
   } */
     .main-container {
-      height: 385px;
+      /*  height: 385px; */
+      height: 322px;
     }
-    ul {
+
+    ul.main-list {
+      height: inherit;
       position: relative;
+    }
+
+    ul.main-list li {
+      position: absolute;
+      /* todos los mains encima de otros */
+      transition: opacity 2s;
+      opacity: 0;
+    }
+
+    ul.main-list li:first-child {
+      opacity: 1;
+      /*Mostramos el primer <li>*/
+    }
+
+    ul.main-list li:target {
+      opacity: 1;
+      /*Mostramos el <li> del enlace que pulsemos*/
+    }
+
+    ul,
+    li {
+      padding: 0;
+      margin: 0;
       list-style: none;
     }
-    ul li {
-    }
+
     .main-article1 {
-      /* height: inherit; */
+      height: inherit;
+      width: 1024px;
       background: url("images/wolverine_0817_com_mas_dsk_01.jpg"),
         linear-gradient(to left, transparent, black 120%);
-      background-blend-mode: multiply; /* activo multiples backgrounds */
+      background-blend-mode: multiply;
+      /* activo multiples backgrounds */
       background-repeat: no-repeat;
       background-size: cover;
-      background-position-x: center;
-      background-attachment: fixed;
+      /* background-position-x: center; */
+      /* background-attachment: fixed; */
       position: relative;
     }
+
     .main-article2 {
+      width: 1024px;
       background: url("images/ultraman_0710_com_mas_dsk_01.jpg"),
         linear-gradient(to left, transparent, black 120%);
-      background-blend-mode: multiply; /* activo multiples backgrounds */
+      background-blend-mode: multiply;
+      /* activo multiples backgrounds */
       background-repeat: no-repeat;
       background-size: cover;
       background-position-x: center;
       background-attachment: fixed;
       position: relative;
     }
+
     .main-article3 {
+      width: 1024px;
       background: url("images/eternals_0819_com_mas_dsk_01.jpg"),
         linear-gradient(to left, transparent, black 120%);
-      background-blend-mode: multiply; /* activo multiples backgrounds */
+      background-blend-mode: multiply;
+      /* activo multiples backgrounds */
       background-repeat: no-repeat;
       background-size: cover;
       background-position-x: center;
@@ -72,6 +106,7 @@
       /* text-align: center; */
       padding: 80px 10px 10px 30px;
     }
+
     .article-description-titleOne {
       position: relative;
       color: #fff;
@@ -79,6 +114,7 @@
       font-weight: bold;
       font-size: 16px;
     }
+
     .article-description-titleOne::before {
       left: 53px;
       top: -8px;
@@ -93,6 +129,7 @@
       transform: rotate(-45deg) skewX(45deg);
       width: 34px;
     }
+
     .article-description-titleOne::after {
       left: -6px;
       top: calc(100% + 3px);
@@ -150,18 +187,15 @@
       margin-top: 20px;
     }
 
-    .main {
-      /* background: #202020; */
-    }
-
     .main-menu {
-      display: none; /*  ESCONDIENDO MENÚ */
+      /* display: none; */
+      /*  ESCONDIENDO MENÚ */
       height: 73px;
       max-width: 85%;
       /* border: 1px solid green; */
       background-color: #fff;
       position: relative;
-      /*    top: 10px; */
+      top: 0px;
       /* left: 20px; */
     }
 
@@ -197,10 +231,11 @@
       border-top: 5px solid #e62429;
     }
   </style>
+
   <body>
     <section class="main">
       <div class="main-container">
-        <ul>
+        <ul class="main-list">
           <li id="main1">
             <article class="main-article1">
               <div class="article-description">
@@ -235,7 +270,7 @@
               </div>
             </article>
           </li>
-          <li id="main2">
+          <li id="main3">
             <article class="main-article3">
               <div class="article-description">
                 <div class="article-description-titleOne">
@@ -256,19 +291,29 @@
       </div>
     </section>
     <div class="main-menu">
-      <div class="main-menu-container">
-        <ul class="main-container-list">
-          <a class="main-menu-container-button" target="_parent" href="#main1">
+      <ul class="main-container-list">
+        <li>
+          <a href="#main1">
             Margaret Stohl on Captain Marvel
           </a>
-          <li class="main-menu-container-button">Eternals #1</li>
-          <li class="main-menu-container-button">Indigenous Voices #1</li>
-          <li class="main-menu-container-button">Black, White & Blood</li>
-          <li class="main-menu-container-button">
+        </li>
+        <li>
+          <a href="#main2">Eternals #1</a>
+        </li>
+        <li>
+          <a href="#main3">
+            Indigenous Voices #1
+          </a>
+        </li>
+        <li>
+          <a>Black, White & Blood</a>
+        </li>
+        <li>
+          <a>
             The Rise of Ultraman Trailer
-          </li>
-        </ul>
-      </div>
+          </a>
+        </li>
+      </ul>
     </div>
   </body>
 </html>

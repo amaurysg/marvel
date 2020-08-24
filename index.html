@@ -353,12 +353,6 @@
     width: 100vw;
   }
 
-  .menu::before {
-    content: "";
-    display: block;
-    height: 9999px;
-    margin-top: -9999px;
-  }
 
   .menu li {
     display: inline-block;
@@ -414,33 +408,93 @@
   } */
   .main-container {
     height: 385px;
+
   }
 
-  .main-article {
-    /* height: inherit; */
-    background: url("images/wolverine_0817_com_mas_dsk_01.jpg"),linear-gradient( to left,transparent, black 120% );
-    background-blend-mode: multiply; /* activo multiples backgrounds */
+  ul.main-list {
+    height: inherit;
+    width: 100%;
+    position: relative;
+    width: -webkit-fill-available;
+  }
+
+  ul.main-list li {
+    width;
+    position: absolute;
+    /* todos los mains encima de otros */
+    transition: opacity 2s;
+    opacity: 0;
+
+  }
+
+  ul.main-list li:first-child {
+    opacity: 1;
+    /*Mostramos el primer <li>*/
+  }
+
+  ul.main-list li:target {
+    opacity: 1;
+    /*Mostramos el <li> del enlace que pulsemos*/
+  }
+
+  .main-article1 {
+    height: 420px;
+    width: 1024px;
+    background: url("images/wolverine_0817_com_mas_dsk_01.jpg"), linear-gradient(to left, transparent, black 120%);
+    background-blend-mode: multiply;
+    /* activo multiples backgrounds */
     background-repeat: no-repeat;
     background-size: cover;
     background-position-x: center;
-    background-attachment:fixed;
+    background-attachment: fixed;
     position: relative;
-
   }
+
+  .main-article2 {
+    height: 420px;
+    width: 1024px;
+
+    background: url("images/ultraman_0710_com_mas_dsk_01.jpg"), linear-gradient(to left, transparent, black 120%);
+    background-blend-mode: multiply;
+    /* activo multiples backgrounds */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    background-attachment: fixed;
+    position: relative;
+  }
+
+  .main-article3 {
+    height: 420px;
+    width: 1024px;
+
+    background: url("images/voices_0819_com_mas_dsk_01.jpg"), linear-gradient(to left, transparent, black 120%);
+    background-blend-mode: multiply;
+    /* activo multiples backgrounds */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    background-attachment: fixed;
+    position: relative;
+  }
+
+
 
   .article-description {
     width: 50%;
     /* text-align: center; */
     padding: 80px 10px 10px 30px;
   }
-  .article-description-titleOne{
+
+  .article-description-titleOne {
     position: relative;
     color: #fff;
-    font-family: "Roboto Condensed", sans-serif ;
+    font-family: "Roboto Condensed", sans-serif;
     font-weight: bold;
     font-size: 16px;
   }
-  .article-description-titleOne::before{
+
+  .article-description-titleOne::before {
     left: 53px;
     top: -8px;
     -webkit-transform-origin: left bottom;
@@ -454,7 +508,8 @@
     transform: rotate(-45deg) skewX(45deg);
     width: 34px;
   }
-  .article-description-titleOne::after{
+
+  .article-description-titleOne::after {
     left: -6px;
     top: calc(100% + 3px);
     -webkit-transform-origin: right top;
@@ -509,7 +564,7 @@
     margin-top: 20px;
   }
 
-   .main-container-list a {
+  .main-container-list a {
     text-decoration: none;
   }
 
@@ -554,6 +609,9 @@
     width: 135px;
     /* border-top: 5px solid; */
     padding: 10px 30px 10px 0;
+    color: #151515;
+    transition: width 2s;
+
   }
 
   .main-menu-container-button:hover {
@@ -1580,18 +1638,21 @@
       display: none;
     }
 
-    .main{
+    .main {
       height: 420px;
     }
-    .main-container{
-      height: inherit; /* 420px */
+
+    .main-container {
+      height: inherit;
+      /* 420px */
     }
 
     .main-menu {
       position: relative;
       top: 0;
     }
-    .main-article{
+
+    .main-article {
       height: 405px;
     }
 
@@ -1682,15 +1743,16 @@
 
   @media screen and (min-width: 960px) {
     .main {
-    height: 420px;
-    background: none; 
+      height: 420px;
+      background: none;
     }
+
     .main-container {
-     /* height: 370px; */
-     height: inherit;
-     clip-path: polygon(50% 0%, 100% 0, 100% 35%, 100% 90%, 0 100%, 50% 100%, 18% 100%, 0 100%, 0% 35%, 0 0);
+      /* height: 370px; */
+      height: inherit;
+      clip-path: polygon(50% 0%, 100% 0, 100% 35%, 100% 90%, 0 100%, 50% 100%, 18% 100%, 0 100%, 0% 35%, 0 0);
     }
-    
+
     .main-article {
       height: 420px;
       /* background-position-x: -100px; */
@@ -1921,9 +1983,9 @@
   <section class="main">
 
     <div class="main-container">
-      <ul>
+      <ul class="main-list">
         <li id="main1">
-          <article class="main-article">
+          <article class="main-article1">
             <div class="article-description">
               <div class="article-description-titleOne">
                 MARVEL COMICS
@@ -1932,29 +1994,44 @@
                 Black, White & Blood
               </div>
               <div class="article-description-copy">
-                  Some of Marvel's top talent sink their claws into Wolverine in an all-new series!
+                Some of Marvel's top talent sink their claws into Wolverine in an all-new series!
               </div>
               <button class="article-description-button">LEARN MORE</button>
             </div>
           </article>
         </li>
- <!--       <li id="main2">
-          <article class="main-article">
+        <li id="main2">
+          <article class="main-article2">
             <div class="article-description">
               <div class="article-description-titleOne">
                 MARVEL COMICS
               </div>
               <div class="article-description-title">
-                Black, White & Blood
+                The Rise of Ultraman Trailer
               </div>
               <div class="article-description-copy">
-                  Some of Marvel's top talent sink their claws into Wolverine in an all-new series!
+                In darkness there lurks Kaiju – terrifying and unfathomable monsters.
+              </div>
+              <button class="article-description-button">WATCH TRAILER</button>
+            </div>
+          </article>
+        </li>
+        <li id="main3">
+          <article class="main-article3">
+            <div class="article-description">
+              <div class="article-description-titleOne">
+                MARVEL'S VOICES
+              </div>
+              <div class="article-description-title">
+                INDIGENOUS VOICES #1
+              </div>
+              <div class="article-description-copy">
+                The Marvel's Voices comics expand this November!
               </div>
               <button class="article-description-button">LEARN MORE</button>
             </div>
           </article>
-        </li> -->
-
+        </li>
 
 
       </ul>
@@ -1964,15 +2041,25 @@
   <div class="main-menu">
     <div class="main-menu-container">
       <ul class="main-container-list">
-        <a class="main-menu-container-button" target="_parent" href="#main1">
+
+        <a class="main-menu-container-button" href="#main1">
           Margaret Stohl on Captain Marvel
         </a>
-        <li class="main-menu-container-button">Eternals #1</li>
-        <li class="main-menu-container-button">Indigenous Voices #1</li>
-        <li class="main-menu-container-button">Black, White & Blood</li>
-        <li class="main-menu-container-button">
+
+
+        <a class="main-menu-container-button" href="#main2">Eternals #1</a>
+
+
+        <a class="main-menu-container-button" href="#main3">Indigenous Voices #1</a>
+
+
+        <a class="main-menu-container-button" href="#main1">Black, White & Blood</a>
+
+
+        <a class="main-menu-container-button" href="#main1">
           The Rise of Ultraman Trailer
-        </li>
+        </a>
+
       </ul>
     </div>
   </div>
