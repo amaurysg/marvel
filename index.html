@@ -413,13 +413,16 @@
 
   ul.main-list {
     height: inherit;
-    width: 100%;
+    /* width: 100%; */
     position: relative;
-    width: -webkit-fill-available;
+    overflow: hidden;
   }
 
+
+
   ul.main-list li {
-    width;
+
+    /*  width; */
     position: absolute;
     /* todos los mains encima de otros */
     transition: opacity 2s;
@@ -594,8 +597,6 @@
   .main-container-list {
     height: 73px;
     display: flex;
-    color: #151515;
-    font-weight: bold;
     list-style: none;
     margin: 0;
     box-sizing: border-box;
@@ -604,21 +605,59 @@
   }
 
   .main-menu-container-button {
+    position: relative;
     font-family: "Roboto", sans-serif;
     height: 45px;
     width: 135px;
     /* border-top: 5px solid; */
     padding: 10px 30px 10px 0;
     color: #151515;
-    transition: width 2s;
+    font-weight: bold;
 
   }
 
   .main-menu-container-button:hover {
     color: #e62429;
-    border-top: 5px solid #e62429;
   }
 
+  /* EFECTO BORDES  */
+  .main-menu-container-button::after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 0;
+    height: 5px;
+    top: 0px;
+    /* transition: width 1s; */
+    background: #e62429;
+    color: #e62429;
+  }
+
+  .main-menu-container-button:hover::after {
+    width: 100%;
+    transition: width 5s;
+    color: #e62429;
+  }
+
+
+
+  /*  .main-menu-container-button::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 6px;
+    background-color: #e62429;
+
+  } */
+
+  /*   .main-menu-container-button:hover {
+    color: #e62429;
+    border-top: 5px solid #e62429;
+
+  }
+ */
   /* MAIN MENU DESKTOP */
 
 
@@ -651,12 +690,49 @@
   }
 
   .cards-title h3 {
+    position: relative;
     font-family: "Roboto Condensed", sans-serif;
     color: #202020;
-    font-weight: 800;
+    /* font-weight: 700; */
+    font-weight: lighter;
     font-size: 26px;
     padding-left: 5px;
+    letter-spacing: 1px;
+    line-height: .9;
   }
+
+  .cards-title h3:before {
+    position: absolute;
+    left: 53px;
+    top: -8px;
+    -webkit-transform-origin: left bottom;
+    transform-origin: left bottom;
+    background-color: #c6a972;
+    content: "";
+    display: block;
+    height: 2px;
+    position: absolute;
+    -webkit-transform: rotate(-45deg) skewX(45deg);
+    transform: rotate(-45deg) skewX(45deg);
+    width: 20px;
+  }
+
+  .cards-title h3:after {
+    position: absolute;
+    left: -6px;
+    top: calc(100% + 3px);
+    -webkit-transform-origin: right top;
+    transform-origin: right top;
+    background-color: #c6a972;
+    content: "";
+    display: block;
+    height: 2px;
+    position: absolute;
+    -webkit-transform: rotate(-45deg) skewX(45deg);
+    transform: rotate(-45deg) skewX(45deg);
+    width: 20px;
+  }
+
 
   .cards-item {
     height: 100%;
@@ -1072,6 +1148,27 @@
     margin-top: 5px;
   }
 
+  .button-latest {
+    display: block;
+    margin: 20px auto;
+    background: transparent;
+    border: 1px solid black;
+    padding: 15px 40px;
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: .5px;
+    clip-path: polygon(14% 0,
+        100% 0,
+        100% 0,
+        100% 65%,
+        87% 100%,
+        0 100%,
+        0 34%);
+    cursor: pointer;
+    outline: none;
+  }
+
   .cards-latest-item-footer {
     display: flex;
     justify-content: space-between;
@@ -1100,6 +1197,8 @@
     /* font-weight: bold; */
   }
 
+
+
   /* TRAILERS */
   .trailers {
     max-width: 1024px;
@@ -1118,7 +1217,6 @@
       grid-template: 35% 35% 30% / 1fr; */
   }
 
-  .trailers-video-head {}
 
   .trailers-video-head iframe {
     width: 100%;
@@ -1508,6 +1606,12 @@
     }
   }
 
+  @media screen and (max-width: 601px) {
+    .footer-part1-img2 img {
+      display: none;
+    }
+  }
+
   @media screen and (min-width: 601px) {
     .hero-container {
       height: 757px;
@@ -1555,6 +1659,14 @@
     .footer-part1 {
       display: flex;
       justify-content: space-around;
+    }
+
+    .footer-part1-img {
+      display: none;
+    }
+
+    .footer-part1-img2 {
+      margin-right: 20px;
     }
 
     .footer-part2 {
@@ -1631,6 +1743,10 @@
 
   @media screen and (min-width: 839px) {
 
+    .main-article1 {
+      width: 1024px;
+    }
+
     .header-mobile,
     .streaming-mobile,
     .hero-container,
@@ -1660,6 +1776,12 @@
       display: flex;
       flex-direction: row-reverse;
       height: auto;
+      clip-path: none;
+    }
+
+    .unlimited-img {
+      width: 70%;
+
     }
 
     .unlimited-img img {
@@ -1667,6 +1789,15 @@
       width: 100%;
       /* height: 280px; */
       object-fit: cover;
+    }
+
+    .unlimited-block {
+      display: none;
+      position: relative;
+      height: inherit;
+      width: 200px;
+      background: indianred;
+      clip-path: polygon(0 0, 32% 30%, 100% 100%, 0% 100%);
     }
 
     .hype-latest-container {
@@ -1735,6 +1866,8 @@
 
   @media screen and (min-width:860px) {
 
+
+
     .main-menu {
       position: relative;
       top: 0;
@@ -1744,17 +1877,20 @@
   @media screen and (min-width: 960px) {
     .main {
       height: 420px;
+
       background: none;
     }
 
     .main-container {
       /* height: 370px; */
       height: inherit;
+      /*   width: 100%; */
       clip-path: polygon(50% 0%, 100% 0, 100% 35%, 100% 90%, 0 100%, 50% 100%, 18% 100%, 0 100%, 0% 35%, 0 0);
     }
 
     .main-article {
       height: 420px;
+
       /* background-position-x: -100px; */
     }
 
@@ -2186,6 +2322,7 @@
 
   <!-- NEW ON MARVEL UNLIMITED-->
   <section class="unlimited">
+    <div class="unlimited-block"></div>
     <div class="unlimited-img">
       <img src="./images/0420_mu_base_set_dsk.jpg" alt="" />
     </div>
@@ -2589,7 +2726,7 @@
                 </div>
               </div>
             </ul>
-            <!--  <button class="button-latest">READ MORE</button> -->
+            <button class="button-latest">LOAD MORE</button>
           </div>
         </div>
       </div>
@@ -2865,6 +3002,9 @@
         <div class="footer-part1">
           <div class="footer-part1-img">
             <img src="./images/marvel-logo-small.png" alt="">
+          </div>
+          <div class="footer-part1-img2">
+            <img src="./images/logo-marvel-M.png" width="80" height="120" alt="">
           </div>
           <div class="footer-part1-titles">
             <div class="footer-part1-titles1">

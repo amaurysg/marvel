@@ -1,319 +1,313 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sliders</title>
-    <link rel="shortcut icon" href="./images/favicon.png" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <style>
-    body {
-      padding: 0;
-      margin: 0;
-      /* background: #202020; */
-      font-family: "Roboto", sans-serif;
-    }
 
-    /* MAIN DESKTOP */
-    /*   .main-container {
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sliders</title>
+  <link rel="shortcut icon" href="./images/favicon.png" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet" />
+</head>
+<style>
+  body {
+    padding: 0;
+    margin: 0;
+    /* background: #202020; */
+    font-family: "Roboto", sans-serif;
+  }
+
+  /* MAIN DESKTOP */
+  /*   .main-container {
     height: 415px;
    
   } */
-    .main-container {
-      /*  height: 385px; */
-      height: 322px;
-    }
+  .main-container {
+    /*  height: 385px; */
+    height: 322px;
+  }
 
-    ul.main-list {
-      height: inherit;
-      position: relative;
-    }
+  ul.main-list {
+    height: inherit;
+    position: relative;
+  }
 
-    ul.main-list li {
-      position: absolute;
-      /* todos los mains encima de otros */
-      transition: opacity 2s;
-      opacity: 0;
-    }
+  ul.main-list li {
+    position: absolute;
+    /* todos los mains encima de otros */
+    transition: opacity 2s;
+    opacity: 1;
+  }
 
-    ul.main-list li:first-child {
-      opacity: 1;
-      /*Mostramos el primer <li>*/
-    }
+  ul.main-list li:first-child {
+    opacity: 1;
+    /*Mostramos el primer <li>*/
+  }
 
-    ul.main-list li:target {
-      opacity: 1;
-      /*Mostramos el <li> del enlace que pulsemos*/
-    }
+  ul.main-list li:target {
+    opacity: 1;
+    /*Mostramos el <li> del enlace que pulsemos*/
+  }
 
-    ul,
-    li {
-      padding: 0;
-      margin: 0;
-      list-style: none;
-    }
+  ul,
+  li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
 
-    .main-article1 {
-      height: inherit;
-      width: 1024px;
-      background: url("images/wolverine_0817_com_mas_dsk_01.jpg"),
-        linear-gradient(to left, transparent, black 120%);
-      background-blend-mode: multiply;
-      /* activo multiples backgrounds */
-      background-repeat: no-repeat;
-      background-size: cover;
-      /* background-position-x: center; */
-      /* background-attachment: fixed; */
-      position: relative;
-    }
+  .main-article1 {
+    height: inherit;
+    /* width: 1024px; */
+    background: url("images/wolverine_0817_com_mas_dsk_01.jpg"),
+      linear-gradient(to left, transparent, black 120%);
+    background-blend-mode: multiply;
+    /* activo multiples backgrounds */
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-position-x: center; */
+    /* background-attachment: fixed; */
+    position: relative;
+  }
 
-    .main-article2 {
-      width: 1024px;
-      background: url("images/ultraman_0710_com_mas_dsk_01.jpg"),
-        linear-gradient(to left, transparent, black 120%);
-      background-blend-mode: multiply;
-      /* activo multiples backgrounds */
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position-x: center;
-      background-attachment: fixed;
-      position: relative;
-    }
+  .main-article2 {
+    /* width: 1024px; */
+    background: url("images/ultraman_0710_com_mas_dsk_01.jpg"),
+      linear-gradient(to left, transparent, black 120%);
+    background-blend-mode: multiply;
+    /* activo multiples backgrounds */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    background-attachment: fixed;
+    position: relative;
+  }
 
-    .main-article3 {
-      width: 1024px;
-      background: url("images/eternals_0819_com_mas_dsk_01.jpg"),
-        linear-gradient(to left, transparent, black 120%);
-      background-blend-mode: multiply;
-      /* activo multiples backgrounds */
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position-x: center;
-      background-attachment: fixed;
-      position: relative;
-    }
+  .main-article3 {
+    width: 1024px;
+    background: url("images/eternals_0819_com_mas_dsk_01.jpg"),
+      linear-gradient(to left, transparent, black 120%);
+    background-blend-mode: multiply;
+    /* activo multiples backgrounds */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    background-attachment: fixed;
+    position: relative;
+  }
 
-    .article-description {
-      width: 50%;
-      /* text-align: center; */
-      padding: 80px 10px 10px 30px;
-    }
+  .article-description {
+    width: 50%;
+    /* text-align: center; */
+    padding: 80px 10px 10px 30px;
+  }
 
-    .article-description-titleOne {
-      position: relative;
-      color: #fff;
-      font-family: "Roboto Condensed", sans-serif;
-      font-weight: bold;
-      font-size: 16px;
-    }
+  .article-description-titleOne {
+    position: relative;
+    color: #fff;
+    font-family: "Roboto Condensed", sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+  }
 
-    .article-description-titleOne::before {
-      left: 53px;
-      top: -8px;
-      -webkit-transform-origin: left bottom;
-      transform-origin: left bottom;
-      background-color: #c6a972;
-      content: "";
-      display: block;
-      height: 2px;
-      position: absolute;
-      -webkit-transform: rotate(-45deg) skewX(45deg);
-      transform: rotate(-45deg) skewX(45deg);
-      width: 34px;
-    }
+  .article-description-titleOne::before {
+    left: 53px;
+    top: -8px;
+    -webkit-transform-origin: left bottom;
+    transform-origin: left bottom;
+    background-color: #c6a972;
+    content: "";
+    display: block;
+    height: 2px;
+    position: absolute;
+    -webkit-transform: rotate(-45deg) skewX(45deg);
+    transform: rotate(-45deg) skewX(45deg);
+    width: 34px;
+  }
 
-    .article-description-titleOne::after {
-      left: -6px;
-      top: calc(100% + 3px);
-      -webkit-transform-origin: right top;
-      transform-origin: right top;
-      background-color: #c6a972;
-      content: "";
-      display: block;
-      height: 2px;
-      position: absolute;
-      -webkit-transform: rotate(-45deg) skewX(45deg);
-      transform: rotate(-45deg) skewX(45deg);
-      width: 34px;
-    }
+  .article-description-titleOne::after {
+    left: -6px;
+    top: calc(100% + 3px);
+    -webkit-transform-origin: right top;
+    transform-origin: right top;
+    background-color: #c6a972;
+    content: "";
+    display: block;
+    height: 2px;
+    position: absolute;
+    -webkit-transform: rotate(-45deg) skewX(45deg);
+    transform: rotate(-45deg) skewX(45deg);
+    width: 34px;
+  }
 
-    .article-description-title {
-      font-family: "Roboto Condensed", sans-serif;
-      letter-spacing: 0.5px;
-      color: #fff;
-      font-size: 44px;
-      font-weight: bold;
-      text-transform: uppercase;
-      margin: 20px 0;
-    }
+  .article-description-title {
+    font-family: "Roboto Condensed", sans-serif;
+    letter-spacing: 0.5px;
+    color: #fff;
+    font-size: 44px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 20px 0;
+  }
 
-    .article-description-copy {
-      font-family: "Roboto", sans-serif;
-      font-size: 16px;
-      color: #fff;
-      margin-top: 20px;
-    }
+  .article-description-copy {
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    color: #fff;
+    margin-top: 20px;
+  }
 
-    .article-description-button {
-      background-color: #e62429;
-      border: none;
-      font-size: 14px;
-      font-weight: bold;
-      padding: 15px 40px;
-      margin-bottom: 15px;
-      color: white;
-      font-family: "Roboto Condensed", sans-serif;
-      padding: 10px 15px;
-      cursor: pointer;
-      outline: none;
-      clip-path: polygon(
-        14% 0,
+  .article-description-button {
+    background-color: #e62429;
+    border: none;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 15px 40px;
+    margin-bottom: 15px;
+    color: white;
+    font-family: "Roboto Condensed", sans-serif;
+    padding: 10px 15px;
+    cursor: pointer;
+    outline: none;
+    clip-path: polygon(14% 0,
         100% 0,
         100% 0,
         100% 65%,
         87% 100%,
         0 100%,
-        0 34%
-      );
-      padding: 15px 40px;
-      margin-top: 20px;
-    }
+        0 34%);
+    padding: 15px 40px;
+    margin-top: 20px;
+  }
 
-    .main-menu {
-      /* display: none; */
-      /*  ESCONDIENDO MENÚ */
-      height: 73px;
-      max-width: 85%;
-      /* border: 1px solid green; */
-      background-color: #fff;
-      position: relative;
-      top: 0px;
-      /* left: 20px; */
-    }
+  .main-menu {
+    display: none;
+    /*  ESCONDIENDO MENÚ */
+    height: 73px;
+    max-width: 85%;
+    /* border: 1px solid green; */
+    background-color: #fff;
+    position: relative;
+    top: 0px;
+    /* left: 20px; */
+  }
 
-    .main-menu-container {
-      text-align: initial;
-      height: inherit;
+  .main-menu-container {
+    text-align: initial;
+    height: inherit;
 
-      margin: 0;
-    }
+    margin: 0;
+  }
 
-    .main-container-list {
-      height: 73px;
-      display: flex;
-      color: #151515;
-      font-weight: bold;
-      list-style: none;
-      margin: 0;
-      box-sizing: border-box;
-      padding-bottom: 10px;
-      padding-left: 20px;
-    }
+  .main-container-list {
+    height: 73px;
+    display: flex;
+    color: #151515;
+    font-weight: bold;
+    list-style: none;
+    margin: 0;
+    box-sizing: border-box;
+    padding-bottom: 10px;
+    padding-left: 20px;
+  }
 
-    .main-menu-container-button {
-      font-family: "Roboto", sans-serif;
-      height: 45px;
-      width: 135px;
-      /* border-top: 5px solid; */
-      padding: 10px 30px 10px 0;
-    }
+  .main-menu-container-button {
+    font-family: "Roboto", sans-serif;
+    height: 45px;
+    width: 135px;
+    /* border-top: 5px solid; */
+    padding: 10px 30px 10px 0;
+  }
 
-    .main-menu-container-button:hover {
-      color: #e62429;
-      border-top: 5px solid #e62429;
-    }
-  </style>
+  .main-menu-container-button:hover {
+    color: #e62429;
+    border-top: 5px solid #e62429;
+  }
+</style>
 
-  <body>
-    <section class="main">
-      <div class="main-container">
-        <ul class="main-list">
-          <li id="main1">
-            <article class="main-article1">
-              <div class="article-description">
-                <div class="article-description-titleOne">
-                  MARVEL COMICS
-                </div>
-                <div class="article-description-title">
-                  Black, White & Blood
-                </div>
-                <div class="article-description-copy">
-                  Some of Marvel's top talent sink their claws into Wolverine in
-                  an all-new series!
-                </div>
-                <button class="article-description-button">LEARN MORE</button>
+<body>
+  <section class="main">
+    <div class="main-container">
+      <ul class="main-list">
+        <li id="main1">
+          <article class="main-article1">
+            <div class="article-description">
+              <div class="article-description-titleOne">
+                MARVEL COMICS
               </div>
-            </article>
-          </li>
-          <li id="main2">
-            <article class="main-article2">
-              <div class="article-description">
-                <div class="article-description-titleOne">
-                  MARVEL COMICS
-                </div>
-                <div class="article-description-title">
-                  Black, White & Blood
-                </div>
-                <div class="article-description-copy">
-                  Some of Marvel's top talent sink their claws into Wolverine in
-                  an all-new series!
-                </div>
-                <button class="article-description-button">LEARN MORE</button>
+              <div class="article-description-title">
+                Black, White & Blood
               </div>
-            </article>
-          </li>
-          <li id="main3">
-            <article class="main-article3">
-              <div class="article-description">
-                <div class="article-description-titleOne">
-                  MARVEL COMICS
-                </div>
-                <div class="article-description-title">
-                  Black, White & Blood
-                </div>
-                <div class="article-description-copy">
-                  Some of Marvel's top talent sink their claws into Wolverine in
-                  an all-new series!
-                </div>
-                <button class="article-description-button">LEARN MORE</button>
+              <div class="article-description-copy">
+                Some of Marvel's top talent sink their claws into Wolverine in
+                an all-new series!
               </div>
-            </article>
-          </li>
-        </ul>
-      </div>
-    </section>
-    <div class="main-menu">
-      <ul class="main-container-list">
-        <li>
-          <a href="#main1">
-            Margaret Stohl on Captain Marvel
-          </a>
+              <button class="article-description-button">LEARN MORE</button>
+            </div>
+          </article>
         </li>
-        <li>
-          <a href="#main2">Eternals #1</a>
+        <li id="main2">
+          <article class="main-article2">
+            <div class="article-description">
+              <div class="article-description-titleOne">
+                MARVEL COMICS
+              </div>
+              <div class="article-description-title">
+                Black, White & Blood
+              </div>
+              <div class="article-description-copy">
+                Some of Marvel's top talent sink their claws into Wolverine in
+                an all-new series!
+              </div>
+              <button class="article-description-button">LEARN MORE</button>
+            </div>
+          </article>
         </li>
-        <li>
-          <a href="#main3">
-            Indigenous Voices #1
-          </a>
-        </li>
-        <li>
-          <a>Black, White & Blood</a>
-        </li>
-        <li>
-          <a>
-            The Rise of Ultraman Trailer
-          </a>
+        <li id="main3">
+          <article class="main-article3">
+            <div class="article-description">
+              <div class="article-description-titleOne">
+                MARVEL COMICS
+              </div>
+              <div class="article-description-title">
+                Black, White & Blood
+              </div>
+              <div class="article-description-copy">
+                Some of Marvel's top talent sink their claws into Wolverine in
+                an all-new series!
+              </div>
+              <button class="article-description-button">LEARN MORE</button>
+            </div>
+          </article>
         </li>
       </ul>
     </div>
-  </body>
+  </section>
+  <div class="main-menu">
+    <ul class="main-container-list">
+      <li>
+        <a href="#main1">
+          Margaret Stohl on Captain Marvel
+        </a>
+      </li>
+      <li>
+        <a href="#main2">Eternals #1</a>
+      </li>
+      <li>
+        <a href="#main3">
+          Indigenous Voices #1
+        </a>
+      </li>
+      <li>
+        <a>Black, White & Blood</a>
+      </li>
+      <li>
+        <a>
+          The Rise of Ultraman Trailer
+        </a>
+      </li>
+    </ul>
+  </div>
+</body>
+
 </html>
