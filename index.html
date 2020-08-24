@@ -9,6 +9,7 @@
   <link rel="shortcut icon" href="./images/favicon.png" />
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./styles/styles.css">
 
   <title>CLONE Marvel.com |</title>
@@ -351,11 +352,12 @@
     top: 250px;
     width: 100vw;
   }
-  .menu::before{
+
+  .menu::before {
     content: "";
-   display: block;
-   height: 9999px;
-   margin-top: -9999px; 
+    display: block;
+    height: 9999px;
+    margin-top: -9999px;
   }
 
   .menu li {
@@ -375,7 +377,7 @@
   .menu li a:hover {
     border-bottom: 5px solid #e62429;
   }
- 
+
 
   ul.hero-slider {
     position: relative;
@@ -406,50 +408,75 @@
   }
 
   /* MAIN DESKTOP */
-  .main-container {
+  /*   .main-container {
     height: 415px;
-    /* border: 1px solid red; */
+   
+  } */
+  .main-container {
+    height: 385px;
   }
 
   .main-article {
     /* height: inherit; */
-    background: url("images/wolverine_0817_com_mas_dsk_01.jpg");
+    background: url("images/wolverine_0817_com_mas_dsk_01.jpg"),linear-gradient( to left,transparent, black 120% );
+    background-blend-mode: multiply; /* activo multiples backgrounds */
     background-repeat: no-repeat;
     background-size: cover;
     background-position-x: center;
-    
+    background-attachment:fixed;
+    position: relative;
 
-      position: relative; 
-        z-index: 1; 
-  }
-  
-
-  .main-article::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    /* background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(255,255,255,1) 100%); */
-  
-   
-    z-index: -1;
   }
 
   .article-description {
-    width: 30%;
+    width: 50%;
     /* text-align: center; */
-    padding: 50px 10px 10px 30px;
+    padding: 80px 10px 10px 30px;
   }
-  
+  .article-description-titleOne{
+    position: relative;
+    color: #fff;
+    font-family: "Roboto Condensed", sans-serif ;
+    font-weight: bold;
+    font-size: 16px;
+  }
+  .article-description-titleOne::before{
+    left: 53px;
+    top: -8px;
+    -webkit-transform-origin: left bottom;
+    transform-origin: left bottom;
+    background-color: #c6a972;
+    content: "";
+    display: block;
+    height: 2px;
+    position: absolute;
+    -webkit-transform: rotate(-45deg) skewX(45deg);
+    transform: rotate(-45deg) skewX(45deg);
+    width: 34px;
+  }
+  .article-description-titleOne::after{
+    left: -6px;
+    top: calc(100% + 3px);
+    -webkit-transform-origin: right top;
+    transform-origin: right top;
+    background-color: #c6a972;
+    content: "";
+    display: block;
+    height: 2px;
+    position: absolute;
+    -webkit-transform: rotate(-45deg) skewX(45deg);
+    transform: rotate(-45deg) skewX(45deg);
+    width: 34px;
+  }
 
   .article-description-title {
     font-family: "Roboto Condensed", sans-serif;
-    letter-spacing: 1px;
+    letter-spacing: .5px;
     color: #fff;
-    font-size: 26px;
+    font-size: 44px;
     font-weight: bold;
+    text-transform: uppercase;
+    margin: 20px 0;
   }
 
   .article-description-copy {
@@ -482,13 +509,15 @@
     margin-top: 20px;
   }
 
+   .main-container-list a {
+    text-decoration: none;
+  }
+
   .main {
     background: #202020;
   }
 
-  .main-container {
-    height: 415px;
-  }
+
 
   .main-menu {
     height: 73px;
@@ -526,13 +555,6 @@
     /* border-top: 5px solid; */
     padding: 10px 30px 10px 0;
   }
-  .main-menu-container-button::before{
-  content: "";
-   display: block;
-   height: 9999px;
-   margin-top: -9999px;
-  }
-
 
   .main-menu-container-button:hover {
     color: #e62429;
@@ -1550,20 +1572,27 @@
   }
 
   @media screen and (min-width: 839px) {
-    .header-mobile {
-      display: none;
-    }
 
-    .streaming-mobile {
-      display: none;
-    }
-
-    .hero-container {
-      display: none;
-    }
-
+    .header-mobile,
+    .streaming-mobile,
+    .hero-container,
     .menu {
       display: none;
+    }
+
+    .main{
+      height: 420px;
+    }
+    .main-container{
+      height: inherit; /* 420px */
+    }
+
+    .main-menu {
+      position: relative;
+      top: 0;
+    }
+    .main-article{
+      height: 405px;
     }
 
     .unlimited {
@@ -1641,35 +1670,40 @@
       margin: 5px 10px 0 0;
     }
 
-    .nav4 {
-      color: blue;
+  }
+
+  @media screen and (min-width:860px) {
+
+    .main-menu {
+      position: relative;
+      top: 0;
     }
   }
 
   @media screen and (min-width: 960px) {
     .main {
-      background: none;
-
+    height: 420px;
+    background: none; 
     }
-
+    .main-container {
+     /* height: 370px; */
+     height: inherit;
+     clip-path: polygon(50% 0%, 100% 0, 100% 35%, 100% 90%, 0 100%, 50% 100%, 18% 100%, 0 100%, 0% 35%, 0 0);
+    }
+    
     .main-article {
-      height: inherit;
-      background-position-x: -100px;
+      height: 420px;
+      /* background-position-x: -100px; */
     }
 
     .article-description {
-      padding: 30px 10px 10px 30px;
+      padding: 80px 10px 10px 30px;
     }
 
-    .main-container {
-      clip-path: polygon(50% 0%, 100% 0, 100% 35%, 100% 91%, 0 100%, 50% 100%, 21% 100%, 0 100%, 0% 35%, 0 0);
-    }
 
     .main-menu {
-      top: -50px
+      top: -60px
     }
-
-
   }
 </style>
 
@@ -1868,55 +1902,72 @@
   <!--  Menú del Slider -->
   <ul class="menu">
     <li>
-      <a href="#slider1" ></a>
+      <a href="#slider1"></a>
     </li>
     <li>
-      <a href="#slider2" ></a>
+      <a href="#slider2"></a>
     </li>
     <li>
-      <a href="#slider3" ></a>
+      <a href="#slider3"></a>
     </li>
     <li>
-      <a href="#slider4" ></a>
+      <a href="#slider4"></a>
     </li>
     <li>
-      <a href="#slider5" ></a>
+      <a href="#slider5"></a>
     </li>
   </ul>
   <!-- MAIN DESKTOP -->
   <section class="main">
-    
+
     <div class="main-container">
       <ul>
         <li id="main1">
           <article class="main-article">
             <div class="article-description">
-              <div class="article-description-img">
-                <img src="./images/mcocss2020_lob_log_eye_01.png" alt="" />
+              <div class="article-description-titleOne">
+                MARVEL COMICS
               </div>
               <div class="article-description-title">
-                SUMMONER SHOWDOWN IS BACK!
+                Black, White & Blood
               </div>
               <div class="article-description-copy">
-                3 regions. 3 rounds. 9 contestants. Find out how you can compete
-                in the 2020 Marvel Contest of Champions Summoner Showdown!
+                  Some of Marvel's top talent sink their claws into Wolverine in an all-new series!
               </div>
               <button class="article-description-button">LEARN MORE</button>
             </div>
           </article>
-
         </li>
-      </ul> 
+ <!--       <li id="main2">
+          <article class="main-article">
+            <div class="article-description">
+              <div class="article-description-titleOne">
+                MARVEL COMICS
+              </div>
+              <div class="article-description-title">
+                Black, White & Blood
+              </div>
+              <div class="article-description-copy">
+                  Some of Marvel's top talent sink their claws into Wolverine in an all-new series!
+              </div>
+              <button class="article-description-button">LEARN MORE</button>
+            </div>
+          </article>
+        </li> -->
+
+
+
+      </ul>
     </div>
   </section>
   <!-- MAIN MENU DESKTOP -->
   <div class="main-menu">
     <div class="main-menu-container">
       <ul class="main-container-list">
-        <a class="main-menu-container-button" target="_parent" href="#main1" >
+        <a class="main-menu-container-button" target="_parent" href="#main1">
           Margaret Stohl on Captain Marvel
         </a>
-        <li class="main-menu-container-button" >Eternals #1</li>
+        <li class="main-menu-container-button">Eternals #1</li>
         <li class="main-menu-container-button">Indigenous Voices #1</li>
         <li class="main-menu-container-button">Black, White & Blood</li>
         <li class="main-menu-container-button">
