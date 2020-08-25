@@ -449,7 +449,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position-x: center;
-    background-attachment: fixed;
+    /*  background-attachment: fixed; */
     position: relative;
   }
 
@@ -463,7 +463,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position-x: center;
-    background-attachment: fixed;
+    /*  background-attachment: fixed; */
     position: relative;
   }
 
@@ -477,7 +477,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position-x: center;
-    background-attachment: fixed;
+    /*  background-attachment: fixed; */
     position: relative;
   }
 
@@ -786,11 +786,27 @@
         0% 70%,
         0% 35%,
         0 0);
+    overflow: hidden;
   }
 
-  .unlimited-img {
+  .unlimited-img img {
+    position: relative;
     /* height: 35%; */
   }
+
+  /*  .unlimited-img:before {
+    border-bottom: 493px solid #151515;
+    border-right: 160px solid transparent;
+    content: "";
+    height: 0;
+    left: 39.99%;
+    position: absolute;
+    -webkit-transition: .5s ease;
+    transition: .5s ease;
+    width: 0;
+    z-index: 1;
+    display: block;
+  } */
 
   .unlimited-img img {
     width: 100%;
@@ -798,8 +814,28 @@
     object-fit: cover;
   }
 
+
+
   .unlimited-main-container {
     padding: 60px 30px 80px;
+    position: relative;
+    /*   overflow: hidden; */
+  }
+
+  .unlimited-main-container:before {
+    border-bottom: 500px solid #151515;
+    border-right: 160px solid transparent;
+    content: "";
+    height: 0;
+    top: 0;
+    left: 100%;
+    position: absolute;
+    -webkit-transition: .5s ease;
+    transition: .5s ease;
+    width: 0;
+    z-index: 1;
+    display: block;
+
   }
 
   .unlimited-title-small {
@@ -1087,6 +1123,39 @@
   .latest-title {
     font-family: "Roboto Condensed", sans-serif;
     font-size: 26px;
+    position: relative;
+  }
+
+  .latest-title p:before {
+    position: absolute;
+    left: 53px;
+    top: -8px;
+    -webkit-transform-origin: left bottom;
+    transform-origin: left bottom;
+    background-color: #c6a972;
+    content: "";
+    display: block;
+    height: 2px;
+    position: absolute;
+    -webkit-transform: rotate(-45deg) skewX(45deg);
+    transform: rotate(-45deg) skewX(45deg);
+    width: 20px;
+  }
+
+  .latest-title p:after {
+    position: absolute;
+    left: -6px;
+    top: calc(100% + 3px);
+    -webkit-transform-origin: right top;
+    transform-origin: right top;
+    background-color: #c6a972;
+    content: "";
+    display: block;
+    height: 2px;
+    position: absolute;
+    -webkit-transform: rotate(-45deg) skewX(45deg);
+    transform: rotate(-45deg) skewX(45deg);
+    width: 20px;
   }
 
   .cards-latest {
@@ -1818,7 +1887,12 @@
     }
 
     .mastercard {
+      height: 300px;
       padding-bottom: none;
+    }
+
+    .mastercard-img img {
+      height: 290px;
     }
 
     .mastercard-descriptions {
