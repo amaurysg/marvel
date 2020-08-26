@@ -411,7 +411,7 @@ ul.main-list li:target {
 .main-article1 {
   height: 420px;
   width: 1024px;
-  background: url("/images/wolverine_0817_com_mas_dsk_01.jpg"),
+  background-image: url("/images/wolverine_0817_com_mas_dsk_01.jpg"),
     linear-gradient(to left, transparent, black 120%);
   background-blend-mode: multiply;
   /* activo multiples backgrounds */
@@ -426,7 +426,7 @@ ul.main-list li:target {
   height: 420px;
   width: 1024px;
 
-  background: url("/images/ultraman_0710_com_mas_dsk_01.jpg"),
+  background-image: url("/images/ultraman_0710_com_mas_dsk_01.jpg"),
     linear-gradient(to left, transparent, black 120%);
   background-blend-mode: multiply;
   /* activo multiples backgrounds */
@@ -441,7 +441,7 @@ ul.main-list li:target {
   height: 420px;
   width: 1024px;
 
-  background: url("/images/voices_0819_com_mas_dsk_01.jpg"),
+  background-image: url("/images/voices_0819_com_mas_dsk_01.jpg"),
     linear-gradient(to left, transparent, black 120%);
   background-blend-mode: multiply;
   /* activo multiples backgrounds */
@@ -577,7 +577,7 @@ ul.main-list li:target {
 }
 
 .main-menu-container-button:hover {
-  /* color: #e62429; */
+  color: #e62429;
 }
 
 /* EFECTO BORDES  */
