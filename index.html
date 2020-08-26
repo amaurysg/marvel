@@ -263,13 +263,26 @@
 
   .streaming-text {
     font-family: "Roboto Condensed", sans-serif;
-    font-size: 14px;
-    /*  letter-spacing: 0.5px; */
+    font-size: 12px;
+    /*  font-weight: bold; */
+    letter-spacing: .5px;
     margin: 0;
     /* text-align: center; */
     margin-top: 12px;
     color: white;
   }
+
+  .streaming-text-hero {
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin: 0;
+    /* text-align: center; */
+    margin-top: 12px;
+    color: white;
+  }
+
 
   .streaming-img img {
     margin-left: 5px;
@@ -282,7 +295,8 @@
   }
 
   .hero-container {
-    height: 600px;
+    height: 670px;
+    background: #151515;
   }
 
   .hero section {
@@ -291,6 +305,9 @@
 
   .hero-image img {
     width: 100%;
+    object-fit: cover;
+    height: 200px;
+    display: block;
   }
 
   .shield-image {
@@ -311,7 +328,7 @@
   }
 
   .shield-image-antman {
-    background: url("./images/svod_logo_white-homepage.png");
+    background: url("./images/storyboards_lob_log_eye_02.png");
     height: 100px;
     background-repeat: no-repeat;
     /* margin: 20px; */
@@ -338,20 +355,21 @@
   }
 
   .hero-post-container {
-    padding: 0 30px 20px;
+    padding: 20px 30px 20px;
   }
 
   .hero-post-title {
     font-family: "Roboto Condensed", sans-serif;
     color: white;
-
+    text-transform: uppercase;
     font-size: 18px;
     line-height: 1;
-    font-weight: 800;
+    font-weight: bold;
     margin: 0;
   }
 
   .hero-post-title h1 {
+    margin-top: 11px;
     margin-bottom: 11px;
   }
 
@@ -408,7 +426,7 @@
     text-align: center;
     margin: 10px 0;
     position: absolute;
-    top: 250px;
+    top: 275px;
     width: 100vw;
   }
 
@@ -421,12 +439,12 @@
     display: inline-block;
     text-decoration: none;
     padding: 10px;
-    border-bottom: 4px solid #e1e1e1;
+    border-bottom: 3px solid #e1e1e1;
     margin-left: 3px;
   }
 
   .menu li a:hover {
-    border-bottom: 5px solid #e62429;
+    border-bottom: 3px solid #e62429;
   }
 
   ul.hero-slider {
@@ -1668,8 +1686,16 @@
   }
 
   @media screen and (min-width: 375px) {
+    .hero-container {
+      height: 750px;
+    }
+
+    .hero-image img {
+      height: 290px;
+    }
+
     .menu {
-      top: 260px;
+      top: 370px;
     }
 
     .trailers-video-head iframe {
@@ -1699,7 +1725,7 @@
           height: 675px;
         } */
     .menu {
-      top: 330px;
+      top: 370px;
     }
 
     .trailers-video-head iframe {
@@ -1712,23 +1738,31 @@
   }
 
   @media screen and (max-width: 601px) {
+
+
+
     .footer-part1-img2 img {
       display: none;
     }
   }
 
   @media screen and (min-width: 601px) {
+
     .hero-container {
-      height: 757px;
-      background: #202020;
+      height: 800px;
+      background: #151515;
     }
 
     .hero {
       height: 757px;
     }
 
+    .hero-image img {
+      height: 400px;
+    }
+
     .menu {
-      top: 400px;
+      top: 480px;
     }
 
     .trailers-video-head iframe {
@@ -1785,9 +1819,7 @@
   }
 
   @media screen and (min-width: 768px) {
-    .menu {
-      top: 465px;
-    }
+
 
     .trailers-video-head iframe {
       height: 330px;
@@ -2100,21 +2132,19 @@
       <li id="slider1">
         <article class="hero" id="slider1">
           <div class="hero-image">
-            <img class="" src="./images/mcocss_0727_com_mas_mob_01.jpg" alt="" />
+            <img class="" src="./images/wolverine_0817_com_mas_dsk_01.jpg" alt="" />
           </div>
           <div class="hero-post-container">
-            <div class="shield-image">
+            <!--             <div class="shield-image">
               <img src="" alt="" />
-            </div>
-            <p class="streaming-text">START STREAMING NOW</p>
+            </div> -->
+            <p class="streaming-text-hero">MARVEL COMICS</p>
             <div class="hero-post-title  ">
-              <h1>SUMMONER SHOWDOWN IS BACK!</h1>
+              <h1>Black, White & Blood</h1>
             </div>
             <div class="hero-post-copy">
               <p>
-                3 regions. 3 rounds. 9 contestants. Find out how you can
-                compete in the 2020 Marvel Contest of Champions Summoner
-                Showdown!
+                Some of Marvel's top talent sink their claws into Wolverine in an all-new series!
               </p>
             </div>
             <button class="hero-btn">LEARN MORE</button>
@@ -2124,29 +2154,29 @@
       <li id="slider2">
         <article class="hero" id="slider2">
           <div class="hero-image">
-            <img src="./images/avengers_0729_com_mas_mob_01.jpg" alt="" />
+            <img src="./images/etu_0825_com_mas_mob_01.jpg" alt="" />
           </div>
           <div class="hero-post-container">
-            <div class="shield-image-avengers">
+            <!--             <div class="shield-image-avengers">
               <img src="" alt="" />
-            </div>
+            </div> -->
+            <p class="streaming-text-hero">EAT THE UNIVERSE</p>
             <div class="hero-post-title">
-              <h1>HAWKEYE JOINS THE FIGHT</h1>
+              <h1>Wolverine Kebabs!</h1>
             </div>
             <div class="hero-post-copy">
               <p>
-                The latest Marvel's Avengers War Table revealed the latest
-                playable character-the highly requested Hawkeye!
+                Check out this end of summer recipe and more in our Eat the Universe Cookbook!
               </p>
             </div>
-            <button class="hero-btn">LEARN MORE</button>
+            <button class="hero-btn">READ MORE</button>
           </div>
         </article>
       </li>
       <li id="slider3">
         <article class="hero" id="slider3">
           <div class="hero-image">
-            <img src="./images/antmanandwasp_lob_mas_mob_02.jpg" alt="" />
+            <img src="./images/storyboards_0819_com_mas_mob_01.jpg" alt="" />
           </div>
           <div class="hero-post-container">
             <div class="shield-image-antman">
