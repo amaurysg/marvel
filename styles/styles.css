@@ -227,7 +227,7 @@ body {
 }
 
 .shield-image {
-  background: url("images/mcocss2020_lob_log_eye_01.png");
+  background-image: url("/images/mcocss2020_lob_log_eye_01.png");
   height: 100px;
   background-repeat: no-repeat;
   /* margin: 20px; */
@@ -235,7 +235,7 @@ body {
 }
 
 .shield-image-avengers {
-  background: url("./images/marvelsavengers_lob_log_eye_01_1_0.png");
+  background-image: url("/images/marvelsavengers_lob_log_eye_01_1_0.png");
   height: 100px;
   background-repeat: no-repeat;
   /* margin: 20px; */
@@ -244,14 +244,29 @@ body {
 }
 
 .shield-image-antman {
-  background: url("./images/svod_logo_white-homepage.png");
+  background-image: url("/images/svod_logo_white-homepage.png");
   height: 100px;
   background-repeat: no-repeat;
   /* margin: 20px; */
   margin-top: 30px;
   background-size: contain;
 }
-
+.shield-image-empyre {
+  background-image: url("/images/empyre_lob_log_eye_01.png");
+  height: 100px;
+  background-repeat: no-repeat;
+  /* margin: 20px; */
+  margin-top: 30px;
+  background-size: contain;
+}
+.shield-image-story {
+  background-image: url("/images/storyboards_lob_log_eye_02.png");
+  height: 100px;
+  background-repeat: no-repeat;
+  /* margin: 20px; */
+  margin-top: 30px;
+  background-size: contain;
+}
 .hero-post-container {
   padding: 0 30px 20px;
 }
