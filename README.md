@@ -17,4 +17,4 @@ Clone page web Marvel, Espero les guste :)
 gh-pages -> https://amaurysg.github.io/marvel/
 <img src="./captures/capture1-desktop.png" alt="Capture 1"/>
 
-<img src="./captures/amaurysg.github.io_marvel_.png" width="50%" alt="Capture 2"/>
+<img src="./captures/capture-mobile-end.png" width="50%" alt="Capture 2" center/>
