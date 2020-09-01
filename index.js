@@ -23,20 +23,12 @@ function hideShow() {
 /* const close = document.getElementById("close-svg");
 close.addEventListener("click", closeMenu); */
 
-var mySVG = document.getElementById("close-svg");
+var mySVG = document.querySelector(".close-svg");
 var svgDoc;
-mySVG.addEventListener(
-  "click",
-  function (event) {
-    svgDoc = mySVG.contentDocument;
-    /*  svgDoc.classList.remove("is-active"); */
-    menu.classList.remove("is-active");
-    alert("SVG contentDocument Loaded!");
-    event.stopPropagation();
-  },
-
-  false
-);
+mySVG.addEventListener("click", function () {
+  svgDoc = mySVG.contentDocument;
+  menu.classList.remove("is-active");
+});
 
 /* 
 function closeMenu(e) {

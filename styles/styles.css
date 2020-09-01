@@ -82,7 +82,7 @@ header {
   width: 100vw;
   bottom: 0;
   height: 100vw; /*A partir de aqui para centrar*/
-  padding-top: 30px;
+  padding-top: 20px;
   /* align-items: center; */
   justify-content: center; /* centrar hasta aqui */
   transition: 0.3s;
@@ -95,7 +95,7 @@ header {
   margin-left: 30px;
 }
 .menuLeft-list {
-  padding: 30px 15px 30px 30px;
+  padding: 30px 15px 31px 30px;
 }
 .menuLeft-list-item a {
   display: flex;
@@ -115,9 +115,9 @@ header {
   color: #e62429;
   margin: 0;
 }
-.close {
+div.close-svg {
   background-color: #151515;
-  padding: 20px 30px;
+  padding-left: 30px;
 }
 svg.svg-close {
   font: 400 16px/1.3 Roboto, Trebuchet MS, Helvetica, Arial, sans-serif;
