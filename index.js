@@ -40,11 +40,40 @@ function abrirDerecha() {
   der1.classList.add("is-active");
 }
 
+const der2 = document.getElementById("characters");
+der2.addEventListener("click", abrirCharacters);
+
+const menuCharacters = document.querySelector(".menu-der2");
+function abrirCharacters() {
+  menuCharacters.classList.add("is-active");
+}
+const der3 = document.getElementById("comics");
+der3.addEventListener("click", abrirComics);
+
+const menuComics = document.querySelector(".menu-der3");
+function abrirComics() {
+  menuComics.classList.add("is-active");
+}
+
 const closeMenuSecond = document.getElementById("menu-der1-title");
 closeMenuSecond.addEventListener("click", closeMenuSecundarios);
 
 function closeMenuSecundarios() {
   der1.classList.remove("is-active");
+}
+
+const $menuCharacters = document.getElementById("menu-der2-title");
+$menuCharacters.addEventListener("click", closeMenuCharacters);
+
+function closeMenuCharacters() {
+  menuCharacters.classList.remove("is-active");
+}
+
+const $menuComics = document.getElementById("menu-der3-title");
+$menuComics.addEventListener("click", closeMenuComics);
+
+function closeMenuComics() {
+  menuComics.classList.remove("is-active");
 }
 
 //FUNCION DE TESTE
