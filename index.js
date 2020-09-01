@@ -20,12 +20,32 @@ function hideShow() {
   }
 }
 //CERRAR MENÚ//
-const close = document.getElementById("close");
-close.addEventListener("click", closeMenu);
+/* const close = document.getElementById("close-svg");
+close.addEventListener("click", closeMenu); */
 
-function closeMenu() {
+var mySVG = document.getElementById("close-svg");
+var svgDoc;
+mySVG.addEventListener(
+  "click",
+  function (event) {
+    svgDoc = mySVG.contentDocument;
+    /*  svgDoc.classList.remove("is-active"); */
+    menu.classList.remove("is-active");
+    alert("SVG contentDocument Loaded!");
+    event.stopPropagation();
+  },
+
+  false
+);
+
+/* 
+function closeMenu(e) {
+  alert("Hola");
   menu.classList.remove("is-active");
-}
+
+} */
+/* 
+const svgObject = document.getElementById("close-svg").contentDocument; */
 
 /*  const menul = document.getElementById("menu-left");
    menul.addEventListener("click", function () {
