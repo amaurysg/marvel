@@ -20,40 +20,34 @@ function hideShow() {
   }
 }
 //CERRAR MENÚ//
-/* const close = document.getElementById("close-svg");
-close.addEventListener("click", closeMenu); */
+const mySVG = document.querySelector(".close-svg");
+mySVG.addEventListener("click", closeMenu);
 
-var mySVG = document.querySelector(".close-svg");
-var svgDoc;
-mySVG.addEventListener("click", function () {
-  svgDoc = mySVG.contentDocument;
+function closeMenu() {
   menu.classList.remove("is-active");
-});
+}
 
-/* 
-function closeMenu(e) {
-  alert("Hola");
-  menu.classList.remove("is-active");
+//PROBANDO ARROW //
 
-} */
-/* 
-const svgObject = document.getElementById("close-svg").contentDocument; */
+/* const flecha1 = document.getElementById("svg-arrow");
+flecha1.addEventListener("click", teste); */
 
-/*  const menul = document.getElementById("menu-left");
-   menul.addEventListener("click", function () {
-     const menuDesple = document.getElementById("menu-desple");
-     if (menuDesple.style.display == "none") {
-       menuDesple.style.display = "block";
-       menuDesple.style.left = "0";
-     } else {
-       menuDesple.style.display = "none"
+const newFlecha = document.querySelector(".svg-arrow");
+newFlecha.addEventListener("click", abrirDerecha);
 
-     }
+const der1 = document.querySelector(".menu-der1");
+function abrirDerecha() {
+  der1.classList.add("is-active");
+}
 
-   });
+const closeMenuSecond = document.getElementById("menu-der1-title");
+closeMenuSecond.addEventListener("click", closeMenuSecundarios);
 
-   const botonCerrar = document.getElementById("cerrar");
-   botonCerrar.addEventListener("click", () => {
-     menuDesple.style.display = "block"
-   }
-   ) */
+function closeMenuSecundarios() {
+  der1.classList.remove("is-active");
+}
+
+//FUNCION DE TESTE
+function teste() {
+  alert("Función teste");
+}
