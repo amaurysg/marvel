@@ -604,7 +604,7 @@ svg.svg-arrow {
 }
 
 .shield-image-antman {
-  background: url("./images/storyboards_lob_log_eye_02.png");
+  background: url("/images/storyboards_lob_log_eye_02.png");
   height: 100px;
   background-repeat: no-repeat;
   /* margin: 20px; */
