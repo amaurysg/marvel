@@ -3,9 +3,10 @@ const menu = document.getElementById("menuLeft");
 const burgerButton = document.getElementById("burger-menu");
 
 ipad.addListener(validation);
-
+//VALIDACION DE MEDIAQUERY
 function validation(evento) {
   if (evento.matches) {
+    /*  console.log(evento); */
     burgerButton.addEventListener("click", hideShow);
   } else burgerButton.removeEventListener("click", hideShow);
   console.log(evento.matches);
@@ -135,7 +136,7 @@ der7.addEventListener("click", abrirNews);
 
 const menuNews = document.querySelector(".menu-der7");
 function abrirNews() {
-  menuNews.classList.add("is-active");
+  menuNews.classList.toggle("is-active");
 }
 
 /* CERRAR MENU NEWS */
@@ -143,7 +144,7 @@ const $menuNews = document.getElementById("menu-der7-title");
 $menuNews.addEventListener("click", closeMenuNews);
 
 function closeMenuNews() {
-  menuNews.classList.remove("is-active");
+  menuNews.classList.toggle("is-active");
 }
 
 //FUNCION DE TESTE

@@ -210,13 +210,16 @@ header {
   bottom: 0;
   height: 100vw; /*A partir de aqui para centrar*/
   padding-top: 20px;
+
   /* align-items: center; */
   justify-content: center; /* centrar hasta aqui */
   transition: 0.3s;
 }
 .menuLeft.is-active {
   left: 0;
-  height: 100vh;
+  height: 1235px; /* DUDA  */
+  display: block;
+  padding-bottom: 100px;
 }
 .btn-close {
   margin-left: 30px;
@@ -286,6 +289,76 @@ svg.svg-arrow {
   -webkit-font-smoothing: antialiased;
   transition: width 0.15s 0.5s;
   stroke-width: 2px;
+}
+.menuLeft-insider-container {
+  background-color: #151515;
+  padding: 30px 15px 30px 30px;
+  border-top: 1px solid #393939;
+}
+
+.menuLeft-insider-container-title {
+  font-size: 12px;
+  font-family: "Roboto Condensed", sans-serif;
+  color: #e8b63e;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+}
+.menuLeft-insider-container-list-item {
+  padding: 15px 0;
+}
+.menuLeft-icons {
+  background-color: #151515;
+  border-top: 1px solid #393939;
+}
+.menuLeft-icons-container {
+  padding: 30px 15px 30px 30px;
+}
+.menuLeft-icons-list {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  padding-bottom: 30px;
+}
+.menuLeft-icons-list-item img {
+  width: 18px;
+  height: 18px;
+  margin: 0 6px;
+}
+
+.menuLeft-marvelMaster {
+  background-color: #ffffff;
+}
+.menuLeft-marvelMaster-container {
+  padding: 30px 15px 30px 30px;
+}
+.menuLeft-marvelMaster-item {
+  display: flex;
+  margin-bottom: 38px;
+}
+.menuLeft-marvelMaster-item figure {
+  margin: 0 20px 0 0;
+}
+.marvelMaster-description-title {
+  font-family: "Roboto Condensed", Trebuchet MS, Helvetica, Arial, sans-serif;
+  font-size: 13px;
+  text-transform: uppercase;
+  line-height: 1em;
+  letter-spacing: 1px;
+  color: #000;
+  margin-bottom: 5px;
+  font-weight: bold;
+  margin-top: 0;
+}
+
+.marvelMaster-description-copy {
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  color: #999;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .header-container {
