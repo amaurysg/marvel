@@ -156,14 +156,14 @@ function teste() {
 
 var ListSubMenu = document.querySelectorAll(".nav2-list-item");
 
-ListSubMenu.forEach((link) => {
-  link.addEventListener("mouseenter", () => {
-    link.classList.toggle("is-active");
-    link.children[1].classList.toggle("is-active");
+ListSubMenu.forEach((event) => {
+  event.addEventListener("mouseenter", () => {
+    event.classList.toggle("is-active");
+    event.children[1].classList.toggle("is-active");
   });
-  link.addEventListener("mouseleave", () => {
-    link.classList.toggle("is-active");
-    link.children[1].classList.toggle("is-active");
+  event.addEventListener("mouseleave", () => {
+    event.classList.toggle("is-active");
+    event.children[1].classList.toggle("is-active");
   });
 });
 

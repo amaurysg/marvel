@@ -333,6 +333,21 @@ svg.svg-arrow {
 .menuLeft-marvelMaster-container {
   padding: 30px 15px 30px 30px;
 }
+.menuLeft-marvelMaster-container.submenu {
+  display: flex;
+  padding: 0;
+}
+.menuLeft-marvelMaster-item.submenu {
+  margin: 0;
+}
+
+.menuLeft-marvelMaster-item-submenu-figure {
+  margin: 0;
+}
+.marvelMaster-description-copy {
+  text-transform: none;
+}
+
 .menuLeft-marvelMaster-item {
   display: flex;
   margin-bottom: 38px;
@@ -350,6 +365,9 @@ svg.svg-arrow {
   margin-bottom: 5px;
   font-weight: bold;
   margin-top: 0;
+}
+.marvelMaster-description-title.hola {
+  color: yellow;
 }
 
 .marvelMaster-description-copy {
@@ -633,12 +651,82 @@ svg.svg-arrow {
   display: flex;
   overflow: hidden; */
 }
+.submenu-listTwo-post-list-new {
+  display: grid;
+  grid-template-columns: repeat(4, 17%);
+  justify-content: center;
+}
+.submenu-listTwo-post-list-item-container {
+  display: grid;
+}
+
+.submenu-listTwo-post-description-container {
+  padding: 20px 30px 0 0;
+}
+.submenu-listTwo-post-list-item-title-news {
+  color: #999;
+  text-align: left;
+  margin: 0;
+  font-size: 14px;
+  line-height: 1;
+  letter-spacing: 1px;
+}
+.submenu-listTwo-post-copy-news {
+  font-size: 15px;
+  color: #151515;
+  text-align: left;
+  text-transform: none;
+  margin: 8px 0 0 0;
+}
+.submenu-listTwo-post-copy-news:hover {
+  color: #e62429;
+}
+
+.submenu-listOne-more-list {
+  display: flex;
+  justify-content: center;
+  padding: 126px 0;
+}
+.submenu-listOne-more-item a {
+  color: #151515;
+  margin-left: 60px;
+  font-size: 26px;
+  letter-spacing: 2px;
+  line-height: 1;
+}
+.submenu-listOne-more-item a:hover {
+  color: #e62429;
+}
+.footer-submenu-more-container {
+  padding: 0 40px 0 20px;
+  display: flex;
+  justify-content: center;
+}
+.footer-submenu-more-list {
+  align-self: center;
+  margin-right: 40px;
+}
+.footer-submenu-more-list-icons {
+  display: flex;
+  justify-content: flex-start;
+}
+.footer-submenu-more-list-icons-item img {
+  width: 18px;
+
+  margin: 0 10px;
+}
+
+.footer-submenu-more-container {
+  /*  padding: 0 200px; */
+}
+
 .submenu-listTwo-post-list-item {
   overflow: hidden;
   margin: 0 8px;
 }
 .submenu-listTwo-post-list-item img {
   width: 100%;
+
   object-position: cover;
   box-shadow: 0 2px 30px 0 rgba(0, 0, 0, 0.2);
 }
@@ -690,6 +778,9 @@ svg.svg-arrow {
   margin-left: 20px;
   font-size: 12px;
   font-family: "Roboto Condensed", sans-serif;
+}
+.footer-submenu-list-item:hover {
+  color: #e62429;
 }
 
 .streaming-mobile,
