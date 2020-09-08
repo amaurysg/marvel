@@ -574,27 +574,29 @@ svg.svg-arrow {
 
 /* //SUBMENUS// */
 .submenuItem {
-  display: grid;
-  grid-template-rows: 100%;
-  grid-template-columns: 100%;
   position: absolute;
-  background: white;
-  color: black;
-  height: auto;
-  width: 100%;
-  top: 101%;
-  z-index: 50;
+  z-index: -1;
   left: 0;
-  right: 0;
-  margin: 0 auto;
-  transition: 0.5s;
+  display: grid;
+  width: 100%;
+  background-color: white;
+  grid-template-columns: 100%;
+  grid-template-rows: 100%;
+  top: 100%;
+  padding: 0;
   opacity: 0;
+  visibility: hidden; /* Oculta, evito el replicamiento  */
+  height: auto;
+  box-shadow: 0 2px 30px 0 rgba(0, 0, 0, 0.2);
   transition-property: opacity, visibility, height;
   transition-duration: 0.25s;
-  box-shadow: 0 2px 30px 0 rgba(0, 0, 0, 0.2);
+  transition-timing-function: ease-in-out;
 }
+
 .submenuItem.is-active {
+  visibility: visible;
   opacity: 1;
+  z-index: 1;
 }
 /* .submenuMovies.is-active {
   opacity: 1;
@@ -775,6 +777,7 @@ svg.svg-arrow {
   align-items: center;
 }
 .footer-submenu-list-item {
+  color: #151515;
   margin-left: 20px;
   font-size: 12px;
   font-family: "Roboto Condensed", sans-serif;
