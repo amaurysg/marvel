@@ -151,3 +151,32 @@ function closeMenuNews() {
 function teste() {
   alert("Función teste");
 }
+
+//<<<<---- SUBMENUS ---->>>> //
+
+var ListSubMenu = document.querySelectorAll(".nav2-list-item");
+
+ListSubMenu.forEach((link) => {
+  link.addEventListener("mouseenter", () => {
+    link.classList.toggle("is-active");
+    link.children[1].classList.toggle("is-active");
+  });
+  link.addEventListener("mouseleave", () => {
+    link.classList.toggle("is-active");
+    link.children[1].classList.toggle("is-active");
+  });
+});
+
+/* var $submenuMovies = document.querySelector(".nav2-list-item-a"); */
+
+/* $submenuComics.addEventListener("click", openSubmenuComics);
+$submenuMovies.addEventListener("click", openSubmenuMovies);
+
+var $classSubmenuComics = document.querySelector(".submenuComics");
+var $classSubmenuMovies = document.querySelector(".submenuMovies");
+
+function openSubmenuComics() {
+  $classSubmenuComics.classList.add("is-active");
+}
+function openSubmenuMovies() {
+  $classSubmenuMovies.classList.add("is-active"); */
