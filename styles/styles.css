@@ -678,12 +678,26 @@ svg.svg-arrow {
   overflow: hidden;
   height: 185px;
 }
+.submenu-character-img-container::after {
+  height: 4px;
+  content: "";
+  background-color: #e62429;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
 .submenu-character-img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   object-position: center center;
 }
+.submenu-character-img:hover {
+  /*  object-position: top c; */
+}
+
 .submenu-character-description {
   font-family: "Roboto", Trebuchet MS, Helvetica, Arial, sans-serif;
   font-size: 16px;
@@ -797,6 +811,10 @@ svg.svg-arrow {
   font-size: 14px;
   line-height: 1;
   letter-spacing: 1px;
+}
+
+.submenu-listTwo-post-list-item-title-news.videos {
+  color: #e62429;
 }
 .submenu-listTwo-post-copy-news {
   font-size: 15px;
@@ -1845,7 +1863,8 @@ ul.main-list li:target {
 
 /* HYPE - LATEST */
 .hype-latest {
-  max-width: 1024px;
+  margin: 0 auto;
+  max-width: 1240px;
   padding-top: 20px;
   /* height: 100vh; */
 }
