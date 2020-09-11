@@ -180,3 +180,15 @@ function openSubmenuComics() {
 }
 function openSubmenuMovies() {
   $classSubmenuMovies.classList.add("is-active"); */
+
+const $botonSignIn = document.getElementById("sign-in");
+const $botonJoin = document.getElementById("join");
+
+$botonSignIn.addEventListener("click", teste);
+$botonJoin.addEventListener("click", openJoin);
+
+const $classJoinFirst = document.querySelector(".join-first");
+
+function openJoin() {
+  $classJoinFirst.classList.toggle("is-active");
+}
