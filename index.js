@@ -167,6 +167,13 @@ ListSubMenu.forEach((event) => {
   });
 });
 
+/*   event.addEventListener("mouseenter", () => {
+    event.classList.toggle("is-active"); */
+
+/*  event.addEventListener("mouseleave", () => {
+    event.classList.toggle("is-active");
+  }); */
+
 /* var $submenuMovies = document.querySelector(".nav2-list-item-a"); */
 
 /* $submenuComics.addEventListener("click", openSubmenuComics);
@@ -185,10 +192,14 @@ const $botonSignIn = document.getElementById("sign-in");
 const $botonJoin = document.getElementById("join");
 
 $botonSignIn.addEventListener("click", teste);
-$botonJoin.addEventListener("click", openJoin);
+$botonJoin.addEventListener("click", openCloseJoin);
 
 const $classJoinFirst = document.querySelector(".join-first");
+const $classJoinModal = document.querySelector(".join-first.is-active");
 
-function openJoin() {
+function openCloseJoin() {
   $classJoinFirst.classList.toggle("is-active");
+  $classJoinFirst.addEventListener("click", () => {
+    $classJoinFirst.classList.remove("is-active");
+  });
 }

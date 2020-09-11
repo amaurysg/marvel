@@ -428,6 +428,7 @@ svg.svg-arrow {
   text-decoration: none;
   text-transform: uppercase;
   padding: 0 4px;
+  cursor: pointer;
 }
 .join-first {
   background: black;
