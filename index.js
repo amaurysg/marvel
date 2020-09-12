@@ -190,9 +190,11 @@ function openSubmenuMovies() {
 
 const $botonSignIn = document.getElementById("sign-in");
 const $botonJoin = document.getElementById("join");
+const $botonCloseSign = document.getElementById("boton-sign-close");
 
-$botonSignIn.addEventListener("click", teste);
+$botonSignIn.addEventListener("click", openCloseSign);
 $botonJoin.addEventListener("click", openCloseJoin);
+$botonCloseSign.addEventListener("click", closeSign);
 
 const $classJoinFirst = document.querySelector(".join-first");
 const $classJoinModal = document.querySelector(".join-first.is-active");
@@ -203,3 +205,32 @@ function openCloseJoin() {
     $classJoinFirst.classList.remove("is-active");
   });
 }
+
+const $classModalSign = document.getElementById("modal-sign");
+function openCloseSign() {
+  $classModalSign.classList.toggle("is-active");
+}
+
+function closeSign() {
+  $classModalSign.classList.remove("is-active");
+}
+
+/* MODAL CREATE USER  */
+
+const $botonOpenModalCreate = document.getElementById("open-modal-create");
+const $classModalCreate = document.getElementById("modal-create");
+const $botonModalCreateClose = document.getElementById("modalCreate-close");
+const $botonJoinCreate = document.getElementById("boton-join-create");
+
+$botonOpenModalCreate.addEventListener("click", () => {
+  $classModalCreate.classList.add("is-active");
+  closeSign();
+});
+
+$botonModalCreateClose.addEventListener("click", () => {
+  $classModalCreate.classList.remove("is-active");
+});
+
+$botonJoinCreate.addEventListener("click", () => {
+  $classModalCreate.classList.add("is-active");
+});

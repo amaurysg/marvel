@@ -430,6 +430,8 @@ svg.svg-arrow {
   padding: 0 4px;
   cursor: pointer;
 }
+
+/* Pantalla Join */
 .join-first {
   background: black;
   min-width: 400px;
@@ -534,6 +536,70 @@ svg.svg-arrow {
   ); */
 }
 
+.Modal {
+  position: fixed;
+  display: none;
+  opacity: 0;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.85);
+  transition: opacity 300ms;
+  will-change: opacity;
+  z-index: 1;
+  visibility: hidden;
+}
+.Modal.is-active {
+  opacity: 1;
+  display: block;
+  z-index: 1;
+  visibility: visible;
+}
+.modal-create-container {
+  width: 410px;
+  margin: 30px auto;
+}
+.modal-create-box {
+  background: white;
+  box-sizing: border-box;
+  position: relative;
+  overflow: hidden;
+  min-height: 23rem;
+  padding-bottom: 8px;
+}
+
+.modal-create-title {
+  color: #e62429;
+  line-height: 1.2;
+  text-transform: uppercase;
+  font-size: 16.8px;
+  font-family: "Roboto Condensed", sans-serif;
+  text-align: center;
+  font-weight: 400;
+  padding: 0 0 14px;
+  margin-bottom: 5px;
+  -webkit-font-smoothing: initial;
+}
+
+.boton-create-close {
+  cursor: pointer;
+  width: 44px;
+  height: 44px;
+  border: none;
+  padding: 0;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  z-index: 1;
+  background: transparent url("../images/icons/SVG/close.svg") no-repeat center
+    center;
+  background-size: 16px;
+  opacity: 0.8;
+  transition: opacity 0.2s;
+  outline: none;
+}
+
 .join-footer {
   margin-top: 48px;
   font-family: "Roboto", sans-serif;
@@ -543,7 +609,286 @@ svg.svg-arrow {
   text-transform: none;
   color: white;
 }
+/* Pantalla Sign in */
 
+.modal-sign {
+  font-family: "Roboto", Trebuchet MS, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.3;
+  letter-spacing: 0.5px;
+  -webkit-font-smoothing: antialiased;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.85);
+  transition: opacity 300ms;
+  will-change: opacity;
+  opacity: 0;
+  visibility: hidden;
+  display: block;
+  /*   z-index: 1; */
+}
+.modal-sign.is-active {
+  display: block;
+  opacity: 1;
+  visibility: visible;
+  z-index: 4000;
+  overflow: hidden;
+}
+.modal-sign-container {
+  width: 410px;
+  margin: 30px auto;
+}
+.modal-sign-box {
+  background: white;
+  box-sizing: border-box;
+  position: relative;
+  overflow: hidden;
+  min-height: 23rem;
+  padding-bottom: 8px;
+}
+.boton-sign-close {
+  cursor: pointer;
+  width: 44px;
+  height: 44px;
+  border: none;
+  padding: 0;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  z-index: 1;
+  background: transparent url("../images/icons/SVG/close.svg") no-repeat center
+    center;
+  background-size: 16px;
+  opacity: 0.8;
+  transition: opacity 0.2s;
+  outline: none;
+}
+
+.modal-sign-header {
+  margin: 55px 40px 25px;
+}
+.modal-sign-image-container {
+  width: 200px;
+  height: 90px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.modal-sign-image-container img {
+  width: 100%;
+}
+.modal-sign-content-form {
+  margin: 0 40px 25px;
+}
+.modal-sign-form {
+}
+.modal-sign-form-group {
+  margin-bottom: 8px;
+}
+.modal-sign-input {
+  font-family: "Roboto", sans-serif;
+  border: 1px solid #ccc;
+  padding: 0 16px;
+  border-radius: 5px;
+  color: #ccc;
+  line-height: normal;
+  font-size: 14px;
+  outline: 0;
+  height: 42px;
+  width: 100%;
+  box-sizing: border-box;
+}
+.button-sign-group {
+  margin-bottom: 18px;
+}
+.button-sign-group button {
+  width: 100%;
+  background: #e62429;
+  color: white;
+
+  height: 41px;
+  -webkit-mask: none;
+  background-image: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: bold;
+  border: none;
+  outline: none;
+}
+.modal-sign-help {
+  text-align: right;
+  text-decoration: underline;
+  margin-bottom: 12px;
+}
+.modal-sign-help a {
+  color: #e62429;
+  font-size: 14px;
+  line-height: 21px;
+  font-family: "Roboto", sans-serif;
+}
+.modal-sign-register {
+  text-align: center;
+  border-top: 1px solid #ddd;
+  padding: 20px 0 0;
+  margin-top: 36px;
+  margin-bottom: 18px;
+}
+.modal-button-create {
+  display: block;
+  font-family: "Roboto", sans-serif;
+  font-size: 13.2px;
+  font-weight: 700;
+  line-height: 38px;
+  background-color: white;
+  border: 2px solid #5c5c5c;
+  width: 200px;
+  min-width: 42px;
+  max-width: 400px;
+  position: relative;
+  padding: 0 18px;
+  margin: 0 auto;
+  outline: 0 none;
+  text-align: center;
+  border-radius: 0;
+  cursor: pointer;
+  color: #000;
+  text-transform: uppercase;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+.checkbox-group.show-password {
+  padding: 0.2em 0 0;
+  margin-bottom: 18px;
+}
+
+.checkbox-group span:before {
+  content: " ";
+  position: absolute;
+  left: 5px;
+  top: 6px;
+  display: block;
+  text-align: center;
+  background-color: var(--white);
+  border: 1px var(--ligthGray);
+  border-radius: 3px;
+  box-shadow: none;
+  width: 14px;
+  height: 14px;
+  z-index: 1;
+  border-color: transparent;
+}
+.checkbox-group.show-password span {
+  margin: -9px 8px 0;
+}
+.checkbox-group input[type="checkbox"] {
+  display: none;
+}
+.checkbox-group span {
+  display: block;
+  line-height: 1.5;
+  font-size: 14px;
+  color: #5e646b;
+  text-align: left;
+  margin: 0 0 3.5px 10px;
+  -webkit-font-smoothing: initial;
+}
+.checkbox-group input[type="checkbox"]:checked + span:before {
+  transition: background-color 70ms;
+  background: transparent none;
+  background-size: auto;
+  border: 0 none;
+  background-color: #666;
+  border-color: transparent;
+}
+.checkbox-group span:after {
+  content: " ";
+  position: absolute;
+  background-color: var(--white);
+  border: 1px solid #aaa;
+  border-radius: 3px;
+  left: 0;
+  top: 1px;
+  width: 22px;
+  height: 22px;
+  text-align: center;
+}
+.checkbox-group {
+  margin-bottom: 8px;
+}
+.checkbox-group.show-password label {
+  padding: 12px 0 12px 24px;
+}
+
+.checkbox-group label {
+  display: inline-block;
+  position: relative;
+  min-height: 24px;
+  margin: 0;
+  padding-left: 24px;
+  box-sizing: border-box;
+  font-family: "Roboto", Trebuchet MS, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.3;
+  letter-spacing: 0.5px;
+}
+
+.checkbox-group.show-password {
+  padding: 0.2em 0 0;
+  margin-bottom: 18px;
+}
+
+.select-group span {
+  display: block;
+  font-size: 12px;
+  font-weight: 400;
+  font-family: Roboto, sans-serif;
+  line-height: 1.5;
+  color: #5e646b;
+  margin-bottom: 0.25em;
+  -webkit-font-smoothing: initial;
+}
+select.birth-month {
+  width: 36%;
+}
+select.birth-day {
+  width: 27%;
+}
+.select-group select:last-of-type {
+  margin-right: 0;
+}
+
+select.birth-year {
+  width: 29%;
+}
+.select-group select {
+  border: 1px solid #ccc;
+  font-family: Roboto, sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  border-radius: 4px;
+  background: #fff url(../images/icons/SVG/chevron-thin-down.svg) no-repeat
+    right 0.75em center;
+  background-size: 0.75em auto;
+  padding: 0 16px;
+  color: #abb0b8;
+  -webkit-appearance: none;
+  height: 42px;
+  outline: 0;
+  margin-right: 9px;
+}
+
+.section-addresses {
+  margin-left: 30px;
+  padding-top: 18px;
+  display: block;
+}
 .nav1-icon1 {
   margin: auto 0;
 }
