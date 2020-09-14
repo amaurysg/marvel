@@ -549,6 +549,7 @@ svg.svg-arrow {
   will-change: opacity;
   z-index: 1;
   visibility: hidden;
+  overflow: scroll;
 }
 .Modal.is-active {
   opacity: 1;
@@ -843,7 +844,9 @@ svg.svg-arrow {
   padding: 0.2em 0 0;
   margin-bottom: 18px;
 }
-
+.select-group {
+  margin-bottom: 8px;
+}
 .select-group span {
   display: block;
   font-size: 12px;
@@ -889,6 +892,67 @@ select.birth-year {
   padding-top: 18px;
   display: block;
 }
+
+.modal-create-policy {
+  padding-top: 18px;
+}
+.modal-create-policy-copy {
+  font-family: "Roboto", sans-serif;
+  color: #5e646b;
+  margin-bottom: 1em;
+  display: block;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: left;
+  letter-spacing: 0;
+  margin-top: 0;
+  margin-bottom: 1em;
+  -webkit-font-smoothing: initial;
+}
+
+.modal-create-region {
+  padding-top: 18px;
+}
+.modal-create-region-copy {
+  font-family: "Roboto", sans-serif;
+  color: #5e646b;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: left;
+  letter-spacing: 0;
+  margin-bottom: 1em;
+  -webkit-font-smoothing: initial;
+  margin-top: 0;
+  margin-bottom: 1em;
+}
+.modal-create-button-group {
+  padding-top: 8px;
+}
+.modal-create-button-submit {
+  width: 100%;
+  background: #e62429;
+  color: #fff;
+  border: 0;
+  height: 41px;
+  -webkit-mask: none;
+  background-image: none;
+  text-transform: uppercase;
+  font-family: "Roboto", sans-serif;
+}
+.modal-footer-create {
+  margin: 18px 40px 0;
+  text-align: center;
+}
+.modal-footer-create-copy {
+  font-family: "Roboto", sans-serif;
+  color: #5e646b;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0;
+  margin-bottom: 1em;
+  -webkit-font-smoothing: initial;
+}
+
 .nav1-icon1 {
   margin: auto 0;
 }
@@ -899,7 +963,7 @@ select.birth-year {
   margin-right: 8px;
 }
 
-.nav1-sign p {
+/* .nav1-sign p {
   font-family: "Roboto Condensed", sans-serif;
   font-size: 12px;
   font-weight: bold;
@@ -908,7 +972,7 @@ select.birth-year {
   color: #fff;
   margin: auto 0;
   margin-right: ;
-}
+} */
 
 .nav1-logo {
   justify-content: center;
@@ -958,7 +1022,7 @@ select.birth-year {
   font-weight: 800;
   padding: 0 18px;
   /* margin: 0 auto; */
-  cursor: pointer;
+  /* cursor: pointer; */
   list-style: none;
   height: 37px;
   user-select: none;
