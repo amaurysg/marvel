@@ -1978,6 +1978,10 @@ ul.main-list li:target {
   background: #202020;
 }
 
+.wrapper-menu-main {
+  max-width: 1240px;
+  margin: 0 auto;
+}
 .main-menu {
   height: 73px;
   max-width: 85%;
@@ -1986,6 +1990,9 @@ ul.main-list li:target {
   position: relative;
   /*    top: 10px; */
   /* left: 20px; */
+
+  max-width: 1240px;
+  margin: 0 auto;
 }
 
 .main-menu-container {
@@ -2328,14 +2335,21 @@ ul.main-list li:target {
 .comics-sliders {
   height: auto;
   /*  border: 1px solid red; */
-  max-width: 1024px;
+  /* max-width: 1024px; */
   padding-top: 20px;
   margin-bottom: 10px;
+}
+.wrapper-comics {
+  position: relative;
+  max-width: 1179px;
+  margin: 0 auto;
+  margin: -60px auto 0;
+  background-color: #fff;
 }
 
 .comics-sliders-container {
   height: auto;
-  padding: 10px;
+  padding: 20px;
   box-sizing: border-box;
   display: flex;
   overflow-x: auto;
@@ -2674,8 +2688,14 @@ ul.main-list li:target {
 
 /* TRAILERS */
 .trailers {
-  max-width: 1024px;
+  max-width: 1200px;
   height: auto;
+  margin: 0 auto;
+}
+.wrapper-trailer {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1200px;
 }
 
 .trailers-container {
@@ -2838,6 +2858,11 @@ ul.main-list li:target {
   height: auto;
   background-color: #000;
   padding-bottom: 10px;
+}
+.mastercard-wrapper {
+  position: relative;
+  max-width: 1240px;
+  margin: 0 auto;
 }
 
 .mastercard-container {
