@@ -234,3 +234,33 @@ $botonModalCreateClose.addEventListener("click", () => {
 $botonJoinCreate.addEventListener("click", () => {
   $classModalCreate.classList.add("is-active");
 });
+
+//ESCONDER MENU SCROLL//
+var lastScrollTop = 0;
+var hea = document.getElementById("headerscroll");
+window.addEventListener("scroll", () => {
+  var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+  if (scrollTop > lastScrollTop) {
+    hea.style.display = "none";
+    console.log("se fue");
+  } else {
+    hea.style.display = "block";
+    console.log("llego");
+  }
+  lastScrollTop = scrollTop;
+});
+
+/* let ubicacionActual = window.pageYOffset; //0
+
+function menuHiddenShow() {
+  let desplazamiento = window.pageYOffset;
+  if (desplazamiento >= ubicacionActual) {
+    document.getElementById("headerd").style.top = "500px";
+    console.log("se e");
+  } else {
+    document.getElementById("headerd").style.top = "-200px";
+    console.log("se escondió");
+  }
+  ubicacionActual = desplazamiento;
+}
+ */
