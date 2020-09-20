@@ -250,7 +250,7 @@ window.addEventListener("scroll", () => {
   lastScrollTop = scrollTop;
 }); */
 
-/* let ubicacionActual = window.pageYOffset; //0
+let ubicacionActual = window.pageYOffset; //0
 
 function menuHiddenShow() {
   let desplazamiento = window.pageYOffset;
@@ -263,4 +263,3 @@ function menuHiddenShow() {
   }
   ubicacionActual = desplazamiento;
 }
- */
