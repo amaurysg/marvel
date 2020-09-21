@@ -2040,13 +2040,12 @@ ul.main-list li:target {
   color: #e62429;
 }
 
-.main-menu-container-button:hover::after {
+.main-menu-container-button.is-active::after {
   width: 100%;
   transition: width 5s;
   color: #e62429;
 }
 .main-menu-container-button.is-active {
-  color: green;
 }
 
 /*  .main-menu-container-button::after {
@@ -2344,6 +2343,7 @@ ul.main-list li:target {
   margin: 0 0 25px;
   font-size: 16px;
   letter-spacing: 0.5px;
+  color: white;
 }
 .cta-btn {
   position: absolute;

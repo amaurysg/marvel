@@ -16,7 +16,7 @@ function showSlides() {
   setTimeout(showSlides, 2000);
 }
 //SLIDES DESKTOP AUTOMATICO
-var slideIndexD = 0;
+/* var slideIndexD = 0;
 window.addEventListener("load", showSlidesDesktop);
 
 function showSlidesDesktop() {
@@ -30,10 +30,10 @@ function showSlidesDesktop() {
     slideIndexD = 1;
   }
   slidesListD[slideIndexD - 1].style.opacity = "1";
-  setTimeout(showSlidesDesktop, 2000);
-}
+  setTimeout(showSlidesDesktop, 5000);
+} */
 
-//MENU MOBILE AUTOMATICO//
+/* //MENU MOBILE AUTOMATICO//
 var menuIndex = 0;
 window.addEventListener("load", showMenuLoad);
 
@@ -49,21 +49,25 @@ function showMenuLoad() {
   }
   menuList[menuIndex - 1].style.borderBottom = "3px solid #e62429";
   setTimeout(showMenuLoad, 5000);
-}
+} */
 //MENU MOBILE AUTOMATICO//
-var menuIndexD = 0;
+/* var menuIndexD = 0;
 window.addEventListener("load", showMenuLoadD);
 
 function showMenuLoadD() {
   var m;
-  var menuListD = document.querySelectorAll(".menu-listD");
+  var menuListD = document.querySelectorAll(".main-menu-container-button");
   for (m = 0; m < menuListD.length; m++) {
-    menuListD[m].style.borderBottom = "3px solid white";
+    menuListD[m].style.color = "black";
+    menuListD[m].classList.remove("is-active");
   }
   menuIndexD++;
   if (menuIndexD > menuListD.length) {
     menuIndexD = 1;
   }
-  menuListD[menuIndexD - 1].style.borderBottom = "3px solid #e62429";
+
+  menuListD[menuIndexD - 1].style.color = "#e62429";
+  menuListD[menuIndexD - 1].classList.toggle("is-active");
+
   setTimeout(showMenuLoadD, 5000);
-}
+} */
