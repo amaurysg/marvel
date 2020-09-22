@@ -3008,9 +3008,29 @@ ul.main-list li:target {
   font-family: "Roboto", sans-serif;
   font-weight: bold;
 }
-.cls-3 {
-  height: 40px;
-  width: 40px;
+.video-metadata__insider {
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+}
+.video-metadata__insider .icon--svg {
+  margin: 0 5px 0 0;
+}
+.icon--svg .icon--insider {
+  height: 24px;
+  width: 24px;
+}
+
+.video-metadata__insider a {
+  margin: 0 0 0 5px;
+  color: #e62429;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.video-metadata__description {
+  margin-top: 16px;
+  letter-spacing: 0.5px;
 }
 
 .trailersN-container-section-video-component__playlist {
