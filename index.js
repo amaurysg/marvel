@@ -239,7 +239,7 @@ $botonJoinCreate.addEventListener("click", () => {
 });
 
 //ESCONDER MENU SCROLL//
-var lastScrollTop = 0;
+/* var lastScrollTop = 0;
 var hea = document.getElementById("headerd");
 window.addEventListener("scroll", () => {
   var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
@@ -249,7 +249,7 @@ window.addEventListener("scroll", () => {
     hea.style.display = "block";
   }
   lastScrollTop = scrollTop;
-});
+}); */
 
 /* let ubicacionActual = window.pageYOffset; //0
 
