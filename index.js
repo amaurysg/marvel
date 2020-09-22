@@ -20,6 +20,9 @@ function hideShow() {
     menu.classList.add("is-active");
   }
 }
+
+//OCULTAR HEADER SCROLL //
+
 //CERRAR MENÚ//
 const mySVG = document.querySelector(".close-svg");
 mySVG.addEventListener("click", closeMenu);
@@ -236,26 +239,24 @@ $botonJoinCreate.addEventListener("click", () => {
 });
 
 //ESCONDER MENU SCROLL//
-/* var lastScrollTop = 0;
-var hea = document.getElementById("headerscroll");
+var lastScrollTop = 0;
+var hea = document.getElementById("headerd");
 window.addEventListener("scroll", () => {
   var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
   if (scrollTop > lastScrollTop) {
     hea.style.display = "none";
-    console.log("se fue");
   } else {
     hea.style.display = "block";
-    console.log("llego");
   }
   lastScrollTop = scrollTop;
-}); */
+});
 
-let ubicacionActual = window.pageYOffset; //0
+/* let ubicacionActual = window.pageYOffset; //0
 
 function menuHiddenShow() {
   let desplazamiento = window.pageYOffset;
   if (desplazamiento >= ubicacionActual) {
-    document.getElementById("headerd").style.top = "500px";
+    document.getElementById("headers").style.top = "500px";
     console.log("se e");
   } else {
     document.getElementById("headerd").style.top = "-200px";
@@ -263,3 +264,4 @@ function menuHiddenShow() {
   }
   ubicacionActual = desplazamiento;
 }
+ */
