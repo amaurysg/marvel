@@ -65,6 +65,7 @@ header {
   background: #202020;
 }
 .header-mobile {
+  top: 0;
   position: fixed;
   width: 100%;
   z-index: 1;
@@ -1088,10 +1089,10 @@ select.birth-year {
 .logo-menu1-img {
   transition: left 0.1s;
 }
-.logo-menu1 img:hover {
+/* .logo-menu1 img:hover {
   position: absolute;
   display: none;
-}
+} */
 
 .icon-credit-card1 {
   margin: auto 5px;
@@ -1600,6 +1601,7 @@ select.birth-year {
 }
 
 .hero-container {
+  margin: 52px auto 0;
   height: 670px;
   background: #151515;
   margin-bottom: 75px;
@@ -1791,7 +1793,7 @@ li {
 
 .main {
   width: 100%;
-  padding-top: 92px;
+  /* padding-top: 92px; */
 }
 .main-container {
   height: 385px;
@@ -2851,6 +2853,12 @@ ul.main-list li:target {
   border: 2px solid #e62429;
 }
 
+.anuncio {
+  color: red;
+  background-color: #e8b63e;
+  height: 100px;
+}
+
 .cards-latest-item-footer {
   display: flex;
   justify-content: space-between;
@@ -3560,6 +3568,11 @@ ul.main-list li:target {
 a {
   color: #e62429;
 }
+@media screen and (min-width: 320px) {
+  .menu {
+    top: 233px;
+  }
+}
 
 @media screen and (min-width: 375px) {
   .hero-container {
@@ -3571,7 +3584,7 @@ a {
   }
 
   .menu {
-    top: 370px;
+    top: 325px;
   }
 
   .trailers-video-head iframe {
@@ -3601,7 +3614,7 @@ a {
           height: 675px;
         } */
   .menu {
-    top: 370px;
+    top: 330px;
   }
 
   .trailers-video-head iframe {
@@ -3634,7 +3647,7 @@ a {
   }
 
   .menu {
-    top: 480px;
+    top: 440px;
   }
   .unlimited-title.mobile {
     font-size: 40px;
