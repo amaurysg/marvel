@@ -2334,6 +2334,9 @@ ul.main-list li:target {
   width: 40%;
   max-width: 500px;
 }
+.unlimited-description-container.second {
+  width: 49%;
+}
 .unlimited-img-wrapper {
   margin: 0 0 20px;
 }
