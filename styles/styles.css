@@ -65,11 +65,11 @@ header {
   background: #202020;
 }
 .header-mobile {
-  /*  position: fixed; */
+  position: fixed;
   width: 100%;
   z-index: 1;
   height: 52px;
-  /* background-color: #202020; */
+  background-color: #202020;
 }
 .menu-der1,
 .menu-der2,
@@ -1085,7 +1085,9 @@ select.birth-year {
   /* margin: 0 auto; */
   /* display: none; */
 }
-
+.logo-menu1-img {
+  transition: left 0.1s;
+}
 .logo-menu1 img:hover {
   position: absolute;
   display: none;
@@ -3763,10 +3765,10 @@ a {
   }
 
   .header-desktop {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
+    /* position: fixed; */
+    /* top: 0; */
+    /* left: 0; */
+    /* right: 0; */
   }
   .main-article1 {
     width: 100%;
