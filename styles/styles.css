@@ -3564,6 +3564,7 @@ ul.main-list li:target {
   letter-spacing: 0.5px;
   margin: 0 0 10px 0;
   padding: 0 10px;
+  cursor: pointer;
   /*   line-height: 1.2em; */
   /*   width: 50%; */
 }
@@ -3772,9 +3773,9 @@ a {
     display: none;
   }
 
-  .main-menu {
+  /*  .main-menu {
     display: none;
-  }
+  } */
   .unlimited-container-all {
     display: none;
   }
@@ -3803,7 +3804,7 @@ a {
   }
 
   .main {
-    height: 585px;
+    height: 571px;
   }
 
   .main-container {
@@ -3962,8 +3963,8 @@ a {
 
 @media screen and (min-width: 960px) {
   .main {
-    height: 420px;
-
+    height: 571px;
+    clip-path: polygon(0 0, 0 100%, 100% 92%, 100% 0);
     background: none;
   }
 
@@ -3996,6 +3997,7 @@ a {
   }
 
   .main-menu {
+    width: 2;
     top: -60px;
   }
 
