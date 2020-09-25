@@ -13,7 +13,7 @@ function showSlides() {
     slideIndex = 1;
   }
   slidesList[slideIndex - 1].style.opacity = "1";
-  setTimeout(showSlides, 2000);
+  setTimeout(showSlides, 5000);
 }
 //SLIDES DESKTOP AUTOMATICO
 var slideIndexD = 0;

@@ -2861,11 +2861,42 @@ ul.main-list li:target {
   border: 2px solid #e62429;
 }
 
-/* .anuncio {
-  color: red;
-  background-color: #e8b63e;
-  height: 100px;
-} */
+.anuncio {
+  height: auto;
+  display: none;
+}
+.anuncio.is-active {
+  display: block;
+}
+.wrapper-anuncio {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 30px;
+  height: 90px;
+  /*  background-color: #e8b63e; */
+}
+.anuncio-box {
+  height: inherit;
+  background-image: url("/images/anuncios/16146602927236293761.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: center;
+  box-sizing: border-box;
+  position: relative;
+}
+.anuncio-close {
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  margin: 0px;
+  padding: 0px;
+  right: 2px;
+
+  top: 2px;
+  font-family: "roboto", sans-serif;
+  text-align: center;
+}
 
 .cards-latest-item-footer {
   display: flex;
@@ -3993,7 +4024,7 @@ a {
   }
 
   .article-description {
-    padding: 80px 10px;
+    padding: 80px 30px;
   }
 
   .main-menu {

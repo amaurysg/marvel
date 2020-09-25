@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scroll Sliders</title>
+</head>
+<style>
+  .slider {
+    max-width: 500px;
+    height: 400px;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+  }
+
+  .slider-container {
+    display: flex;
+
+  }
+
+  .slider-item img {
+    object-fit: cover;
+    scroll-snap-align: center;
+  }
+</style>
+
+<body>
+  <div class="slider">
+    <div class="slider-container">
+      <div class="slider-item">
+        <img src="./images/16x9_8.png" alt="">
+      </div>
+      <div class="slider-item">
+        <img src="./images/_avengers_card_4.jpg" alt="">
+      </div>
+      <div class="slider-item">
+        <img src="./images/empyre_0805_com_mas_mob_01.jpg" alt="">
+      </div>
+
+    </div>
+  </div>
+</body>
+
+</html>

@@ -10,22 +10,31 @@ anuncio.setAttribute("align", "center");
 //5-Agrego anuncio al documento
 /* document.getElementById("anuncio1").appendChild(anuncio); */
 
+var closeAnu = document.getElementById("close-svg-anuncio");
+closeAnu.addEventListener("click", () => {
+  anu.classList.remove("is-active");
+});
+
 window.addEventListener("load", showAd);
 window.addEventListener("load", hiddenAd);
-
+const anu = document.querySelector(".anuncio");
 function showAd() {
   setTimeout(() => {
-    document.getElementById("anuncio1").appendChild(anuncio);
+    anu.classList.add("is-active");
+    /* 
+    document.getElementById("anuncio1").appendChild(anuncio); */
 
     console.log("debería mostrar");
-  }, 2000);
+  }, 5000);
 }
 function hiddenAd() {
   setTimeout(() => {
-    document.getElementById("anuncio1").removeChild(anuncio);
+    anu.classList.remove("is-active");
+
+    /* document.getElementById("anuncio1").removeChild(anuncio); */
 
     console.log("debería ocultar");
-  }, 5000);
+  }, 10000);
 }
 setInterval(showAd, 5000);
 setInterval(hiddenAd, 10000);

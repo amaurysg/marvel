@@ -4,6 +4,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preload" href="./styles/styles.css" as="style" />
+  <!-- Preload me permite cargar contenido o elementos que necesitaré inmediatamente -->
   <link rel="stylesheet" href="./styles/styles.css" />
 
   <link rel="shortcut icon" href="./images/favicon.png" />
@@ -1417,22 +1419,20 @@
   </div>
   <!--  Menú del Slider -->
   <ul class="menu">
-    <li>
-      <a class="menu-list" href="#slider1"></a>
+    <li id="menu-b1">
+      <a id="menu-list1" class="menu-list"></a>
     </li>
-
-
-    <li>
-      <a class="menu-list" href="#slider2"></a>
+    <li id="menu-b2">
+      <a id="menu-list2" class="menu-list"></a>
     </li>
-    <li>
-      <a class="menu-list"></a>
+    <li id="menu-b3">
+      <a id="menu-list3" class="menu-list"></a>
     </li>
-    <li>
-      <a class="menu-list"></a>
+    <li id="menu-b4">
+      <a id="menu-list4" class="menu-list"></a>
     </li>
-    <li>
-      <a class="menu-list"></a>
+    <li id="menu-b5">
+      <a id="menu-list5" class="menu-list"></a>
     </li>
   </ul>
   <!-- MAIN DESKTOP -->
@@ -2136,13 +2136,30 @@
               </div>
             </ul>
             <button class="button-latest">LOAD MORE</button>
-            <div class="anuncio" id="anuncio1"></div>
+
+
 
           </div>
+
         </div>
+
       </div>
     </div>
   </section>
+
+  <div class="anuncio" id="anuncio1">
+    <div class="wrapper-anuncio">
+      <div class="anuncio-box">
+        <div class="anuncio-close">
+          <svg class="svg-close" id="close-svg-anuncio" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+            viewBox="0 0 20 16">
+            <path id="close-svg" d="M-1-3L10.314 8.314M13 11l11.314 11.314M24.142-6L-4.142 22.284"></path>
+          </svg>
+
+        </div>
+      </div>
+    </div>
+  </div>
   <!-- TRAILERS -->
 
 
@@ -2695,8 +2712,9 @@
   </section>
 </body>
 <script src="./index.js"></script>
-<script src="./jsteste.js"></script>
+<script src="./sliders.js"></script>
 <script src="./jslogo.js"></script>
-<script src="./anuncios+.js"></script>
+<script src="./anuncios.js"></script>
+<script src="./menu-botones.js"></script>
 
 </html>
