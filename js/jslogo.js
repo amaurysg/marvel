@@ -19,6 +19,11 @@ window.addEventListener("scroll", () => {
   lastScrollTop = scrollTop;
 });
 
-function hagaAlgo() {
+/* const datoFuera = 9; 
+
+(function hagaAlgo(e) {
+  console.log(e)
+  const primerVar = 0; 
   console.log("Hola");
-}
+}) 
+();  */

@@ -405,7 +405,8 @@ svg.svg-arrow {
   height: 52px;
   padding: 0 20px;
   border-bottom: 1px solid #393939;
-  color: g;
+  margin: 0 auto;
+  max-width: 1240px;
 }
 
 .nav1-sign {
@@ -980,7 +981,8 @@ select.birth-year {
 .nav1-logo {
   justify-content: center;
   margin: auto;
-  position: relative;
+  position: absolute;
+  /* position: relative; */
   left: 0;
   right: 0;
   height: 52px;
@@ -1830,7 +1832,7 @@ ul.main-list li:target {
 .main-article1 {
   height: 420px;
   width: 100%;
-  background: url("/images/etu_0825_com_mas_dsk_01.jpg"),
+  background: url("/images/slider2909/muplus_0924_com_mas_dsk_01.jpg"),
     linear-gradient(to left, transparent, black 120%);
   background-blend-mode: multiply;
   /* activo multiples backgrounds */
@@ -1845,7 +1847,7 @@ ul.main-list li:target {
   height: 420px;
   width: 100%;
 
-  background: url("/images/slidersDesktop/im2020_0916_com_mas_dsk_01.jpg"),
+  background: url("/images/slider2909/blackwidow_0925_com_mas_dsk_01.jpg"),
     linear-gradient(to left, transparent, black 120%);
   background-blend-mode: multiply;
   /* activo multiples backgrounds */
@@ -1859,7 +1861,7 @@ ul.main-list li:target {
 .main-article3 {
   height: 420px;
   width: 100%;
-  background: url("/images/slidersDesktop/m616_0722_com_mas_dsk_01.jpg"),
+  background: url("/images/slider2909/blackwidowfeaturette_mas_dsk.jpg"),
     linear-gradient(to left, transparent, black 120%);
   background-blend-mode: multiply;
   /* activo multiples backgrounds */
@@ -1874,7 +1876,7 @@ ul.main-list li:target {
   height: 420px;
   width: 100%;
 
-  background: url("/images/slidersDesktop/mmsm_0916_com_mas_dsk_01.jpg"),
+  background: url("/images/slider2909/hulkhands_com_mas_dsk_01.jpg"),
     linear-gradient(to left, transparent, black 120%);
   background-blend-mode: multiply;
   /* activo multiples backgrounds */
@@ -1888,7 +1890,7 @@ ul.main-list li:target {
 .main-article5 {
   height: 420px;
   width: 100%;
-  background: url("/images/slidersDesktop/shopmarvel_mas_dsk.jpg"),
+  background: url("/images/slider2909/marvel616_lob_mas_dsk_02_0.jpg"),
     linear-gradient(to left, transparent, black 120%);
   background-blend-mode: multiply;
   /* activo multiples backgrounds */
@@ -3858,10 +3860,10 @@ a {
   }
 
   .header-desktop {
-    /* position: fixed; */
-    /* top: 0; */
-    /* left: 0; */
-    /* right: 0; */
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
   }
   .main-article1 {
     width: 100%;
@@ -3875,7 +3877,11 @@ a {
   }
 
   .main {
+    margin: 92px auto 0;
     height: 571px;
+  }
+  .article-description-title {
+    font-size: 26px;
   }
 
   .main-container {
@@ -3899,12 +3905,16 @@ a {
     padding: 30px 20px;
     /* margin: 0 auto; */
     white-space: normal;
-    z-index: 10;
+    /*  z-index: 10; */
     zoom: 1;
   }
 
   .main-article {
     height: 405px;
+  }
+
+  .main-menu-container {
+    width: 100%;
   }
 
   .unlimited-container-all {
@@ -4034,7 +4044,9 @@ a {
 
 @media screen and (min-width: 960px) {
   .main {
-    height: 571px;
+    height: 655px;
+    margin: 92px auto 0;
+    /*   height: 571px; */
     clip-path: polygon(0 0, 0 100%, 100% 92%, 100% 0);
     background: none;
   }
@@ -4062,14 +4074,29 @@ a {
 
     /* background-position-x: -100px; */
   }
+  .main-article1,
+  .main-article2,
+  .main-article3,
+  .main-article4,
+  .main-article5 {
+    height: 655px;
+  }
 
   .article-description {
     padding: 80px 30px;
   }
 
   .main-menu {
-    width: 2;
-    top: -60px;
+    background: transparent;
+    top: -70px;
+  }
+  .main-menu-container {
+    background: white;
+
+    width: 80%;
+  }
+  .article-description-title {
+    font-size: 44px;
   }
 
   .video-sliders-container {
