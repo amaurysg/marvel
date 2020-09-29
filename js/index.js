@@ -1,12 +1,12 @@
 const ipad = window.matchMedia("screen and (max-width: 767px)");
 const menu = document.getElementById("menuLeft");
 const burgerButton = document.getElementById("burger-menu");
-
+/* const headerMobile = document.getElementById("header-mobile");
+ */
 ipad.addListener(validation);
 //VALIDACION DE MEDIAQUERY
 function validation(evento) {
   if (evento.matches) {
-    /*  console.log(evento); */
     burgerButton.addEventListener("click", hideShow);
   } else burgerButton.removeEventListener("click", hideShow);
   console.log(evento.matches);
@@ -234,7 +234,8 @@ $botonModalCreateClose.addEventListener("click", () => {
   $classModalCreate.classList.remove("is-active");
 });
 
-$botonJoinCreate.addEventListener("click", () => {
+$botonJoinCreate.addEventListener("click", (e) => {
+  e.preventDefault();
   $classModalCreate.classList.add("is-active");
 });
 

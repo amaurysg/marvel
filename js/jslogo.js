@@ -18,3 +18,7 @@ window.addEventListener("scroll", () => {
   }
   lastScrollTop = scrollTop;
 });
+
+function hagaAlgo() {
+  console.log("Hola");
+}

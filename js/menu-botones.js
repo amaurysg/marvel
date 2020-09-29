@@ -63,3 +63,17 @@ b5.addEventListener("click", () => {
   slider4.style.opacity = "0";
   slider5.style.opacity = "1";
 });
+
+/* 
+var dias = ["lunes", "martes"];
+ */
+/* for (i = 0; i <= dias.length - 1; i++) {
+  console.log(dias[i]);
+} */
+/* 
+function addDay(d) {
+  dias.unshift(d);
+}
+addDay("Primer");
+
+console.log(dias); */
