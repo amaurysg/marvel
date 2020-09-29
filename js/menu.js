@@ -61,9 +61,10 @@ $menuDesktop.addEventListener("click", function delegarDesktop(evento) {
 
 $menuMobile.addEventListener("click", function delegacion(e) {
   /*  console.log(e.target.classList[0]); */
-  const mostrarSlider = e.target.classList[0];
+  const mostrarSlider = e.target.classList[1];
   switch (mostrarSlider) {
     case "menu-list1":
+      e.preventDefault();
       $slider1.style.opacity = "1";
       $slider2.style.opacity = "0";
       $slider3.style.opacity = "0";
@@ -71,6 +72,7 @@ $menuMobile.addEventListener("click", function delegacion(e) {
       $slider5.style.opacity = "0";
       break;
     case "menu-list2":
+      e.preventDefault();
       $slider1.style.opacity = "0";
       $slider2.style.opacity = "1";
       $slider3.style.opacity = "0";
@@ -78,6 +80,7 @@ $menuMobile.addEventListener("click", function delegacion(e) {
       $slider5.style.opacity = "0";
       break;
     case "menu-list3":
+      e.preventDefault();
       $slider1.style.opacity = "0";
       $slider2.style.opacity = "0";
       $slider3.style.opacity = "1";
@@ -85,6 +88,7 @@ $menuMobile.addEventListener("click", function delegacion(e) {
       $slider5.style.opacity = "0";
       break;
     case "menu-list4":
+      e.preventDefault();
       $slider1.style.opacity = "0";
       $slider2.style.opacity = "0";
       $slider3.style.opacity = "0";
@@ -92,6 +96,7 @@ $menuMobile.addEventListener("click", function delegacion(e) {
       $slider5.style.opacity = "0";
       break;
     case "menu-list5":
+      e.preventDefault();
       $slider1.style.opacity = "0";
       $slider2.style.opacity = "0";
       $slider3.style.opacity = "0";
