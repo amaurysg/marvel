@@ -2053,11 +2053,11 @@ ul.main-list li:target {
 .main-menu-container-button:hover {
   color: #e62429;
 }
-.main-menu-container-button:hover::after {
+/* .main-menu-container-button:hover::after {
   width: 100%;
   transition: width 5s;
   color: #e62429;
-}
+} */
 
 /* EFECTO BORDES  */
 .main-menu-container-button::after {
@@ -2074,7 +2074,7 @@ ul.main-list li:target {
 
 .main-menu-container-button.is-active::after {
   width: 100%;
-  transition: width 5s;
+  transition: width 3s;
   color: #e62429;
 }
 .main-menu-container-button.is-active {
@@ -3062,7 +3062,7 @@ ul.main-list li:target {
   padding: 0;
   transform: translateZ(0);
   position: absolute;
-  z-index: 1;
+  /* z-index: 1; */
   width: 100%;
 }
 .trailersN-grid-wrapper {
