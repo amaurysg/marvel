@@ -1868,7 +1868,7 @@ ul.main-list li:target {
 .main-article3 {
   height: 420px;
   width: 100%;
-  background: url("/images/slider2909/blackwidowfeaturette_mas_dsk.JPG"),
+  background-image: url("https://imgur.com/pwb6dFa"),
     linear-gradient(to left, transparent, black 120%);
   background-blend-mode: multiply;
   /* activo multiples backgrounds */
