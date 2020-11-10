@@ -21,136 +21,58 @@ function hideShow() {
   }
 }
 
-//OCULTAR HEADER SCROLL //
 
-//CERRAR MENÚ//
-const mySVG = document.querySelector(".close-svg");
-mySVG.addEventListener("click", closeMenu);
+//MENUS LEFT NEW //
+//SELECTORES MENU LEFT//
+const Menu = document.querySelector(".Menu");
+const menuButton = document.querySelector(".icon-menu");
+const menuCloseButton = document.querySelector(".Menu-close");
+const subMenuLinks = document.querySelectorAll(".Submenu-open");
+const subMenuBackLinks = document.querySelectorAll(".Submenu-back");
 
-function closeMenu() {
-  menu.classList.remove("is-active");
-}
+//SELECTORES SUBMENUS HEADER//
+const menuDesktopLinks = document.querySelectorAll(".Menu-link");
 
-const newFlecha = document.querySelector(".svg-arrow");
-newFlecha.addEventListener("click", abrirDerecha);
-
-/* ABRIR MENU VIDEOS */
-const der1 = document.querySelector(".menu-der1");
-function abrirDerecha() {
-  der1.classList.add("is-active");
-}
-/* CERRAR MENU VIDEOS */
-const closeMenuSecond = document.getElementById("menu-der1-title");
-closeMenuSecond.addEventListener("click", closeMenuSecundarios);
-
-function closeMenuSecundarios() {
-  der1.classList.remove("is-active");
-}
-
-/* ABRIR MENU CHARACTERS */
-const der2 = document.getElementById("characters");
-der2.addEventListener("click", abrirCharacters);
-
-const menuCharacters = document.querySelector(".menu-der2");
-function abrirCharacters() {
-  menuCharacters.classList.add("is-active");
-}
+menuDesktopLinks.forEach((link) => {
+  link.addEventListener("mouseenter", () => {
+    setTimeout(() => {
+      link.classList.toggle("isActive");
+      link.children[1].classList.toggle("isActive");
+    }, 250);
+  });
+  link.addEventListener("mouseleave", () => {
+    link.classList.toggle("isActive");
+    link.children[1].classList.toggle("isActive");
+  });
+});
 
 
-/* CERRAR MENU CHARACTERS */
+//ABRIR MENU//
+menuButton.addEventListener("click", (event) => {
+  event.preventDefault();
+  Menu.classList.toggle("isActive");
+});
+//CERRAR MENU//
+menuCloseButton.addEventListener("click", (event) => {
+  event.preventDefault();
+  Menu.classList.toggle("isActive");
+});
 
-const $menuCharacters = document.getElementById("menu-der2-title");
-$menuCharacters.addEventListener("click", closeMenuCharacters);
+//ABRIR SUB MENUS DERECHA A IZQUIERDA//
+subMenuLinks.forEach((submenu) => {
+  submenu.addEventListener("click", (event) => {
+    event.preventDefault();
+    submenu.nextElementSibling.classList.toggle("isActive");
+  });
+});
+//CERRAR SUB MENUS IZQUIERDA A DERECHA//
+subMenuBackLinks.forEach((backLink) => {
+  backLink.addEventListener("click", (event) => {
+    event.preventDefault();
+    backLink.parentElement.classList.toggle("isActive");
+  });
+});
 
-function closeMenuCharacters() {
-  menuCharacters.classList.remove("is-active");
-}
-
-/* ABRIR MENU COMICS */
-const der3 = document.getElementById("comics");
-der3.addEventListener("click", abrirComics);
-
-const menuComics = document.querySelector(".menu-der3");
-function abrirComics() {
-  menuComics.classList.add("is-active");
-}
-
-/* CERRAR MENU COMICS */
-
-const $menuComics = document.getElementById("menu-der3-title");
-$menuComics.addEventListener("click", closeMenuComics);
-
-function closeMenuComics() {
-  menuComics.classList.remove("is-active");
-}
-
-/* ABRIR MENU MOVIES */
-const der4 = document.getElementById("movies");
-der4.addEventListener("click", abrirMovies);
-
-const menuMovies = document.querySelector(".menu-der4");
-function abrirMovies() {
-  menuMovies.classList.add("is-active");
-}
-
-/* CERRAR MENU MOVIES */
-const $menuMovies = document.getElementById("menu-der4-title");
-$menuMovies.addEventListener("click", closeMenuMovies);
-
-function closeMenuMovies() {
-  menuMovies.classList.remove("is-active");
-}
-
-/* ABRIR MENU MOVIES */
-const der5 = document.getElementById("tv");
-der5.addEventListener("click", abrirTv);
-
-const menuTv = document.querySelector(".menu-der5");
-function abrirTv() {
-  menuTv.classList.add("is-active");
-}
-
-/* CERRAR MENU TV SHOWS */
-const $menuTv = document.getElementById("menu-der5-title");
-$menuTv.addEventListener("click", closeMenuTv);
-
-function closeMenuTv() {
-  menuTv.classList.remove("is-active");
-}
-
-/* ABRIR MENU GAMES */
-const der6 = document.getElementById("games");
-der6.addEventListener("click", abrirGames);
-
-const menuGames = document.querySelector(".menu-der6");
-function abrirGames() {
-  menuGames.classList.add("is-active");
-}
-
-/* CERRAR MENU GAMES */
-const $menuGames = document.getElementById("menu-der6-title");
-$menuGames.addEventListener("click", closeMenuGames);
-
-function closeMenuGames() {
-  menuGames.classList.remove("is-active");
-}
-
-/* ABRIR MENU NEWS */
-const der7 = document.getElementById("news");
-der7.addEventListener("click", abrirNews);
-
-const menuNews = document.querySelector(".menu-der7");
-function abrirNews() {
-  menuNews.classList.toggle("is-active");
-}
-
-/* CERRAR MENU NEWS */
-const $menuNews = document.getElementById("menu-der7-title");
-$menuNews.addEventListener("click", closeMenuNews);
-
-function closeMenuNews() {
-  menuNews.classList.toggle("is-active");
-}
 
 //FUNCION DE TESTE
 function teste() {
@@ -172,26 +94,6 @@ ListSubMenu.forEach((event) => {
   });
 });
 
-/*   event.addEventListener("mouseenter", () => {
-    event.classList.toggle("is-active"); */
-
-/*  event.addEventListener("mouseleave", () => {
-    event.classList.toggle("is-active");
-  }); */
-
-/* var $submenuMovies = document.querySelector(".nav2-list-item-a"); */
-
-/* $submenuComics.addEventListener("click", openSubmenuComics);
-$submenuMovies.addEventListener("click", openSubmenuMovies);
-
-var $classSubmenuComics = document.querySelector(".submenuComics");
-var $classSubmenuMovies = document.querySelector(".submenuMovies");
-
-function openSubmenuComics() {
-  $classSubmenuComics.classList.add("is-active");
-}
-function openSubmenuMovies() {
-  $classSubmenuMovies.classList.add("is-active"); */
 
 const $botonSignIn = document.getElementById("sign-in");
 const $botonJoin = document.getElementById("join");
@@ -240,6 +142,8 @@ $botonJoinCreate.addEventListener("click", (e) => {
   e.preventDefault();
   $classModalCreate.classList.add("is-active");
 });
+
+
 
 //ESCONDER MENU SCROLL//
 /* var lastScrollTop = 0;
