@@ -55,6 +55,8 @@ const menuCharacters = document.querySelector(".menu-der2");
 function abrirCharacters() {
   menuCharacters.classList.add("is-active");
 }
+
+
 /* CERRAR MENU CHARACTERS */
 
 const $menuCharacters = document.getElementById("menu-der2-title");

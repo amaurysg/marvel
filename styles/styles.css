@@ -97,32 +97,84 @@ header {
   z-index: 80;
   height: 100vh;
   left: -105%;
+/*   left: 105%; */
   top: 0;
   width: 100vw;
   padding-bottom: 100px;
   transition: 0.3s;
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+ 
 }
 .menu-der1.is-active {
-  left: 0;
+  bottom: 0;
+  
+    top: 0;
+    left: 0;
+    height: inherit;
+    width: 100%;
+    overflow-y: hidden;
+    z-index: 2;
+  
 }
 .menu-der2.is-active {
-  left: 0;
+ bottom: 0;
+    right: 0;
+    top: 0;
+    left: 0;
+    height: inherit;
+    width: 100%;
+    overflow-y: hidden;
+    z-index: 2;
 }
 .menu-der3.is-active {
-  left: 0;
+  bottom: 0;
+    right: 0;
+    top: 0;
+    left: 0;
+    height: inherit;
+    width: 100%;
+    overflow-y: hidden;
+    z-index: 2;
 }
 .menu-der4.is-active {
-  left: 0;
+bottom: 0;
+    right: 0;
+    top: 0;
+    left: 0;
+    height: inherit;
+    width: 100%;
+    overflow-y: hidden;
+    z-index: 2;
 }
 .menu-der5.is-active {
-  left: 0;
+  bottom: 0;
+    right: 0;
+    top: 0;
+    left: 0;
+    height: inherit;
+    width: 100%;
+    overflow-y: hidden;
+    z-index: 2;
 }
 .menu-der6.is-active {
-  left: 0;
+  bottom: 0;
+    right: 0;
+    top: 0;
+    left: 0;
+    height: inherit;
+    width: 100%;
+    overflow-y: hidden;
+    z-index: 2;
 }
 .menu-der7.is-active {
-  left: 0;
+  bottom: 0;
+    right: 0;
+    top: 0;
+    left: 0;
+    height: inherit;
+    width: 100%;
+    overflow-y: hidden;
+    z-index: 2;
 }
 /* .menu-der1-item {
   display: flex;
@@ -399,13 +451,15 @@ svg.svg-arrow {
   transition: 2s;
   display: n;
 }
-
+.nav1-wrapper{
+   border-bottom: 1px solid #393939; 
+  z-index: 5;
+}
 .nav1 {
   display: flex;
   justify-content: space-between;
   height: 52px;
   padding: 0 20px;
-  border-bottom: 1px solid #393939;
   margin: 0 auto;
   max-width: 1240px;
 }
