@@ -36,11 +36,13 @@ const menuDesktopLinks = document.querySelectorAll(".Menu-link");
 menuDesktopLinks.forEach((link) => {
   link.addEventListener("mouseenter", () => {
     setTimeout(() => {
+      //link.preventDefault()
       link.classList.toggle("isActive");
       link.children[1].classList.toggle("isActive");
     }, 250);
   });
   link.addEventListener("mouseleave", () => {
+    //link.preventDefault()
     link.classList.toggle("isActive");
     link.children[1].classList.toggle("isActive");
   });

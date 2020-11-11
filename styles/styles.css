@@ -4287,9 +4287,42 @@ a {
     padding: 20px 30px 0;
     box-sizing: border-box;
 }
+.Grid-5 {
+    grid-template-columns: repeat(5, 1fr);
+}
+.Grid-item-card-title a {
+    color:#e62429;
+    font-size: 14px;
+    font-family: "Roboto Condensed", Helvetica, sans-serif;
+    font-weight: 700;
+    line-height: 1;
+    text-transform: uppercase;
+}
 .Grid-item-card-image {
     position: relative;
 }
+
+.mvl-card--lob .card-body .card-footer__secondary-text {
+    color: #999;
+    margin: 0;
+    padding: 0;
+}
+.mvl-card--lob .card-body .card-footer__secondary-text {
+    font: 400 12px/1 "Roboto Condensed Bold",Trebuchet MS,Helvetica,Arial,sans-serif;
+    color: #e62429;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+.Grid-item-card-subtitle {
+    color: #999;
+    font-size: 12px;
+    line-height: 1;
+    font-weight: 700;
+    font-family: "Roboto Condensed", Helvetica, sans-serif;
+    text-transform: none;
+    padding: 0 0 5px;
+}
+
 .Grid-item-overlay {
     position: absolute;
     top: 0;
