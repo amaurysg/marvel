@@ -1,12 +1,12 @@
 const ipad = window.matchMedia("screen and (max-width: 767px)");
 const menu = document.getElementById("menuLeft");
 const burgerButton = document.getElementById("burger-menu");
-/* const headerMobile = document.getElementById("header-mobile");
- */
+
 ipad.addListener(validation);
 //VALIDACION DE MEDIAQUERY
 function validation(evento) {
   if (evento.matches) {
+    /*  console.log(evento); */
     burgerButton.addEventListener("click", hideShow);
   } else burgerButton.removeEventListener("click", hideShow);
   console.log(evento.matches);
@@ -140,15 +140,14 @@ $botonModalCreateClose.addEventListener("click", () => {
   $classModalCreate.classList.remove("is-active");
 });
 
-$botonJoinCreate.addEventListener("click", (e) => {
-  e.preventDefault();
+$botonJoinCreate.addEventListener("click", () => {
   $classModalCreate.classList.add("is-active");
 });
 
 
 
 //ESCONDER MENU SCROLL//
-/* var lastScrollTop = 0;
+var lastScrollTop = 0;
 var hea = document.getElementById("headerd");
 window.addEventListener("scroll", () => {
   var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
@@ -158,7 +157,7 @@ window.addEventListener("scroll", () => {
     hea.style.display = "block";
   }
   lastScrollTop = scrollTop;
-}); */
+});
 
 /* let ubicacionActual = window.pageYOffset; //0
 

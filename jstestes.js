@@ -13,7 +13,7 @@ function showSlides() {
     slideIndex = 1;
   }
   slidesList[slideIndex - 1].style.opacity = "1";
-  setTimeout(showSlides, 3000);
+  setTimeout(showSlides, 2000);
 }
 //SLIDES DESKTOP AUTOMATICO
 var slideIndexD = 0;
@@ -30,7 +30,7 @@ function showSlidesDesktop() {
     slideIndexD = 1;
   }
   slidesListD[slideIndexD - 1].style.opacity = "1";
-  setTimeout(showSlidesDesktop, 3000);
+  setTimeout(showSlidesDesktop, 5000);
 }
 
 //MENU MOBILE AUTOMATICO//
@@ -48,9 +48,9 @@ function showMenuLoad() {
     menuIndex = 1;
   }
   menuList[menuIndex - 1].style.borderBottom = "3px solid #e62429";
-  setTimeout(showMenuLoad, 3000);
+  setTimeout(showMenuLoad, 5000);
 }
-//MENU DESKTOP AUTOMATICO//
+//MENU MOBILE AUTOMATICO//
 var menuIndexD = 0;
 window.addEventListener("load", showMenuLoadD);
 
@@ -69,30 +69,5 @@ function showMenuLoadD() {
   menuListD[menuIndexD - 1].style.color = "#e62429";
   menuListD[menuIndexD - 1].classList.toggle("is-active");
 
-  setTimeout(showMenuLoadD, 3000);
+  setTimeout(showMenuLoadD, 5000);
 }
-
-var botonesMenu = document.querySelector(".main-container-list");
-botonesMenu.addEventListener("click", function delegationMenu(evento) {
-  const botonesM = evento.target.classList[1];
-
-  switch (botonesM) {
-    case "main-menu-container-button1":
-      menuIndex = 0;
-      break;
-    case "main-menu-container-button2":
-      console.log("boton2");
-      break;
-    case "main-menu-container-button3":
-      console.log("termine función");
-      break;
-
-    case "main-menu-container-button4":
-      console.log("boton4");
-
-      break;
-    case "main-menu-container-button5":
-      console.log("boton5");
-      break;
-  }
-});
